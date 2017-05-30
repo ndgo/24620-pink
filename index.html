@@ -1,12 +1,254 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>Pink: Главная</title>
+</head>
 
-  </body>
+<body>
+<header class="page-header">
+  <div class="page-header__back">
+    <div class="container">
+      <div class="page-header__logo">
+        <a class="page-header__link" href="index.html">Главная</a>
+      </div>
+      <button class="page-header__toggle">Нажми</button>
+      <nav class="navigation">
+        <ul class="navigation__nav">
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="photos.html">Фотографии</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="page-header__container">
+    <div class="page-header__group">
+    </div>
+    <div class="app">
+      <a class="btn btn--download">Скачать приложение</a>
+      <ul class="app__os-list">
+        <li class="app__os-item app__os-item--ios">
+          <a class="app__item-link" href="#">Скачать на iOS</a>
+        </li>
+        <li class="app__os-item app__os-item--android">
+          <a class="app__item-link" href="#">Скачать на Android</a>
+        </li>
+        <li class="app__os-item app__os-item--windows">
+          <a class="app__item-link" href="#">Скачать на Windows</a>
+        </li>
+      </ul>
+      <p class="app__description">Доступно для iPhone, iPad, Android,
+        <br>Windows Phone, OS X, Windows 8</p>
+    </div>
+  </div>
+</header>
+<main class="page-content">
+  <div class="user-appeal">
+    <div class="container">
+      <h1 class="user-appeal__note">Устали от серости мегаполиса?</h1>
+      <p class="user-appeal__note">Нам есть, что вам предложить!</p>
+    </div>
+  </div>
+
+  <div class="benefits">
+    <div class="container">
+      <div class="benefits__note">
+        <h2 class="benefits__note-header">Поднимает настроение</h2>
+        <p class="benefits__note-text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в
+          несколько кликов!</p>
+      </div>
+      <div class="benefits__note">
+        <h2 class="benefits__note-header">Меняет мир вокруг</h2>
+        <p class="benefits__note-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+          эффект!</p>
+      </div>
+      <div class="benefits__item">
+        <h2 class="benefits__note-header">Заводит новых друзей</h2>
+        <p class="benefits__note-text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите
+          новых!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="reviews">
+    <div class="container">
+      <div class="reviews__slider">
+        <input type="radio" id="review-control-1" name="controls" checked="checked"/>
+        <input type="radio" id="review-control-2" name="controls"/>
+        <input type="radio" id="review-control-3" name="controls"/>
+        <label class="slider-control reviews__control--first" for="review-control-1">0</label>
+        <label class="slider-control reviews__control--second" for="review-control-2">0</label>
+        <label class="slider-control reviews__control--third" for="review-control-3">0</label>
+        <div class="reviews__slide-container">
+          <ul>
+            <li class="reviews__slide">
+              <h2 class="reviews__header">Николай Петров</h2>
+              <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+                привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной
+                фотографии!»
+              </blockquote>
+            </li>
+            <li class="reviews__slide">
+              <h2 class="reviews__header">Николай Петров</h2>
+              <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+                привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной
+                фотографии!»
+              </blockquote>
+            </li>
+            <li class="reviews__header">
+              <h2 class="reviews__header">Николай Петров</h2>
+              <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+                привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной
+                фотографии!»
+              </blockquote>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pricing">
+    <div class="container">
+      <div class="pricing__slider">
+        <input type="radio" id="pricing-slider-input-1" name="controls" checked="checked"/>
+        <input type="radio" id="pricing-slider-input-2" name="controls"/>
+        <input type="radio" id="pricing-slider-input-3" name="controls"/>
+        <label class="slider-control pricing__control--first" for="pricing-slider-input-1">0</label>
+        <label class="slider-control pricing__control--second" for="pricing-slider-input-2">0</label>
+        <label class="slider-control pricing__control--third" for="pricing-slider-input-3">0</label>
+        <div class="pricing__slide-container">
+          <table class="pricing__table">
+            <tr class="pricing__row-1">
+              <td class="pricing__col-1">
+              </td>
+              <td class="pricing__col-2">
+                <div class="pricing__buy">
+                  <span class="pricing__name">База</span>
+                  <span class="pricing__price">1,99 USD</span>
+                </div>
+              </td>
+              <td class="pricing__col-3">
+                <div class="pricing__buy">
+                  <p class="pricing__ribbon"><span>ХИТ</span>
+                  </p>
+                  <span class="pricing__name">Стандарт</span>
+                  <span class="pricing__price">3,99 USD</span>
+                </div>
+              </td>
+              <td class="pricing__col-4">
+                <div class="pricing__buy">
+                  <span class="pricing__name">АНЛИМ</span>
+                  <span class="pricing__price">9,99 USD</span>
+                </div>
+              </td>
+            </tr>
+            <tr class="pricing__row-2">
+              <td class="pricing__col-1">
+                <span class="pricing__package-option">Розовый фильтр</span>
+              </td>
+              <td class="pricing__col-2">
+                <div class="pricing__wrap">
+                  <span class="pricing__package-option">Розовый фильтр</span>
+                  <span class="icon icon-yes">Есть</span>
+                </div>
+              </td>
+              <td class="pricing__col-3">
+                <div class="pricing__wrap">
+                  <span class="pricing__package-option">Розовый фильтр</span>
+                  <span class="icon icon-yes">Есть</span>
+                </div>
+              </td>
+              <td class="pricing__col-4">
+                <div class="pricing__wrap">
+                  <span class="pricing__package-option">Розовый фильтр</span>
+                  <span class="icon icon-yes">Есть</span>
+                </div>
+              </td>
+            </tr>
+            <tr class="pricing__row-3">
+              <td class="pricing__col-1">
+                <a class="pricing__package-option">Смайлики</a>
+              </td>
+              <td class="pricing__col-2">
+                <div class="pricing__wrap">
+                  <span class="pricing__package-option">Смайлики</span>
+                  <span class="icon icon-no">Нет</span>
+                </div>
+              </td>
+              <td class="pricing__col-3">
+                <div class="pricing__wrap">
+                  <span class="pricing__package-option">Смайлики</span>
+                  <span class="icon icon-yes">Есть</span>
+                </div>
+              </td>
+              <td class="pricing__col-4">
+                <div class="pricing__wrap">
+                  <span class="pricing__package-option">Смайлики</span>
+                  <span class="icon icon-yes">Нет</span>
+                </div>
+              </td>
+            </tr>
+            <tr class="pricing__row-4">
+              <td class="pricing__col-1">
+                <a class="pricing-option">Комментарии</a>
+              </td>
+              <td class="pricing__col-2">
+                <div class="pricing__wrap">
+                  <span class="pricing__package-option">Комментарии</span>
+                  <span class="icon icon-no">Нет</span>
+                </div>
+              </td>
+              <td class="pricing__col-3">
+                <div class="pricing__wrap">
+                  <span class="pricing__package-option">Комментарии</span>
+                  <span class="icon icon-no">Нет</span>
+                </div>
+              </td>
+              <td class="pricing__col-4">
+                <div class="pricing__wrap">
+                  <span class="pricing__package-option">Комментарии</span>
+                  <span class="icon icon-yes">Есть</span>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="page-footer">
+  <div class="page-footer__inner">
+    <p class="page-footer__title">Остались вопросы? Свяжитесь с нами!</p>
+    <div class="page-footer__contacts-wrap">
+      <div class="page-footer__contacts">
+        <h2 class="page-footer__header">Звоните:</h2>
+        <a class="page-footer__text" href="tel:+78125556666">+7(812)555-66-66</a>
+      </div>
+      <div class="page-footer__contacts">
+        <h2 class="page-footer__header">Пишите:</h2>
+        <a class="page-footer__text" href="mailto:mail@htmlacademy.com">mail@htmlacademy.com</a>
+      </div>
+      <div class="page-footer__contacts">
+        <h2 class="page-footer__header">Приезжайте в гости:</h2>
+        <p class="page-footer__text">Ул. Большая Конюшенная, 19/8</p>
+      </div>
+    </div>
+  </div>
+  <div class="google-map"></div>
+</footer>
+
+</body>
 </html>
