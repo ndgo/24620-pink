@@ -44,80 +44,80 @@
       </div>
       <form class="form" action="/send" method="post">
         <div class="form__fields form__fields--full-name">
-          <label class="text-field">
-            <span class="text-field__caption">Фамилия:</span>
-            <input class="text-field__input" type="text" placeholder="Укажите фамилию *" required>
+          <label class="form__text-field">
+            <span class="form__text-field-caption">Фамилия:</span>
+            <input class="form__text-field-input" type="text" placeholder="Укажите фамилию *" required>
           </label>
-          <label class="text-field">
-            <span class="text-field__caption">Имя:</span>
-            <input class="text-field__input" type="text" placeholder="Введите ваше имя *" required>
+          <label class="form__text-field">
+            <span class="form__text-field-caption">Имя:</span>
+            <input class="form__text-field-input" type="text" placeholder="Введите ваше имя *" required>
           </label>
-          <label class="text-field">
-            <span class="text-field__caption">Отчество:</span>
-            <input class="text-field__input" type="text" placeholder="Ну и отчество тоже">
+          <label class="form__text-field">
+            <span class="form__text-field-caption">Отчество:</span>
+            <input class="form__text-field-input" type="text" placeholder="Ну и отчество тоже">
           </label>
         </div>
         <div class="form__fields form__fields--achievements">
           <h3 class="form__legend">Ваши безбашенные достижения в путешествии</h3>
-          <label class="checkbox">
-            <input class="checkbox__input" type="checkbox" name="shark-selfie" checked="checked">
-            <span class="checkbox__caption">Сделал селфи с акулой</span>
+          <label class="form__checkbox">
+            <input class="form__checkbox-input" type="checkbox" name="shark-selfie" checked="checked">
+            <span class="form__checkbox-caption">Сделал селфи с акулой</span>
           </label>
-          <label class="checkbox">
-            <input class="checkbox__input" type="checkbox" name="shiny-skin" checked="checked">
-            <span class="checkbox__caption">Обгорел на пляже</span>
+          <label class="form__checkbox">
+            <input class="form__checkbox-input" type="checkbox" name="shiny-skin" checked="checked">
+            <span class="form__checkbox-caption">Обгорел на пляже</span>
           </label>
-          <label class="checkbox">
-            <input class="checkbox__input" type="checkbox" name="see-chuck">
-            <span class="checkbox__caption">Видел Чака Норриса</span>
+          <label class="form__checkbox">
+            <input class="form__checkbox-input" type="checkbox" name="see-chuck">
+            <span class="form__checkbox-caption">Видел Чака Норриса</span>
           </label>
-          <label class="checkbox">
-            <input class="checkbox__input" type="checkbox" name="bought-souvenirs">
-            <span class="checkbox__caption">Накупил сувениров</span>
+          <label class="form__checkbox">
+            <input class="form__checkbox-input" type="checkbox" name="bought-souvenirs">
+            <span class="form__checkbox-caption">Накупил сувениров</span>
           </label>
-          <label class="checkbox">
-            <input class="checkbox__input" type="checkbox" name="defenced-tower" checked="checked"><span
-            class="checkbox__caption">Удержал башню</span>
+          <label class="form__checkbox">
+            <input class="form__checkbox-input" type="checkbox" name="defenced-tower" checked="checked">
+            <span class="form__checkbox-caption">Удержал башню</span>
           </label>
-          <label class="checkbox">
-            <input class="checkbox__input" type="checkbox" name="destroyed-hotel">
-            <span class="checkbox__caption">Разгромил отель</span>
+          <label class="form__checkbox">
+            <input class="form__checkbox-input" type="checkbox" name="destroyed-hotel">
+            <span class="form__checkbox-caption">Разгромил отель</span>
           </label>
         </div>
         <div class="form__fields form__fields--contacts">
-          <label class="text-field">
-            <span class="text-field__caption">номер телефона</span>
-            <input class="text-field__input" type="tel" placeholder="Номер, пожалуйста">
+          <label class="form__text-field">
+            <span class="form__text-field-caption">номер телефона</span>
+            <input class="form__text-field-input" type="tel" placeholder="Номер, пожалуйста">
           </label>
-          <label class="text-field">
-            <span class="text-field__caption">адрес почты</span>
-            <input class="text-field__input" type="email" placeholder="Введите почту *" required>
+          <label class="form__text-field">
+            <span class="form__text-field-caption">адрес почты</span>
+            <input class="form__text-field-input" type="email" placeholder="Введите почту *" required>
           </label>
         </div>
         <div class="form__fields form__fields--platform">
           <h3 class="form__legend">С каким приложением путешествовали?</h3>
-          <label class="radio">
-            <input class="radio__input" type="radio" name="platform" checked="checked">
-            <span class="radio__caption">Pink для iOS</span>
+          <label class="from__radio">
+            <input class="form__radio-input" type="radio" name="platform" checked="checked">
+            <span class="form__radio-caption">Pink для iOS</span>
           </label>
-          <label class="radio">
-            <input class="radio__input" type="radio" name="platform">
-            <span class="radio__caption">Pink на Android</span>
+          <label class="form__radio">
+            <input class="form__radio-input" type="radio" name="platform">
+            <span class="form__radio-caption">Pink на Android</span>
           </label>
-          <label class="radio">
-            <input class="radio__input" type="radio" name="platform">
-            <span class="radio__caption">Windows Phone</span>
+          <label class="form__radio">
+            <input class="form__radio-input" type="radio" name="platform">
+            <span class="form__radio-caption">Windows Phone</span>
           </label>
         </div>
         <div class="form__fields form__fields--report">
           <div class="form__legend">Опишите свои эмоции</div>
-          <textarea class="textarea" name="report"
+          <textarea class="form__textarea" name="report"
                     placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </div>
         <div class="form__fields form__fields--submit">
-          <button class="btn__submit" type="submit">Отправить форму</button>
-          <p class="footnote form__footer-note">
-            <span class="footer-note__wildcard">*</span> — обязательные для заполнения поля
+          <button class="btn form__submit" type="submit">Отправить форму</button>
+          <p class="form__footer-note">
+            <span class="form__wildcard">*</span> — обязательные для заполнения поля
           </p>
         </div>
       </form>
