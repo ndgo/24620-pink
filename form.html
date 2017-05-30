@@ -43,7 +43,7 @@
         <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       </div>
       <form class="form" action="/send" method="post">
-        <fieldset class="form__fields form__fields--full-name">
+        <div class="form__fields form__fields--full-name">
           <label class="text-field">
             <span class="text-field__caption">Фамилия:</span>
             <input class="text-field__input" type="text" placeholder="Укажите фамилию *" required>
@@ -56,9 +56,9 @@
             <span class="text-field__caption">Отчество:</span>
             <input class="text-field__input" type="text" placeholder="Ну и отчество тоже">
           </label>
-        </fieldset>
-        <fieldset class="form__fields form__fields--achievements">
-          <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+        </div>
+        <div class="form__fields form__fields--achievements">
+          <h3 class="form__legend">Ваши безбашенные достижения в путешествии</h3>
           <label class="checkbox">
             <input class="checkbox__input" type="checkbox" name="shark-selfie" checked="checked">
             <span class="checkbox__caption">Сделал селфи с акулой</span>
@@ -83,8 +83,8 @@
             <input class="checkbox__input" type="checkbox" name="destroyed-hotel">
             <span class="checkbox__caption">Разгромил отель</span>
           </label>
-        </fieldset>
-        <fieldset class="form__fields form__fields--contacts">
+        </div>
+        <div class="form__fields form__fields--contacts">
           <label class="text-field">
             <span class="text-field__caption">номер телефона</span>
             <input class="text-field__input" type="tel" placeholder="Номер, пожалуйста">
@@ -93,9 +93,9 @@
             <span class="text-field__caption">адрес почты</span>
             <input class="text-field__input" type="email" placeholder="Введите почту *" required>
           </label>
-        </fieldset>
-        <fieldset class="form__fields form__fields--platform">
-          <legend class="form__legend">С каким приложением путешествовали?</legend>
+        </div>
+        <div class="form__fields form__fields--platform">
+          <h3 class="form__legend">С каким приложением путешествовали?</h3>
           <label class="radio">
             <input class="radio__input" type="radio" name="platform" checked="checked">
             <span class="radio__caption">Pink для iOS</span>
@@ -108,18 +108,18 @@
             <input class="radio__input" type="radio" name="platform">
             <span class="radio__caption">Windows Phone</span>
           </label>
-        </fieldset>
-        <fieldset class="form__fields form__fields--report">
+        </div>
+        <div class="form__fields form__fields--report">
           <div class="form__legend">Опишите свои эмоции</div>
           <textarea class="textarea" name="report"
                     placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </fieldset>
-        <fieldset class="form__fields form__fields--submit">
+        </div>
+        <div class="form__fields form__fields--submit">
           <button class="btn__submit" type="submit">Отправить форму</button>
           <p class="footnote form__footer-note">
             <span class="footer-note__wildcard">*</span> — обязательные для заполнения поля
           </p>
-        </fieldset>
+        </div>
       </form>
     </div>
   </div>
@@ -143,7 +143,8 @@
         </a>
       </li>
     </ul>
-    <div class="copyright"><span>Разработано</span>
+    <div class="copyright">
+      <span>Разработано</span>
       <a href="https://htmlacademy.ru/"></a>
     </div>
   </div>
