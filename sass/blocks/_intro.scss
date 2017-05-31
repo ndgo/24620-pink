@@ -5,11 +5,10 @@
   @include embed-font($sans-light-family, 24px, 29px, $midnight, 300);
 
   margin-top: 0;
-  margin-bottom: 0;
 
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 
   &:last-child {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
