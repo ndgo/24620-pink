@@ -45,15 +45,15 @@
 }
 
 // Modified. Adding font directive at http://engageinteractive.co.uk/blog/top-10-scss-mixins
-@mixin font-preferences($size: false, $colour: false, $weight: false,  $line-height: false) {
-  @if $size {
-    font-size: $size;
+@mixin font-preferences($font-size: false, $colour: false, $font-weight: false,  $line-height: false) {
+  @if $font-size {
+    font-size: $font-size;
   }
   @if $colour {
     color: $colour;
   }
-  @if $weight {
-    font-weight: $weight;
+  @if $font-weight {
+    font-weight: $font-weight;
   }
   @if $line-height {
     line-height: $line-height;
