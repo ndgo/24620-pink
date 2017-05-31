@@ -1,4 +1,4 @@
-// https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
+// Adding font-face directive at https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
 // =============================================================================
 // String Replace
 // =============================================================================
@@ -41,5 +41,21 @@
     font-style: $style;
     font-weight: $weight;
     src: $src;
+  }
+}
+
+// Modified. Adding font directive at http://engageinteractive.co.uk/blog/top-10-scss-mixins
+@mixin font-preferences($size: false, $colour: false, $weight: false,  $line-height: false) {
+  @if $size {
+    font-size: $size;
+  }
+  @if $colour {
+    color: $colour;
+  }
+  @if $weight {
+    font-weight: $weight;
+  }
+  @if $line-height {
+    line-height: $line-height;
   }
 }
