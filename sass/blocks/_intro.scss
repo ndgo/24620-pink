@@ -2,7 +2,7 @@
 @import "../global/mixins";
 
 .intro__text {
-  @include embed-font($sans-light-family, 24px, 29px, $dark-blue, 300);
+  @include embed-font($sans-light-family, 24px, 29px, $midnight, 300);
 
   margin-top: 0;
   margin-bottom: 0;
