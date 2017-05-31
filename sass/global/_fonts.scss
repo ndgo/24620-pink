@@ -1,0 +1,5 @@
+@import "font-mixins";
+
+@include font-face(opensans-light, "../../fonts/opensanslight", 300, normal, woff woff2);
+@include font-face(opensans-regular, "../../fonts/opensans", 400, normal, woff woff2);
+@include font-face(opensans-bold, "../../fonts/opensansbold", 700, normal, woff woff2);

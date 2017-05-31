@@ -1,2 +1,12 @@
+
+@import "global/fonts";
+@import "global/mixins";
+
 @import "normalize";
-@import "page-header";
+@import "variables";
+
+@import "blocks/page-header";
+
+body {
+  font-family: opensans-light, Helvetica, Arial, sans-serif;
+}
