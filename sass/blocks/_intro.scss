@@ -1,0 +1,15 @@
+@import "../variables";
+@import "../global/mixins";
+
+.intro__text {
+  @include embed-font($sans-light-family, 24px, 29px, $dark-blue, 300);
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding-bottom: 30px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
