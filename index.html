@@ -82,40 +82,41 @@
       </ul>
     </div>
   </div>
-  <div class="reviews">
-    <div class="container">
-      <div class="reviews__slider">
-        <input type="radio" id="review-control-1" name="controls" checked="checked"/>
-        <input type="radio" id="review-control-2" name="controls"/>
-        <input type="radio" id="review-control-3" name="controls"/>
-        <label class="slider-control reviews__control--first" for="review-control-1">0</label>
-        <label class="slider-control reviews__control--second" for="review-control-2">0</label>
-        <label class="slider-control reviews__control--third" for="review-control-3">0</label>
-        <div class="reviews__slide-container">
-          <ul>
-            <li class="reviews__slide">
-              <h2 class="reviews__header">Николай Петров</h2>
-              <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-                привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной
-                фотографии!»
-              </blockquote>
-            </li>
-            <li class="reviews__slide">
-              <h2 class="reviews__header">Николай Петров</h2>
-              <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-                привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной
-                фотографии!»
-              </blockquote>
-            </li>
-            <li class="reviews__header">
-              <h2 class="reviews__header">Николай Петров</h2>
-              <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-                привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной
-                фотографии!»
-              </blockquote>
-            </li>
-          </ul>
+  <div class="promotion__review-slider-container">
+    <div class="review-slider">
+      <input class="review-slider__input" type="radio" name="review-slider__input" id="review-slider__slide-1"
+             checked="checked">
+      <input class="review-slider__input" type="radio" name="review-slider__input" id="review-slider__slide-2">
+      <input class="review-slider__input" type="radio" name="review-slider__input" id="review-slider__slide-3">
+      <div class="review-slider__mask">
+        <div class="review-slider__slides">
+          <blockquote class="review-slider__slide review">
+            <cite class="review__author">Николай Петров</cite>
+            <div class="review__status">25 лет, водитель трамвая</div>
+            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+              фотографии!»</p>
+          </blockquote>
+          <blockquote class="review-slider__slide review">
+            <cite class="review__author">Николай Петров</cite>
+            <div class="review__status">25 лет, водитель трамвая</div>
+            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+              фотографии!»</p>
+          </blockquote>
+          <blockquote class="review-slider__slide review">
+            <cite class="review__author">Николай Петров</cite>
+            <div class="review__status">25 лет, водитель трамвая</div>
+            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+              фотографии!»</p>
+          </blockquote>
         </div>
+      </div>
+      <div class="review-slider__controls">
+        <label class="review-slider__control" for="review-slider__slide-1"></label>
+        <label class="review-slider__control" for="review-slider__slide-2"></label>
+        <label class="review-slider__control" for="review-slider__slide-3"></label>
       </div>
     </div>
   </div>
