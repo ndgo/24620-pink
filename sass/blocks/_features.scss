@@ -1,0 +1,12 @@
+@import "../variables";
+@import "../global/mixins";
+
+.features {
+
+  background-color: rgba($white-smoke, 1);
+
+  &::before {
+    content: "";
+    background-image: url("../../img/bg-triangle-white.svg");
+  }
+}
