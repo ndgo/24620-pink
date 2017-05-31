@@ -33,3 +33,7 @@
 .page-header__toggle-control {
   display: none;
 }
+
+.page-header__title {
+  @include embed-font($sans-light-family, 24px, 30px, white);
+}
