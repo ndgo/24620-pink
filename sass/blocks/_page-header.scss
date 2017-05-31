@@ -1,4 +1,35 @@
-.page-header__link,
-.page-header__toggle {
-  font-size: 0;
+@import "../variables";
+@import "../global/mixins";
+
+.page-header {
+  background-color: rgba($dark-blue, 1);
+}
+
+.page-header__menu {
+  background-color: rgba($dark-blue, .3);
+
+  min-height: 66px;
+  padding: 0 20px;
+
+  &::before {
+    content: "";
+    background-image: url("../../img/bg-back-mobile@1x.jpg");
+  }
+
+  &::after {
+    content: "";
+    background-image: url("../../img/iphone-hand-mobile@1x.png");
+  }
+}
+
+.page-header__link {
+  @include embed-font($sans-bold-family, 22px, 22px, white);
+
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.page-header__toggle-control {
+  display: none;
 }
