@@ -3,8 +3,5 @@
 @import "variables";
 @import "global/fonts";
 @import "blocks/page-header";
-
-body {
-
-  @include embed-font($sans-light-family, 10px, 20px, red, 700);
-}
+@import "blocks/navigation";
+@import "blocks";
