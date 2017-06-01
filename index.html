@@ -116,113 +116,93 @@
       </div>
     </div>
   </div>
-
-  <div class="pricing">
-    <div class="container">
-      <div class="pricing__slider">
-        <input type="radio" id="pricing-slider-input-1" name="controls" checked="checked"/>
-        <input type="radio" id="pricing-slider-input-2" name="controls"/>
-        <input type="radio" id="pricing-slider-input-3" name="controls"/>
-        <label class="slider-control pricing__control--first" for="pricing-slider-input-1"></label>
-        <label class="slider-control pricing__control--second" for="pricing-slider-input-2"></label>
-        <label class="slider-control pricing__control--third" for="pricing-slider-input-3"></label>
-        <div class="pricing__slide-container">
-          <table class="pricing__table">
-            <tr class="pricing__row-1">
-              <td class="pricing__col-1">
-              </td>
-              <td class="pricing__col-2">
-                <div class="pricing__buy">
-                  <span class="pricing__name">База</span>
-                  <span class="pricing__price">1,99 USD</span>
-                </div>
-              </td>
-              <td class="pricing__col-3">
-                <div class="pricing__buy">
-                  <p class="pricing__ribbon"><span>ХИТ</span>
-                  </p>
-                  <span class="pricing__name">Стандарт</span>
-                  <span class="pricing__price">3,99 USD</span>
-                </div>
-              </td>
-              <td class="pricing__col-4">
-                <div class="pricing__buy">
-                  <span class="pricing__name">АНЛИМ</span>
-                  <span class="pricing__price">9,99 USD</span>
-                </div>
-              </td>
-            </tr>
-            <tr class="pricing__row-2">
-              <td class="pricing__col-1">
-                <span class="pricing__package-option">Розовый фильтр</span>
-              </td>
-              <td class="pricing__col-2">
-                <div class="pricing__wrap">
-                  <span class="pricing__package-option">Розовый фильтр</span>
-                  <span class="icon icon-yes">Есть</span>
-                </div>
-              </td>
-              <td class="pricing__col-3">
-                <div class="pricing__wrap">
-                  <span class="pricing__package-option">Розовый фильтр</span>
-                  <span class="icon icon-yes">Есть</span>
-                </div>
-              </td>
-              <td class="pricing__col-4">
-                <div class="pricing__wrap">
-                  <span class="pricing__package-option">Розовый фильтр</span>
-                  <span class="icon icon-yes">Есть</span>
-                </div>
-              </td>
-            </tr>
-            <tr class="pricing__row-3">
-              <td class="pricing__col-1">
-                <a class="pricing__package-option">Смайлики</a>
-              </td>
-              <td class="pricing__col-2">
-                <div class="pricing__wrap">
-                  <span class="pricing__package-option">Смайлики</span>
-                  <span class="icon icon-no">Нет</span>
-                </div>
-              </td>
-              <td class="pricing__col-3">
-                <div class="pricing__wrap">
-                  <span class="pricing__package-option">Смайлики</span>
-                  <span class="icon icon-yes">Есть</span>
-                </div>
-              </td>
-              <td class="pricing__col-4">
-                <div class="pricing__wrap">
-                  <span class="pricing__package-option">Смайлики</span>
-                  <span class="icon icon-yes">Нет</span>
-                </div>
-              </td>
-            </tr>
-            <tr class="pricing__row-4">
-              <td class="pricing__col-1">
-                <a class="pricing-option">Комментарии</a>
-              </td>
-              <td class="pricing__col-2">
-                <div class="pricing__wrap">
-                  <span class="pricing__package-option">Комментарии</span>
-                  <span class="icon icon-no">Нет</span>
-                </div>
-              </td>
-              <td class="pricing__col-3">
-                <div class="pricing__wrap">
-                  <span class="pricing__package-option">Комментарии</span>
-                  <span class="icon icon-no">Нет</span>
-                </div>
-              </td>
-              <td class="pricing__col-4">
-                <div class="pricing__wrap">
-                  <span class="pricing__package-option">Комментарии</span>
-                  <span class="icon icon-yes">Есть</span>
-                </div>
-              </td>
-            </tr>
-          </table>
-        </div>
+  <div class="pricing-slider">
+    <div class="pricing-slider__container">
+      <input class="pricing-slider__input" type="radio" name="pricing-slider__input" id="pricing-slider__slide-1"
+             checked="checked">
+      <input class="pricing-slider__input" type="radio" name="pricing-slider__input" id="pricing-slider__slide-2">
+      <input class="pricing-slider__input" type="radio" name="pricing-slider__input" id="pricing-slider__slide-3">
+      <div class="pricing-slider__mask">
+        <table class="pricing-slider__slides pricing-table">
+          <thead class="pricing-table__header">
+          <tr class="pricing-table__row">
+            <th class="pricing-slider__slide pricing-table__cell"></th>
+            <th class="pricing-slider__slide pricing-table__cell">
+              <strong class="pricing-table__tariff-name">База</strong>
+              <div class="pricing-table__tariff-price">1.99 USD</div>
+            </th>
+            <th class="pricing-slider__slide pricing-table__cell pricing-table__cell--hit" data-tag="хит">
+              <strong class="pricing-table__tariff-name">Стандарт</strong>
+              <div class="pricing-table__tariff-price">3.99 USD</div>
+            </th>
+            <th class="pricing-slider__slide pricing-table__cell">
+              <strong class="pricing-table__tariff-name">Анлим</strong>
+              <div class="pricing-table__tariff-price">9.99 USD</div>
+            </th>
+          </tr>
+          </thead>
+          <tbody class="pricing-table__body">
+          <tr class="pricing-table__row">
+            <td class="pricing-table__cell">
+              <span class="pricing-table__option-name">Розовый фильтр</span>
+              <span class="pricing-table__option-status">Доступно</span>
+            </td>
+            <td class="pricing-table__cell">
+              <span class="pricing-table__option-name">Розовый фильтр</span>
+              <span class="pricing-table__option-status">Доступно</span>
+            </td>
+            <td class="pricing-table__cell">
+              <span class="pricing-table__option-name">Розовый фильтр</span>
+              <span class="pricing-table__option-status">Доступно</span>
+            </td>
+            <td class="pricing-table__cell">
+              <span class="pricing-table__option-name">Розовый фильтр</span>
+              <span class="pricing-table__option-status">Доступно</span>
+            </td>
+          </tr>
+          <tr class="pricing-table__row">
+            <td class="pricing-table__cell">
+              <span class="pricing-table__option-name">Смайлики</span>
+              <span class="pricing-table__option-status">Недоступно</span>
+            </td>
+            <td class="pricing-table__cell">
+              <span class="pricing-table__option-name">Смайлики</span>
+              <span class="pricing-table__option-status">Недоступно</span>
+            </td>
+            <td class="pricing-table__cell">
+              <span class="pricing-table__option-name">Смайлики</span>
+              <span class="pricing-table__option-status">Доступно</span>
+            </td>
+            <td class="pricing-table__cell">
+              <span class="pricing-table__option-name">Смайлики</span>
+              <span class="pricing-table__option-status">Доступно</span>
+            </td>
+          </tr>
+          <tr class="pricing-table__row">
+            <td class="pricing-table__cell">
+              <span class="pricing-table__option-name">Комментарии</span>
+              <span class="pricing-table__option-status">Недоступно</span>
+            </td>
+            <td class="pricing-table__cell">
+              <span class="pricing-table__option-name">Комментарии</span>
+              <span class="pricing-table__option-status">Недоступно</span>
+            </td>
+            <td class="pricing-table__cell">
+              <span class="pricing-table__option-name">Комментарии</span>
+              <span class="pricing-table__option-status">Недоступно</span>
+            </td>
+            <td class="pricing-table__cell">
+              <span class="pricing-table__option-name">Комментарии</span>
+              <span class="pricing-table__option-status">Доступно</span>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="pricing-slider__controls">
+        <label class="pricing-slider__control" for="pricing-slider__slide-1"></label>
+        <label class="pricing-slider__control" for="pricing-slider__slide-2"></label>
+        <label class="pricing-slider__control" for="pricing-slider__slide-3"></label>
       </div>
     </div>
   </div>
