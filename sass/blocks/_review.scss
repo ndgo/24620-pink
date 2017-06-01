@@ -1,0 +1,29 @@
+@import "../variables";
+@import "../global/mixins";
+
+.review {
+  background-color: $white;
+
+  &::after {
+    content: "";
+    background-image: url("../../img/bg-triangle-white.svg");
+  }
+}
+
+.review__item {
+  margin: 0;
+}
+
+.review__author {
+  @include embed-font($sans-bold-family, 18px, 18px, $midnight, null, normal);
+
+  display: block;
+
+  margin-bottom: 20px;
+}
+
+.review__text {
+  @include embed-font($sans-regular-family, 14px, 30px, $midnight);
+
+  margin: 0;
+}
