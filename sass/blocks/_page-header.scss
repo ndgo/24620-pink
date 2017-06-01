@@ -23,7 +23,7 @@
 }
 
 .page-header__link {
-  @include embed-font($sans-bold-family, 22px, 22px, white);
+  @include embed-font($sans-bold-family, 22px, 22px, $white);
 
   display: block;
   text-transform: uppercase;
@@ -35,5 +35,5 @@
 }
 
 .page-header__title {
-  @include embed-font($sans-light-family, 24px, 29px, white);
+  @include embed-font($sans-light-family, 24px, 29px, $white);
 }

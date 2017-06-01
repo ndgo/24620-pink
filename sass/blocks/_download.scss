@@ -17,7 +17,7 @@
 }
 
 .download__item-link {
-  @include embed-font($sans-bold-family, 18px, 18px, white);
+  @include embed-font($sans-bold-family, 18px, 18px, $white);
 
   display: block;
 
@@ -25,5 +25,5 @@
 }
 
 .download__description {
-  @include embed-font($sans-light-family, 14px, 24px, white);
+  @include embed-font($sans-light-family, 14px, 24px, $white);
 }
