@@ -26,4 +26,7 @@
 
 .download__description {
   @include embed-font($sans-light-family, 14px, 24px, $white);
+
+  margin-top: 0;
+  margin-bottom: 0;
 }
