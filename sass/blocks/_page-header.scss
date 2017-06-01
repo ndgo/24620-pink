@@ -36,4 +36,6 @@
 
 .page-header__title {
   @include embed-font($sans-light-family, 24px, 29px, $white);
+
+  margin: 0;
 }
