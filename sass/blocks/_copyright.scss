@@ -1,0 +1,16 @@
+@import "../variables";
+@import "../global/mixins";
+
+.copyright__note {
+  @include embed-font($sans-regular-family, 14px, 18px, $midnight);
+
+  display: block;
+}
+
+.copyright__link {
+  display: block;
+}
+
+.copyright__link-img {
+  display: block;
+}
