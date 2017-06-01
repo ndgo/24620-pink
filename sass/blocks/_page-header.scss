@@ -34,6 +34,11 @@
   display: none;
 }
 
+.page-header__title-container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .page-header__title {
   @include embed-font($sans-light-family, 24px, 29px, $white);
 
