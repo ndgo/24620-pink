@@ -1,0 +1,46 @@
+@import "../variables";
+@import "../global/mixins";
+
+.page-footer__inner {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.page-footer__title {
+  @include embed-font($sans-light-family, 24px, 29px, $midnight);
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+
+.page-footer__contacts {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  &::after {
+    content: "";
+
+    background-image: url("../../img/bg-triangle-white-footer.svg");
+  }
+}
+
+.page-footer__contact-title {
+  @include embed-font($sans-bold-family, 18px, 22px, $midnight);
+
+  margin: 0;
+  font-style: normal;
+
+}
+
+.page-footer__contact-text {
+  @include embed-font($sans-light-family, 24px, 29px, $cerise);
+
+  margin: 0;
+
+  text-decoration: none;
+}
