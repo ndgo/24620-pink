@@ -1,16 +1,16 @@
 @import "../variables";
 @import "../global/mixins";
 
-.page-footer {
+.contacts {
   background-color: $white;
 }
 
-.page-footer__inner {
+.contacts__inner {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.page-footer__title {
+.contacts__title {
   @include embed-font($sans-light-family, 24px, 29px, $midnight);
 
   margin-top: 0;
@@ -20,7 +20,7 @@
   padding-bottom: 40px;
 }
 
-.page-footer__contacts {
+.contacts__list {
   margin: 0;
   padding: 0;
 
@@ -33,7 +33,7 @@
   }
 }
 
-.page-footer__contact-title {
+.contacts__item-title {
   @include embed-font($sans-bold-family, 18px, 22px, $midnight);
 
   margin: 0;
@@ -41,7 +41,7 @@
 
 }
 
-.page-footer__contact-text {
+.contacts__item-text {
   @include embed-font($sans-light-family, 24px, 29px, $cerise);
 
   margin: 0;
