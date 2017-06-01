@@ -1,0 +1,19 @@
+@import "../variables";
+@import "../global/mixins";
+
+.page-footer {
+  background-color: $white;
+}
+
+.page-footer__container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.page-footer__link {
+  display: block;
+}
+
+.page-footer__link-img {
+  display: block;
+}
