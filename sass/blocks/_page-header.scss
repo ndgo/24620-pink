@@ -40,7 +40,7 @@
 }
 
 .page-header__title {
-  @include embed-font($sans-light-family, 24px, 29px, $white);
+  @include embed-font($sans-light-family, 24px, 29px, $white, normal);
 
   margin: 0;
 }
