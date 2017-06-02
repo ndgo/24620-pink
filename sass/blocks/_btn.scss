@@ -6,7 +6,7 @@
 
   display: block;
 
-  padding: 17px 0;
+  padding: 15px 0;
 
   border: 3px solid $white;
   border-radius: 50px;
@@ -14,4 +14,18 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+
+.btn--submit {
+
+  width: 100%;
+
+  border: 0 solid;
+  border-radius: 3px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: $sea-green;
 }
