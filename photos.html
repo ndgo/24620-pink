@@ -175,16 +175,21 @@
       <p class="intro__text">Выкладывайте все, что накопилось втелефоне!</p>
     </div>
     <div class="editor__container">
+      <a class="photo-editor__link" href="#">
+        <img class="photo-editor__image" src="img/photo-7-mobile@1x.jpg" alt="Панорама дня">
+      </a>
       <form class="editor-form" action="/post" method="post">
         <div class="editor-form__tools" role="group">
           <div class="editor-form__tool">
             <label class="editor-form__range range--crop range--active" for="crop">
+              <img class="editor-form-img editor-form-crop" src="img/icon-editor-crop.svg" alt="Обрезать">
               <input class="editor-form__range-control editor-form__range-control--crop" type="range" min="1" max="10"
                      step="1" value="3" id="crop">
             </label>
           </div>
           <div class="editor-form__tool">
             <label class="range range--fill" for="fill">
+              <img class="editor-form-img editor-form-crop" src="img/icon-editor-fill.svg" alt="Залить">
               <input
                 class="editor-form__range-control editor-form__range-control--fill editor-form__range-control--hidden"
                 type="range" min="1" max="10" step="1" value="9" id="fill">
@@ -192,6 +197,7 @@
           </div>
           <div class="editor-form__tool">
             <label class="range range--contrast" for="contrast">
+              <img class="editor-form-img editor-form-crop" src="img/icon-editor-contrast.svg" alt="Контраст">
               <input
                 class="editor-form__range-control editor-form__range-control--contrast editor-form__range-control--hidden"
                 type="range" min="1" max="10" step="1" value="6" id="contrast">
