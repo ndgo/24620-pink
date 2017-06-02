@@ -14,10 +14,12 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+
+  box-sizing: border-box;
 }
 
-
-.btn--submit {
+.btn--submit,
+.btn--modal-window {
 
   width: 100%;
 
@@ -29,3 +31,4 @@
 
   background-color: $sea-green;
 }
+
