@@ -6,6 +6,8 @@
 
   display: block;
 
+  width: 100%;
+
   padding: 15px 0;
 
   border: 3px solid $white;
@@ -21,8 +23,6 @@
 .btn--submit,
 .btn--modal-window {
 
-  width: 100%;
-
   border: 0 solid;
   border-radius: 3px;
 
@@ -32,3 +32,19 @@
   background-color: $sea-green;
 }
 
+.btn--editor-submit {
+  color: $cerise;
+
+  border-color: $cerise;
+
+  background-color: $transparent;
+}
+
+.btn--editor-reset {
+  color: $heather;
+
+  border-color: $heather;
+
+  background-color: $transparent;
+
+}
