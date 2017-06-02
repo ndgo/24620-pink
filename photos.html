@@ -46,7 +46,7 @@
     <div class="feed">
       <div class="post post--choice">
         <a class="post__link" href="#">
-          <img src="http://placehold.it/150x100" alt="Картинка от пользователя">
+          <img src="img/panorama-mobile@1x.jpg" alt="Картинка от пользователя">
         </a>
         <div class="container">
           <div class="post__author"><span class="post__author-name">Анна</span>
@@ -65,7 +65,7 @@
       <div class="container">
         <div class="post">
           <a class="post__link" href="#">
-            <img src="http://placehold.it/150x100" alt="Картинка от пользователя">
+            <img src="img/photo-1-mobile@1x.jpg" alt="Картинка от пользователя">
           </a>
           <div class="post__author"><span class="post__author-name">Левон</span>
             <time class="post__published-at" datetime="2016-05-23 12:00">5 часов назад</time>
@@ -80,7 +80,7 @@
         </div>
         <div class="post">
           <a class="post__link" href="#">
-            <img src="http://placehold.it/150x100" alt="Картинка от пользователя">
+            <img src="img/photo-2-mobile@1x.jpg" alt="Картинка от пользователя">
           </a>
           <div class="post__author"><span class="post__author-name">Антон</span>
             <time class="post__published-at" datetime="2016-05-23 12:00">12 часов назад</time>
@@ -95,7 +95,7 @@
         </div>
         <div class="post">
           <a class="post__link" href="#">
-            <img src="http://placehold.it/150x100" alt="Картинка от пользователя">
+            <img src="img/photo-3-mobile@1x.jpg" alt="Картинка от пользователя">
           </a>
           <div class="post__author"><span class="post__author-name">Борис</span>
             <time class="post__published-at" datetime="2016-05-23 12:00">20 часов назад</time>
@@ -110,7 +110,7 @@
         </div>
         <div class="post">
           <a class="post__link" href="#">
-            <img src="http://placehold.it/150x100" alt="Картинка от пользователя">
+            <img src="img/photo-4-mobile@1x.jpg" alt="Картинка от пользователя">
           </a>
           <div class="post__author"><span class="post__author-name">Сергей</span>
             <time class="post__published-at" datetime="2016-05-23 12:00">25 часов назад</time>
@@ -125,7 +125,7 @@
         </div>
         <div class="post">
           <a class="post__link" href="#">
-            <img src="http://placehold.it/150x100" alt="Картинка от пользователя">
+            <img src="img/photo-5-mobile@1x.jpg" alt="Картинка от пользователя">
           </a>
           <div class="post__author"><span class="post__author-name">Максим</span>
             <time class="post__published-at" datetime="2016-05-23 12:00">40 часов назад</time>
@@ -140,7 +140,7 @@
         </div>
         <div class="post">
           <a class="post__link" href="#">
-            <img src="http://placehold.it/150x100" alt="Картинка от пользователя">
+            <img src="img/photo-6-mobile@1x.jpg" alt="Картинка от пользователя">
           </a>
           <div class="post__author"><span class="post__author-name">Надежда</span>
             <time class="post__published-at" datetime="2016-05-23 12:00">45 часов назад</time>
@@ -163,6 +163,23 @@
     </div>
     <div class="photo-editor__container">
       <form class="editor-form" action="/post" method="post">
+        <div class="editor-form__tools" role="group">
+          <div class="editor-form__tool">
+            <label class="editor-form__range range--crop range--active" for="crop">
+              <input class="editor-form__range-control editor-form__range-control--crop" type="range" min="1" max="10" step="1" value="3" id="crop">
+            </label>
+          </div>
+          <div class="editor-form__tool">
+            <label class="range range--fill" for="fill">
+              <input class="editor-form__range-control editor-form__range-control--fill editor-form__range-control--hidden" type="range" min="1" max="10" step="1" value="9" id="fill">
+            </label>
+          </div>
+          <div class="editor-form__tool">
+            <label class="range range--contrast" for="contrast">
+              <input class="editor-form__range-control editor-form__range-control--contrast editor-form__range-control--hidden" type="range" min="1" max="10" step="1" value="6" id="contrast">
+            </label>
+          </div>
+        </div>
         <div class="editor-form__controls">
           <button class="btn btn--active" type="submit">Запостить</button>
           <button class="btn btn--disabled" type="reset">Отмена</button>
