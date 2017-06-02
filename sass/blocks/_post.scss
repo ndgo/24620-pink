@@ -5,6 +5,10 @@
   margin-bottom: 20px;
 }
 
+.post:last-child {
+  margin-bottom: 0;
+}
+
 .post__link {
   display: block;
 }
@@ -46,7 +50,7 @@
 .post__comment-text {
   margin-top: 0;
   margin-bottom: 0;
-  
+
   padding-bottom: 15px;
 }
 
