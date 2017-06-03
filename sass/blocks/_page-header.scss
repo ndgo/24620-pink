@@ -70,6 +70,12 @@
   content: "";
 }
 
+@media #{$desktop} {
+  .page-header::before {
+    height: 850px;
+  }
+}
+
 .page-header::after {
 
   position: absolute;
