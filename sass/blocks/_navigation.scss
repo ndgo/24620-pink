@@ -1,6 +1,13 @@
 @import "../variables";
 @import "../global/mixins";
 
+.navigation {
+  position: absolute;
+  left: 0;
+
+  width: 100%;
+}
+
 .navigation__nav {
   margin: 0;
   padding: 0;

@@ -8,6 +8,8 @@
 .page-header__menu {
   background-color: rgba($midnight, .3);
 
+  position: relative;
+
   min-height: 66px;
   padding: 0 20px;
 
@@ -15,6 +17,8 @@
 
 .page-header__toggle-control {
   background: $transparent;
+
+  padding: 0;
 
   border: 0;
 }
