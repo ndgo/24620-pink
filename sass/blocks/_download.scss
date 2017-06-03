@@ -6,12 +6,22 @@
   background-color: $midnight;
 }
 
+@media #{$tablet} {
+  .download {
+    background-color: $transparent;
+  }
+}
+
 .download__platform-list {
 
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.download__platform {
+  display: inline-block;
 }
 
 .download__item-link {
