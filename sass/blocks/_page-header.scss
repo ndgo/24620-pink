@@ -13,6 +13,16 @@
 
 }
 
+.page-header__toggle-control {
+  background: $transparent;
+
+  border: 0;
+}
+
+.page-header__toggle-control-img {
+  display: block;
+}
+
 .page-header__menu::before {
   content: "";
   background-image: url("../../img/bg-back-mobile@1x.jpg");
