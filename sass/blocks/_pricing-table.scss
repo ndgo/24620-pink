@@ -25,6 +25,20 @@
   background-color: $midnight;
 }
 
+.pricing-table__cell--transparent {
+  background-color: $transparent;
+}
+
+.pricing-table__cell--column-header {
+  display: none;
+}
+
+@media #{$tablet} {
+  .pricing-table__cell--column-header {
+    display: table-cell;
+  }
+}
+
 .pricing-table__option-name {
   @include embed-font($sans-regular-family, 14px, 30px, $midnight);
 }
