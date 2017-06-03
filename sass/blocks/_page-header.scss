@@ -2,7 +2,7 @@
 @import "../global/mixins";
 
 .page-header {
-  background-color: rgba($midnight, 1);
+  background-color: $midnight;
 }
 
 .page-header__menu {
