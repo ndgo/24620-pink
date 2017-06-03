@@ -1,0 +1,50 @@
+@import "../variables";
+@import "../global/mixins";
+
+.btn {
+  @include embed-font($sans-bold-family, 18px, 18px, $white);
+
+  display: block;
+
+  width: 100%;
+
+  padding: 15px 0;
+
+  border: 3px solid $white;
+  border-radius: 50px;
+
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  box-sizing: border-box;
+}
+
+.btn--submit,
+.btn--modal-window {
+
+  border: 0 solid;
+  border-radius: 3px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: $sea-green;
+}
+
+.btn--editor-submit {
+  color: $cerise;
+
+  border-color: $cerise;
+
+  background-color: $transparent;
+}
+
+.btn--editor-reset {
+  color: $heather;
+
+  border-color: $heather;
+
+  background-color: $transparent;
+
+}

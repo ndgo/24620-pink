@@ -1,0 +1,110 @@
+@import "../variables";
+@import "../global/mixins";
+
+.form {
+  background-color: $white;
+}
+
+.form__fields {
+  background-color: $white;
+}
+
+.form__fields--full-name {
+  padding-bottom: 30px;
+}
+
+.form__text-field {
+  display: block;
+}
+
+.form__text-field-caption {
+  @include embed-font($sans-regular-family, 14px, 30px, $cerise);
+
+  display: block;
+
+  text-transform: uppercase;
+}
+
+.form__text-field-input {
+  display: block;
+
+  width: 100%;
+}
+
+.form__fields--achievements {
+
+  padding-top: 35px;
+  padding-bottom: 60px;
+
+  background-color: $white-smoke;
+}
+
+.form__legend {
+  @include embed-font($sans-regular-family, 14px, 18px, $cerise, normal);
+
+  margin: 0;
+
+  text-transform: uppercase;
+}
+
+.form__checkbox {
+  display: block;
+}
+
+.form__checkbox-caption {
+  @include embed-font($sans-regular-family, 18px, 30px, $midnight);
+
+}
+
+.form__fields--contacts {
+  padding-top: 25px;
+  padding-bottom: 45px;
+}
+
+.form__fields--platform {
+  padding-top: 35px;
+  padding-bottom: 45px;
+
+  background-color: $white-smoke;
+}
+
+.from__radio {
+  display: block;
+}
+
+.form__radio-caption {
+  @include embed-font($sans-regular-family, 18px, 30px, $midnight);
+}
+
+.form__fields--report {
+
+  padding-top: 25px;
+  padding-bottom: 45px;
+}
+
+.form__textarea {
+  width: 100%;
+  height: 200px;
+
+  min-height: 200px;
+
+  padding: 0;
+  margin: 0;
+
+  border: 0;
+}
+
+.form__fields--submit {
+  padding-bottom: 55px;
+}
+
+.form__footer-note {
+  @include embed-font($sans-regular-family, 14px, 30px, $midnight);
+
+  text-transform: uppercase;
+}
+
+.form__wildcard {
+
+  color: $cerise;
+}

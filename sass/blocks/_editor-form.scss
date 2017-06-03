@@ -1,0 +1,11 @@
+@import "../variables";
+@import "../global/mixins";
+
+.editor-form {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.editor-form__tool {
+  margin-bottom: 30px;
+}

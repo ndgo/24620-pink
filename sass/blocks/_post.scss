@@ -1,0 +1,55 @@
+@import "../variables";
+@import "../global/mixins";
+
+.post {
+  margin-bottom: 20px;
+}
+
+.post:last-child {
+  margin-bottom: 0;
+}
+
+.post__link {
+  display: block;
+}
+
+.post__link-img {
+  display: block;
+
+  width: 100%;
+  min-width: 100%;
+}
+
+.post__container {
+  padding: 15px;
+
+  background-color: $white-smoke;
+}
+
+.post__container--choice {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.post__author {
+  padding-bottom: 5px;
+}
+
+.post__author-name {
+  @include embed-font($sans-bold-family, 14px, 14px, $midnight);
+}
+
+.post__published-at {
+  @include embed-font($sans-light-family, 14px, 14px, $midnight);
+}
+
+.post__comment {
+  @include embed-font($sans-regular-family, 14px, 24px, $midnight);
+}
+
+.post__comment-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding-bottom: 15px;
+}

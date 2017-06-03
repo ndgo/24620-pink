@@ -1,0 +1,43 @@
+@import "../variables";
+@import "../global/mixins";
+
+.intro {
+  padding-top: 45px;
+
+  background-color: $white;
+}
+
+.intro--forms-page {
+  padding-bottom: 35px;
+}
+
+.intro--main-page {
+  padding-bottom: 65px;
+}
+
+.intro--photos-page {
+  padding-bottom: 50px;
+}
+
+.intro__text {
+  @include embed-font($sans-regular-family, 14px, 30px, $midnight);
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.intro__text--main-page {
+  font-size: 24px;
+  font-family: $sans-light-family;
+
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.intro--editor {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}

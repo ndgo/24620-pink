@@ -1,0 +1,23 @@
+@import "../variables";
+@import "../global/mixins";
+
+.navigation__nav {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__item {
+  background-color: rgba($midnight, 1);
+  list-style: none;
+}
+
+.navigation__link {
+  @include embed-font($sans-bold-family, 18px, 32px, $white);
+
+  display: block;
+
+  padding: 19px 0;
+
+  text-align: center;
+  text-decoration: none;
+}

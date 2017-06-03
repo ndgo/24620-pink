@@ -1,0 +1,42 @@
+@import "../variables";
+@import "../global/mixins";
+
+.features {
+
+  margin: 0;
+  padding: 0;
+
+  background-color: $white-smoke;
+
+  list-style: none;
+
+  &::before {
+    content: "";
+    background-image: url("../../img/bg-triangle-white.svg");
+  }
+
+  &::after {
+    content: "";
+    background-image: url("../../img/iphone-screen-mobile@1x.png");
+  }
+}
+
+.features__item {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.features__item-title {
+  @include embed-font($sans-bold-family, 18px, 24px, $midnight);
+
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.features__item-description {
+  @include embed-font($sans-regular-family, 14px, 24px, $midnight);
+  margin: 0;
+}

@@ -1,0 +1,30 @@
+@import "../variables";
+@import "../global/mixins";
+
+.pricing-table__plan-name {
+  @include embed-font($sans-bold-family, 18px, 30px, $white);
+
+  font-weight: normal;
+
+  text-transform: uppercase;
+}
+
+.pricing-table__plan-price {
+  @include embed-font($sans-regular-family, 24px, 30px, $white);
+
+  font-weight: normal;
+
+  text-transform: uppercase;
+}
+
+.pricing-table__cell {
+  background-color: $white;
+}
+
+.pricing-table__cell--header {
+  background-color: $midnight;
+}
+
+.pricing-table__option-name {
+  @include embed-font($sans-regular-family, 14px, 30px, $midnight);
+}

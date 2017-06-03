@@ -1,0 +1,45 @@
+@import "../variables";
+@import "../global/mixins";
+
+.modal-window {
+  width: 100%;
+
+  padding: 35px 20px 45px;
+
+  text-align: center;
+
+  background-color: $white;
+  box-shadow: 0 5px 20px 0 rgba($midnight, .3);
+
+  box-sizing: border-box;
+}
+
+.modal-window__header {
+  @include embed-font($sans-bold-family, 18px, 24px, $black);
+
+  padding: 0;
+  margin: 0 0 25px;
+}
+
+.modal-window__text {
+  @include embed-font($sans-regular-family, 14px, 24px, $midnight);
+
+  margin-bottom: 30px;
+}
+
+.modal-window__inner {
+  margin-bottom: -45px;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-color: $white-smoke;
+}
+
+.modal-window__inner--failure {
+  background-color: $white;
+}

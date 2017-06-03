@@ -1,0 +1,50 @@
+@import "../variables";
+@import "../global/mixins";
+
+.contacts {
+  background-color: $white;
+}
+
+.contacts__inner {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contacts__title {
+  @include embed-font($sans-light-family, 24px, 29px, $midnight);
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  &::after {
+    content: "";
+
+    background-image: url("../../img/bg-triangle-white-footer.svg");
+  }
+}
+
+.contacts__item-title {
+  @include embed-font($sans-bold-family, 18px, 22px, $midnight);
+
+  margin: 0;
+  font-style: normal;
+
+}
+
+.contacts__item-text {
+  @include embed-font($sans-light-family, 24px, 29px, $cerise);
+
+  margin: 0;
+
+  text-decoration: none;
+}
