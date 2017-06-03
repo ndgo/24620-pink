@@ -26,8 +26,9 @@
 }
 
 @media #{$desktop} {
-  display: flex;
-
+  .navigation__nav {
+    display: flex;
+  }
 }
 
 .navigation__item {
