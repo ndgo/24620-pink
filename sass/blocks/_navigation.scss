@@ -7,11 +7,17 @@
 
   width: 100%;
 
-  z-index: 1;
+  z-index: 2;
 }
 
 .navigation--hidden {
   display: none;
+}
+
+@media #{$desktop} {
+  .navigation--hidden {
+    display: block;
+  }
 }
 
 .navigation__nav {
@@ -19,9 +25,25 @@
   padding: 0;
 }
 
+@media #{$desktop} {
+  display: flex;
+
+}
+
 .navigation__item {
-  background-color: rgba($midnight, 1);
+  background-color: $midnight;
   list-style: none;
+}
+
+@media #{$desktop} {
+  .navigation__item {
+    background-color: $transparent;
+    margin-right: 40px;
+  }
+
+  .navigation__item:last-child {
+    margin-right: 0;
+  }
 }
 
 .navigation__link {
@@ -33,4 +55,14 @@
 
   text-align: center;
   text-decoration: none;
+}
+
+@media #{$desktop} {
+
+  .navigation__link {
+    padding-left: 25px;
+    padding-right: 25px;
+
+    font-family: $sans-regular-family;
+  }
 }

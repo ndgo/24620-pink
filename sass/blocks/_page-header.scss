@@ -31,6 +31,12 @@
   border: 0;
 }
 
+@media #{$desktop} {
+  .page-header__toggle-control {
+    display: none;
+  }
+}
+
 .page-header__toggle-control-img {
   display: block;
 }
