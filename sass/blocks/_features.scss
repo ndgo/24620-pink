@@ -2,6 +2,7 @@
 @import "../global/mixins";
 
 .features {
+  position: relative;
 
   margin: 0;
   padding: 0;
@@ -9,15 +10,48 @@
   background-color: $white-smoke;
 
   list-style: none;
+}
 
-  &::before {
-    content: "";
-    background-image: url("../../img/bg-triangle-white.svg");
-  }
+.features::before {
+  content: "";
+  background-image: url("../../img/bg-triangle-white.svg");
+}
 
-  &::after {
-    content: "";
+.features::after {
+  position: absolute;
+
+  width: 268px;
+  height: 485px;
+  bottom: -30px;
+  left: 40px;
+
+  background-image: url("../../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  content: "";
+}
+
+@media #{$tablet} {
+  .features::after {
+    position: absolute;
+
+    width: 268px;
+    height: 485px;
+    bottom: -30px;
+    left: 40px;
+
     background-image: url("../../img/iphone-screen-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    content: "";
+  }
+}
+
+@media #{$tablet} {
+  .features {
+    padding: 30px 40px 35px 350px;
   }
 }
 
@@ -38,5 +72,30 @@
 
 .features__item-description {
   @include embed-font($sans-regular-family, 14px, 24px, $midnight);
+
   margin: 0;
+}
+
+.features__item-link {
+  @include embed-font($sans-light-family, 14px, 24px, $cerise);
+
+  margin: 0;
+
+  text-decoration: none;
+}
+
+.features__item--full-width {
+  display: none;
+
+  background-color: $white;
+}
+
+@media #{$tablet} {
+  .features__item--full-width {
+    position: relative;
+
+    display: block;
+
+    padding: 95px 40px 80px 350px;
+  }
 }
