@@ -17,6 +17,8 @@
 
 @media #{$tablet} {
   .page-header__menu {
+    min-height: 110px;
+
     padding: 0 40px;
   }
 }
