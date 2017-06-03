@@ -2,15 +2,33 @@
 @import "../global/mixins";
 
 .review {
+  margin-left: 20px;
+  margin-right: 20px;
+
   background-color: $white;
 
-  &::after {
-    content: "";
-    background-image: url("../../img/bg-triangle-white.svg");
-  }
+  box-sizing: border-box;
+}
+
+.review::after {
+  content: "";
+  background-image: url("../../img/bg-triangle-white.svg");
+}
+
+.review__mask {
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+
+.review__slides {
+  width: 300%;
 }
 
 .review__item {
+  width: 280px;
+
+  float: left;
+
   margin: 0;
 }
 
@@ -20,10 +38,14 @@
   display: block;
 
   margin-bottom: 20px;
+
+  text-align: center;
 }
 
 .review__text {
   @include embed-font($sans-regular-family, 14px, 30px, $midnight);
 
   margin: 0;
+
+  text-align: center;
 }
