@@ -7,3 +7,18 @@
 
   background-color: $white-smoke;
 }
+
+.pricing-slider__mask {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  overflow: hidden;
+}
+
+.pricing-slider__slides {
+  width: 300%;
+}
+
+.pricing-slider__slide  {
+  width: 280px;
+}
