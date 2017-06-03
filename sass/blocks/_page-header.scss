@@ -11,15 +11,16 @@
   min-height: 66px;
   padding: 0 20px;
 
-  &::before {
-    content: "";
-    background-image: url("../../img/bg-back-mobile@1x.jpg");
-  }
+}
 
-  &::after {
-    content: "";
-    background-image: url("../../img/iphone-hand-mobile@1x.png");
-  }
+.page-header__menu::before {
+  content: "";
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+}
+
+.page-header__menu::after {
+  content: "";
+  background-image: url("../../img/iphone-hand-mobile@1x.png");
 }
 
 .page-header__link {
