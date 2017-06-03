@@ -52,6 +52,12 @@
 }
 
 @media #{$tablet} {
+  .features__list {
+    padding: 30px 40px 35px 350px;
+  }
+}
+
+@media #{$tablet} {
   .features__list::before {
     position: absolute;
 
@@ -71,9 +77,9 @@
   }
 }
 
-@media #{$tablet} {
-  .features__list {
-    padding: 30px 40px 35px 350px;
+@media #{$desktop} {
+  .features__list::before {
+    display: none;
   }
 }
 
