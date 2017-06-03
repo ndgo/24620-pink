@@ -53,11 +53,3 @@
 
   padding-bottom: 15px;
 }
-
-.like__text {
-  @include embed-font($sans-light-family, 12px, 12px, $cerise);
-}
-
-.like__count {
-  @include embed-font($sans-light-family, 12px, 12px, $cerise);
-}
