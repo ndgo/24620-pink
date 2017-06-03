@@ -6,7 +6,7 @@
 }
 
 .page-header__menu {
-  background-color: rgba($midnight, .3);
+  background-color: rgba($black, 0.3);
 
   position: relative;
 
@@ -27,14 +27,43 @@
   display: block;
 }
 
-.page-header__menu::before {
-  content: "";
+.page-header::before {
+  position: absolute;
+
+  right: 0;
+  bottom: 0;
+  height: 460px;
+  top: 0;
+  left: 0;
+
   background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  content: "";
 }
 
 .page-header__menu::after {
-  content: "";
   background-image: url("../../img/iphone-hand-mobile@1x.png");
+
+  position: absolute;
+
+  width: 258px;
+  height: 286px;
+  top: 174px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  content: "";
+}
+
+.page-header__container {
+  margin: 422px auto 0;
+  padding: 0 20px;
+
+  text-align: center;
 }
 
 .page-header__link {
