@@ -2,7 +2,15 @@
 @import "../global/mixins";
 
 .page-footer {
+  display: none;
+
   background-color: $white;
+}
+
+@media #{$desktop} {
+  .page-footer {
+    display: block;
+  }
 }
 
 .page-footer__container {
