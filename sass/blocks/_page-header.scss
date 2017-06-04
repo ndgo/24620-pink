@@ -82,7 +82,7 @@
   }
 }
 
-.page-header::after {
+.page-header--main-page::after {
 
   position: absolute;
 
@@ -100,7 +100,7 @@
 }
 
 @media #{$tablet} {
-  .page-header::after {
+  .page-header--main-page::after {
     height: 545px;
   }
 }
