@@ -70,6 +70,12 @@
   content: "";
 }
 
+@media #{$tablet} {
+  .page-header::before {
+    height: 730px;
+  }
+}
+
 @media #{$desktop} {
   .page-header::before {
     height: 850px;
