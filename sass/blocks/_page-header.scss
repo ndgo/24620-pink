@@ -2,18 +2,50 @@
 @import "../global/mixins";
 
 .page-header {
+  height: 235px;
+
   background-color: $midnight;
 }
 
 @media #{$tablet} {
   .page-header {
-    min-height: 730px;
+
+    height: 440px;
   }
 }
 
 @media #{$desktop} {
   .page-header {
-    min-height: 850px;
+    height: 395px;
+  }
+}
+
+.page-header::before {
+  position: absolute;
+
+  right: 0;
+  bottom: 0;
+  height: 235px;
+  top: 0;
+  left: 0;
+
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  content: "";
+}
+
+@media #{$tablet} {
+  .page-header::before {
+    height: 440px;
+  }
+}
+
+@media #{$tablet} {
+  .page-header::before {
+    height: 395px;
   }
 }
 
@@ -53,31 +85,30 @@
   display: block;
 }
 
-.page-header::before {
-  position: absolute;
-
-  right: 0;
-  bottom: 0;
+.page-header--main-page {
   height: 460px;
-  top: 0;
-  left: 0;
-
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  content: "";
 }
 
 @media #{$tablet} {
-  .page-header::before {
+  .page-header--main-page {
+    min-height: 730px;
+  }
+}
+
+@media #{$desktop} {
+  .page-header--main-page {
+    min-height: 850px;
+  }
+}
+
+@media #{$tablet} {
+  .page-header--main-page::before {
     height: 730px;
   }
 }
 
 @media #{$desktop} {
-  .page-header::before {
+  .page-header--main-page::before {
     height: 850px;
   }
 }
