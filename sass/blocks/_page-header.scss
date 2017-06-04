@@ -86,7 +86,7 @@
 }
 
 .page-header--main-page {
-  height: 460px;
+  height: auto;
 }
 
 @media #{$tablet} {
@@ -99,6 +99,10 @@
   .page-header--main-page {
     min-height: 850px;
   }
+}
+
+.page-header--main-page::before {
+  height: 460px;
 }
 
 @media #{$tablet} {
