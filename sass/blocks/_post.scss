@@ -5,6 +5,28 @@
   margin-bottom: 20px;
 }
 
+@media #{$tablet} {
+  .post {
+    width: calc(50% - 10px);
+
+    margin-right: 20px;
+
+    box-sizing: border-box;
+  }
+}
+
+@media #{$tablet} {
+  .post:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+.post--choice {
+  width: auto;
+
+  margin-right: 0;
+}
+
 .post:last-child {
   margin-bottom: 0;
 }
