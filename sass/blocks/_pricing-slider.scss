@@ -28,6 +28,21 @@
   overflow: hidden;
 }
 
+@media #{$tablet} {
+  .pricing-slider__mask {
+
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media #{$desktop} {
+  .pricing-slider__mask {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .pricing-slider__slides {
   width: 300%;
 }
