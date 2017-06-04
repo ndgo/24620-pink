@@ -175,17 +175,23 @@
 }
 
 .page-header__title-container {
+  position: relative;
+
   padding-left: 20px;
   padding-right: 20px;
+
+  z-index: 1;
+}
+
+.page-header__title-main-page {
+  display: none;
 }
 
 @media #{$tablet} {
-  .page-header__title-container {
-    z-index: 1;
+  .page-header__title-main-page {
+    display: block
   }
 }
-
-;
 
 @media #{$tablet} {
   .page-header__group {
@@ -197,6 +203,8 @@
   @include embed-font($sans-light-family, 24px, 29px, $white, normal);
 
   margin: 0;
+
+  text-align: center;
 
   z-index: 1;
 }
