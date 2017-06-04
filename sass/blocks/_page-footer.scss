@@ -18,6 +18,17 @@
   padding-right: 20px;
 }
 
+@media #{$desktop} {
+  .page-footer__container {
+    display: flex;
+    justify-content: space-between;
+
+    width: 940px;
+
+    margin: 0 auto;
+  }
+}
+
 .page-footer__link {
   display: block;
 }
