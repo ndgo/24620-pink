@@ -8,6 +8,19 @@
   background-color: $white-smoke;
 }
 
+.pricing-slider__container {
+  margin: 0 auto;
+}
+
+@media #{$desktop} {
+  .pricing-slider__container {
+    width: 940px;
+
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .pricing-slider__mask {
   padding-left: 20px;
   padding-right: 20px;
@@ -19,6 +32,18 @@
   width: 300%;
 }
 
-.pricing-slider__slide  {
+@media #{$tablet} {
+  .pricing-slider__slides {
+    width: 100%;
+  }
+}
+
+.pricing-slider__slide {
   width: 280px;
+}
+
+@media #{$tablet} {
+  .pricing-slider__slide {
+    width: 25%;
+  }
 }
