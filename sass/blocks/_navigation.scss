@@ -14,6 +14,9 @@
   .navigation {
     position: static;
 
+    width: auto;
+
+    margin-left: auto;
   }
 }
 
@@ -68,8 +71,14 @@
 @media #{$desktop} {
 
   .navigation__link {
-    padding: auto 25px;
+    padding-top: 0;
+    padding-right: 25px;
+    padding-bottom: 0;
+    padding-left: 25px;
 
     font-family: $sans-regular-family;
+    line-height: 110px;
+
+    vertical-align: middle;
   }
 }
