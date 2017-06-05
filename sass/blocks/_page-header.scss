@@ -67,6 +67,20 @@
   }
 }
 
+@media #{$desktop} {
+  .page-header__menu {
+    padding: 0;
+  }
+}
+
+@media #{$desktop} {
+  .page-header__menu-container {
+    width: 940px;
+
+    margin: 0 auto;
+  }
+}
+
 .page-header__toggle-control {
   background: $transparent;
 

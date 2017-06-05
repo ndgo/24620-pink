@@ -10,6 +10,12 @@
   z-index: 2;
 }
 
+@media #{$desktop} {
+  .navigation {
+    position: relative;
+  }
+}
+
 .navigation--hidden {
   display: none;
 }
