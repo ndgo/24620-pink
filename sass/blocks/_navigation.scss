@@ -12,7 +12,8 @@
 
 @media #{$desktop} {
   .navigation {
-    position: relative;
+    position: static;
+
   }
 }
 
@@ -67,8 +68,7 @@
 @media #{$desktop} {
 
   .navigation__link {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: auto 25px;
 
     font-family: $sans-regular-family;
   }

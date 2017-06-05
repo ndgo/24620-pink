@@ -73,6 +73,10 @@
   }
 }
 
+.page-header__menu-container {
+  display: flex;
+}
+
 @media #{$desktop} {
   .page-header__menu-container {
     width: 940px;
