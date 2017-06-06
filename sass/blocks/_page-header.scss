@@ -16,9 +16,7 @@
   top: 0;
   left: 0;
 
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../../img/bg-back-mobile@1x.jpg") no-repeat center;
   background-size: cover;
 
   content: "";
@@ -30,12 +28,16 @@
   position: relative;
 
   min-height: 66px;
-  padding: 0 20px;
 
+  padding: 0 20px;
 }
 
 .page-header__menu-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 66px;
 }
 
 .page-header__toggle-control {
@@ -131,6 +133,10 @@
     min-height: 110px;
 
     padding: 0 40px;
+  }
+
+  .page-header__menu-container {
+    min-height: 110px;
   }
 
   .page-header--main-page {
