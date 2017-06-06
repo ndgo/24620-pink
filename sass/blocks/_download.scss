@@ -6,15 +6,12 @@
   background-color: $midnight;
 }
 
-@media #{$tablet} {
-  .download {
-    background-color: $transparent;
-  }
-}
-
 .download__platform-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  margin: 0;
+  margin: 35px 0 15px;
   padding: 0;
 
   list-style: none;
@@ -22,6 +19,12 @@
 
 .download__platform {
   display: inline-block;
+
+  margin-right: 35px;
+}
+
+.download__platform:last-child {
+  margin-right: 0;
 }
 
 .download__item-link {
@@ -37,4 +40,10 @@
 
   margin-top: 0;
   margin-bottom: 0;
+}
+
+@media #{$tablet} {
+  .download {
+    background-color: $transparent;
+  }
 }
