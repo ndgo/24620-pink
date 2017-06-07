@@ -35,10 +35,15 @@
   background-image: url("../../img/bg-triangle-white-footer.svg");
 }
 
+.contacts__item {
+  padding-bottom: 25px;
+}
+
 .contacts__item-title {
   @include embed-font($sans-bold-family, 18px, 22px, $midnight);
 
   margin: 0;
+  padding-bottom: 5px;
 
   font-style: normal;
   text-align: center;
@@ -46,6 +51,8 @@
 
 .contacts__item-text {
   @include embed-font($sans-light-family, 24px, 29px, $cerise);
+
+  display: block;
 
   margin: 0;
 
