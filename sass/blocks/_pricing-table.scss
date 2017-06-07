@@ -89,6 +89,10 @@
   @include embed-font($sans-regular-family, 14px, 30px, $midnight);
 }
 
+.pricing-table__option-name--title {
+  @include embed-font($sans-regular-family, 14px, 30px, $midnight);
+}
+
 .pricing-table__option-status {
   position: absolute;
   top: 50%;
@@ -100,5 +104,13 @@
 @media #{$tablet} {
   .pricing-table__cell--column-header {
     display: table-cell;
+  }
+
+  .pricing-table__option-name {
+    display: none;
+  }
+
+  .pricing-table__option-name--title {
+    display: block;
   }
 }
