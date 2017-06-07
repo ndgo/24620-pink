@@ -1,12 +1,32 @@
 @import "../variables";
 @import "../global/mixins";
 
+.pricing-table {
+  margin-bottom: 40px;
+}
+
 .pricing-table__cell {
   background-color: $white;
+
+  padding: 18px;
+
+  box-sizing: border-box;
+
+  border-right: 2px solid $whisper;
+  border-bottom: 2px solid $whisper;
+  border-left: 2px solid $whisper;
+
+  text-transform: uppercase;
 }
 
 .pricing-table__cell--header {
   background-color: $midnight;
+
+  padding: 18px 40px;
+
+  border-left: 2px solid $whisper;
+  border-right: 2px solid $whisper;
+  border-bottom: 2px solid $midnight;
 }
 
 .pricing-table__cell--transparent {
@@ -19,6 +39,8 @@
 
 .pricing-table__plan-name {
   @include embed-font($sans-bold-family, 18px, 30px, $white);
+
+  display: block;
 
   font-weight: normal;
 
