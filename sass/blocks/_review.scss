@@ -78,17 +78,17 @@
 }
 
 .review__author {
-  @include embed-font($sans-bold-family, 18px, 30px, $midnight, null, normal);
+  @include embed-font($sans-bold-family, 18px, 30px, $black, null, normal);
 
   display: block;
 
-  margin-bottom: 15px;
+  padding-bottom: 15px;
 
   text-align: center;
 }
 
 .review__author-info {
-  @include embed-font($sans-regular-family, 18px, 30px, $midnight);
+  @include embed-font($sans-regular-family, 14px, 30px, $midnight);
 
   display: none;
 
@@ -105,11 +105,33 @@
 
 @media #{$tablet} {
   .review {
-    padding: 0 40px;
+    padding: 0 40px 65px 40px;
   }
 
   .review__author-info {
     display: block;
+  }
+
+  .review__item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .review__text {
+    font-size: 18px;
+  }
+
+  .review__author {
+    font-size: 20px;
+
+    padding-bottom: 5px;
+  }
+
+  .review__text {
+    order: -1;
+
+    padding-bottom: 35px;
   }
 }
 
