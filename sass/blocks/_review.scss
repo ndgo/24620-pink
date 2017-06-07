@@ -11,21 +11,6 @@
   box-sizing: border-box;
 }
 
-@media #{$tablet} {
-  .review {
-    padding: 0 40px;
-  }
-}
-
-@media #{$desktop} {
-  .review {
-    width: 940px;
-
-    margin-bottom: 90px;
-    padding: 0;
-  }
-}
-
 .review::after {
   content: "";
   background-image: url("../../img/bg-triangle-white.svg");
@@ -68,16 +53,29 @@
   text-align: center;
 }
 
-@media #{$tablet} {
-  .review__author-info {
-    display: block;
-  }
-}
-
 .review__text {
   @include embed-font($sans-regular-family, 14px, 30px, $midnight);
 
   margin: 0;
 
   text-align: center;
+}
+
+@media #{$tablet} {
+  .review {
+    padding: 0 40px;
+  }
+
+  .review__author-info {
+    display: block;
+  }
+}
+
+@media #{$desktop} {
+  .review {
+    width: 940px;
+
+    margin-bottom: 90px;
+    padding: 0;
+  }
 }
