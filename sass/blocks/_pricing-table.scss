@@ -102,6 +102,14 @@
 }
 
 @media #{$tablet} {
+  .pricing-table__cell {
+    text-align: center;
+  }
+
+  .pricing-table__option-name--title {
+    text-align: left;
+  }
+
   .pricing-table__cell--column-header {
     display: table-cell;
   }
@@ -112,5 +120,13 @@
 
   .pricing-table__option-name--title {
     display: block;
+  }
+
+  .pricing-table__option-status {
+    position: static;
+    top: auto;
+    right: auto;
+
+    display: inline-block;
   }
 }
