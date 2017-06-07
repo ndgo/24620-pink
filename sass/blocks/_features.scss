@@ -64,7 +64,8 @@
 .features__item-description {
   @include embed-font($sans-regular-family, 14px, 24px, $midnight);
 
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 12px;
 }
 
 .features__item-link {
@@ -111,17 +112,23 @@
     content: "";
   }
 
+  .features__item {
+    text-align: left;
+  }
+
   .features__item--full-width {
     position: relative;
 
     display: block;
 
     padding: 95px 40px 80px 350px;
+  }
 
-    text-align: left;
+  .features__item--full-width .features__item-title {
+    font-size: 30px;
+    line-height: 36px;
   }
 }
-
 
 @media #{$desktop} {
 
@@ -149,6 +156,8 @@
     padding-right: 25px;
     padding-top: 330px;
     margin-top: -50px;
+
+    text-align: center;
   }
 
   .features__item--full-width {
@@ -162,5 +171,7 @@
     margin: 0 auto;
 
     background-color: $white-smoke;
+
+    text-align: left;
   }
 }
