@@ -31,8 +31,33 @@
   border-bottom: 2px solid $midnight;
 }
 
+.pricing-table__cell--hit {
+  overflow: hidden;
+}
+
+.pricing-table__cell--hit::before {
+  content: attr(data-tag);
+  position: absolute;
+  top: 10px;
+  left: -40px;
+  display: block;
+  width: 120px;
+  height: 30px;
+  background-color: $cerise;
+  color: $white;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  transform: rotate(-45deg);
+}
+
 .pricing-table__cell--transparent {
   background-color: $transparent;
+
+  border-left: 2px solid $transparent;
+  border-right: 2px solid $transparent;
+  border-bottom: 2px solid $whisper;
 }
 
 .pricing-table__cell--column-header {
