@@ -55,7 +55,7 @@
 }
 
 .features__item-title {
-  @include embed-font($sans-bold-family, 18px, 24px, $midnight);
+  @include embed-font($sans-bold-family, 18px, 24px, $black);
 
   margin-top: 0;
   margin-bottom: 12px;
