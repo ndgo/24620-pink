@@ -6,6 +6,8 @@
 }
 
 .pricing-table__cell {
+  position: relative;
+
   background-color: $white;
 
   padding: 18px;
@@ -57,6 +59,14 @@
 
 .pricing-table__option-name {
   @include embed-font($sans-regular-family, 14px, 30px, $midnight);
+}
+
+.pricing-table__option-status {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+
+  transform: translateY(-50%);
 }
 
 @media #{$tablet} {
