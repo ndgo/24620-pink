@@ -16,19 +16,6 @@
   text-align: center;
 }
 
-@media #{$tablet} {
-  .features__container {
-    padding: 0;
-  }
-}
-
-@media #{$desktop} {
-  .features__container {
-    width: 940px;
-  }
-}
-
-
 .features__container::before {
   position: absolute;
 
@@ -47,12 +34,6 @@
   content: "";
 }
 
-@media #{$tablet} {
-  .features__container::before {
-    display: none;
-  }
-}
-
 .features__list {
   position: relative;
 
@@ -64,68 +45,14 @@
   list-style: none;
 }
 
-@media #{$tablet} {
-  .features__list {
-    padding: 30px 40px 35px 350px;
-  }
-}
-
-@media #{$desktop} {
-  .features__list {
-    display: flex;
-    justify-content: space-between;
-
-    padding: 0 0 20px;
-
-    text-align: center;
-  }
-}
-
-@media #{$tablet} {
-  .features__list::before {
-    position: absolute;
-
-    bottom: -30px;
-    left: 40px;
-
-    transform: unset;
-
-    width: 268px;
-    height: 485px;
-
-    background-image: url("../../img/iphone-screen-mobile@1x.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    content: "";
-  }
-}
-
-@media #{$desktop} {
-  .features__list::before {
-    display: none;
-  }
-}
-
 .features__item {
   display: block;
 
   margin-bottom: 30px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
-@media #{$desktop} {
-  .features__item {
-    width: 33%;
-
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 330px;
-    margin-top: -50px;
-  }
+.features__item:last-child {
+  margin-bottom: 0;
 }
 
 .features__item-title {
@@ -156,6 +83,36 @@
 }
 
 @media #{$tablet} {
+  .features__container {
+    padding: 0;
+  }
+
+  .features__container::before {
+    display: none;
+  }
+
+  .features__list {
+    padding: 30px 40px 35px 350px;
+  }
+
+  .features__list::before {
+    position: absolute;
+
+    bottom: -30px;
+    left: 40px;
+
+    transform: unset;
+
+    width: 268px;
+    height: 485px;
+
+    background-image: url("../../img/iphone-screen-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    content: "";
+  }
+
   .features__item--full-width {
     position: relative;
 
@@ -169,6 +126,33 @@
 
 
 @media #{$desktop} {
+
+  .features__container {
+    width: 940px;
+  }
+
+  .features__list {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 0 20px;
+
+    text-align: center;
+  }
+
+  .features__list::before {
+    display: none;
+  }
+
+  .features__item {
+    width: 33%;
+
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 330px;
+    margin-top: -50px;
+  }
+
   .features__item--full-width {
 
     width: auto;
