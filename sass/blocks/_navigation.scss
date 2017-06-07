@@ -3,6 +3,7 @@
 
 .navigation {
   position: absolute;
+  top: 66px;
   left: 0;
 
   width: 100%;
@@ -22,6 +23,9 @@
 .navigation__item {
   background-color: $midnight;
   list-style: none;
+
+  box-shadow: inset 0 1px rgba($white,.3);
+  border-top: 1px solid $black;
 }
 
 .navigation__link {
@@ -55,6 +59,9 @@
   .navigation__item {
     background-color: $transparent;
     margin-right: 40px;
+
+    box-shadow: none;
+    border-top: none;
   }
 
   .navigation__item:last-child {
