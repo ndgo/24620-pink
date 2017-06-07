@@ -39,6 +39,12 @@
   text-decoration: none;
 }
 
+@media #{$tablet} {
+  .navigation {
+    top: 110px;
+  }
+}
+
 @media #{$desktop} {
   .navigation {
     position: static;
