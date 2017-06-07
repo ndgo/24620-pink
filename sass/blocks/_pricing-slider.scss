@@ -12,15 +12,6 @@
   margin: 0 auto;
 }
 
-@media #{$desktop} {
-  .pricing-slider__container {
-    width: 940px;
-
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
 .pricing-slider__mask {
   padding-left: 20px;
   padding-right: 20px;
@@ -36,21 +27,8 @@
   }
 }
 
-@media #{$desktop} {
-  .pricing-slider__mask {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
 .pricing-slider__slides {
   width: 300%;
-}
-
-@media #{$tablet} {
-  .pricing-slider__slides {
-    width: 100%;
-  }
 }
 
 .pricing-slider__slide {
@@ -58,7 +36,26 @@
 }
 
 @media #{$tablet} {
+  .pricing-slider__slides {
+    width: 100%;
+  }
+
   .pricing-slider__slide {
     width: 25%;
+  }
+}
+
+
+@media #{$desktop} {
+  .pricing-slider__container {
+    width: 940px;
+
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .pricing-slider__mask {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
