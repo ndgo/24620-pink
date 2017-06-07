@@ -17,12 +17,6 @@
   display: none;
 }
 
-@media #{$tablet} {
-  .pricing-table__cell--column-header {
-    display: table-cell;
-  }
-}
-
 .pricing-table__plan-name {
   @include embed-font($sans-bold-family, 18px, 30px, $white);
 
@@ -41,4 +35,10 @@
 
 .pricing-table__option-name {
   @include embed-font($sans-regular-family, 14px, 30px, $midnight);
+}
+
+@media #{$tablet} {
+  .pricing-table__cell--column-header {
+    display: table-cell;
+  }
 }
