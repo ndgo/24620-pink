@@ -30,7 +30,9 @@
 }
 
 .review__controls {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .review__control {
@@ -41,10 +43,17 @@
 
   margin-right: 15px;
 
-  background-color: $white;
-  border: 3px solid $midnight;
-  border-radius: 50px;
+  background-color: $spindle;
+  border: 3px solid $white;
+  border-radius: 50%;
   transition-duration: .3s;
+}
+
+#review__slide-1:checked ~ .review__controls [for="review__slide-1"],
+#review__slide-2:checked ~ .review__controls [for="review__slide-2"],
+#review__slide-3:checked ~ .review__controls [for="review__slide-3"]{
+  border: 3px solid $midnight;
+  background-color: $white-smoke;
 }
 
 .review__item {
