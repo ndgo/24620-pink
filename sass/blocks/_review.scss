@@ -25,6 +25,26 @@
   display: flex;
 
   width: 300%;
+
+  transition: transform .8s ease;
+}
+
+.review__controls {
+  text-align: center;
+}
+
+.review__control {
+  display: inline-block;
+
+  width: 6px;
+  height: 6px;
+
+  margin-right: 15px;
+
+  background-color: $white;
+  border: 3px solid $midnight;
+  border-radius: 50px;
+  transition-duration: .3s;
 }
 
 .review__item {
