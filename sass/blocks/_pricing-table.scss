@@ -36,19 +36,22 @@
 }
 
 .pricing-table__cell--hit::before {
+  @include embed-font($sans-bold-family, 14px, 30px, $white);
+
   content: attr(data-tag);
   position: absolute;
   top: 10px;
   left: -40px;
+
   display: block;
   width: 120px;
   height: 30px;
+
   background-color: $cerise;
   color: $white;
-  font-size: 14px;
-  line-height: 30px;
   text-transform: uppercase;
   text-align: center;
+  
   transform: rotate(-45deg);
 }
 
