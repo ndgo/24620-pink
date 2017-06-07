@@ -23,10 +23,9 @@
 
 .review__slides {
   display: flex;
-
   width: 300%;
-
-  transition: transform .8s ease;
+  transition-property: margin-left;
+  transition-duration: .6s;
 }
 
 .review__controls {
@@ -56,10 +55,20 @@
   background-color: $white-smoke;
 }
 
+#review__slide-1:checked ~ .review__mask .review__slides {
+  margin-left: 0;
+}
+
+#review__slide-2:checked ~ .review__mask .review__slides {
+  margin-left: -100%;
+}
+
+#review__slide-3:checked ~ .review__mask .review__slides {
+  margin-left: -200%;
+}
+
 .review__item {
   width: 100%;
-
-  float: left;
 
   margin: 0;
 }
