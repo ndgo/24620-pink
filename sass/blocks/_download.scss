@@ -46,4 +46,13 @@
   .download {
     background-color: $transparent;
   }
+
+  .download__platform-list {
+    margin-top: 45px;
+    margin-bottom: 30px;
+  }
+
+  .download__description {
+    font-size: 18px;
+  }
 }

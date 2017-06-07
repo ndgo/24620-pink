@@ -151,6 +151,17 @@
     height: 545px;
   }
 
+  .page-header__title-container {
+    padding: 0;
+  }
+
+  .page-header__title {
+    margin: 0 50px 30px 50px;
+
+    font-size: 40px;
+    line-height: 48px;
+  }
+
   .page-header__title-main-page {
     display: block
   }
