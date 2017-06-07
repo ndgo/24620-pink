@@ -19,14 +19,6 @@
   overflow: hidden;
 }
 
-@media #{$tablet} {
-  .pricing-slider__mask {
-
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-
 .pricing-slider__slides {
   width: 300%;
 }
@@ -38,6 +30,12 @@
 @media #{$tablet} {
   .pricing-slider__slides {
     width: 100%;
+  }
+
+  .pricing-slider__mask {
+
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .pricing-slider__slide {
