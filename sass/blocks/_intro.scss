@@ -35,13 +35,22 @@
   padding-right: 45px;
 
   text-align: center;
+}
 
-  &:last-child {
-    margin-bottom: 0;
-  }
+.intro__text--main-page:last-child {
+  margin-bottom: 0;
 }
 
 .intro--editor {
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+
+@media #{$tablet} {
+  .intro__text--main-page {
+    font-size: 40px;
+    line-height:48px;
+    margin-bottom: 0;
+  }
 }
