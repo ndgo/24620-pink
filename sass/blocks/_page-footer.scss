@@ -7,26 +7,9 @@
   background-color: $white;
 }
 
-@media #{$desktop} {
-  .page-footer {
-    display: block;
-  }
-}
-
 .page-footer__container {
   padding-left: 20px;
   padding-right: 20px;
-}
-
-@media #{$desktop} {
-  .page-footer__container {
-    display: flex;
-    justify-content: space-between;
-
-    width: 940px;
-
-    margin: 0 auto;
-  }
 }
 
 .page-footer__link {
@@ -35,4 +18,18 @@
 
 .page-footer__link-img {
   display: block;
+}
+
+@media #{$tablet} {
+  .page-footer {
+    display: block;
+  }
+}
+
+@media #{$desktop} {
+  .page-footer__container {
+    width: 940px;
+
+    margin: 0 auto;
+  }
 }
