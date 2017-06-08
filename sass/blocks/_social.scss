@@ -10,21 +10,29 @@
   list-style: none;
 }
 
+.social__item {
+  margin-right: 12px;
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}
+
 .social__link {
   display: block;
 
   width: 50px;
   height: 50px;
 
+
   border: 3px solid $pattens-blue;
   border-radius: 50%;
-
 
   text-align: center;
 }
 
 .social__link-img {
   display: inline-block;
-height: 100%;
+  height: 100%;
   vertical-align: middle;
 }
