@@ -2,6 +2,8 @@
 @import "../global/mixins";
 
 .social {
+  display: flex;
+
   margin: 0;
   padding: 0;
 
@@ -10,8 +12,19 @@
 
 .social__link {
   display: block;
+
+  width: 50px;
+  height: 50px;
+
+  border: 3px solid $pattens-blue;
+  border-radius: 50%;
+
+
+  text-align: center;
 }
 
 .social__link-img {
-  display: block;
+  display: inline-block;
+height: 100%;
+  vertical-align: middle;
 }
