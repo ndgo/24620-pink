@@ -1,0 +1,15 @@
+@import "../variables";
+@import "../global/mixins";
+
+.google-map {
+  display: none;
+}
+
+@media #{$tablet} {
+  .google-map {
+    display: block;
+    
+    height: 380px;
+  }
+
+}
