@@ -1,6 +1,14 @@
 @import "../variables";
 @import "../global/mixins";
 
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 128px;
+}
+
 .copyright__note {
   @include embed-font($sans-regular-family, 14px, 18px, $midnight);
 
