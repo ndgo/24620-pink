@@ -11,27 +11,25 @@
   padding-right: 20px;
 }
 
-@media #{$tablet} {
-  .photo-editor__container {
-    display: flex;
-    justify-content: space-between;
-
-    padding: 55px 40px;
-  }
-}
-
 .photo-editor__link {
   display: block;
-}
-
-@media #{$tablet} {
-  .photo-editor__link {
-    width: calc(99.99% * 1 / 2 - (20px - 20px * 1 / 2));
-  }
 }
 
 .photo-editor__image {
   display: block;
 
   width: 100%;
+}
+
+@media #{$tablet} {
+  .photo-editor__link {
+    width: calc(99.99% * 1 / 2 - (20px - 20px * 1 / 2));
+  }
+
+  .photo-editor__container {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 55px 40px;
+  }
 }
