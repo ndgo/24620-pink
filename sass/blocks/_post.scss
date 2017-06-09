@@ -106,6 +106,9 @@
   }
 
   .post__container {
+    display: flex;
+    flex-wrap: wrap;
+
     padding: 25px 25px 15px 25px;
   }
 
@@ -116,6 +119,10 @@
 
   .post__link-img {
     height: 300px;
+  }
+
+  .post__comment {
+    order: 15;
   }
 }
 

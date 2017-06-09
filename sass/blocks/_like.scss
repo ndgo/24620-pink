@@ -4,6 +4,8 @@
 .like {
   display: flex;
   align-items: center;
+
+  margin-left: auto;
 }
 
 .like__icon {
@@ -18,4 +20,13 @@
 
 .like__count {
   @include embed-font($sans-light-family, 12px, 12px, $cerise);
+}
+
+@media #{$tablet} {
+
+  .like__icon {
+    order: 15;
+    margin-right: 0;
+    margin-left: 15px;
+  }
 }
