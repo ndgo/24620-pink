@@ -3,6 +3,8 @@
 
 .like__text {
   @include embed-font($sans-light-family, 12px, 12px, $cerise);
+
+  text-transform: uppercase;
 }
 
 .like__count {
