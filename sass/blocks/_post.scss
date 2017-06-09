@@ -74,7 +74,9 @@
 }
 
 .post__published-at {
-  @include embed-font($sans-light-family, 14px, 14px, $midnight);
+  @include embed-font($sans-light-family, 12px, 12px, $midnight);
+
+  text-transform: uppercase;
 }
 
 .post__comment {
