@@ -98,6 +98,12 @@
     top: 55px;
     right: 40px;
   }
+
+  .post--choice {
+    width: auto;
+
+    margin-right: 0;
+  }
 }
 
 @media #{$desktop} {
@@ -110,6 +116,12 @@
   }
 
   .post:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .post--choice {
+    width: auto;
+
     margin-right: 0;
   }
 }
