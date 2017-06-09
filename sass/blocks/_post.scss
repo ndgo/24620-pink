@@ -7,7 +7,7 @@
   margin-bottom: 20px;
 }
 
-.post::before {
+.post--choice::before {
   @include embed-font($sans-bold-family, 12px, 24px, $white);
 
   position: absolute;
@@ -94,7 +94,7 @@
     margin-right: 0;
   }
 
-  .post::before {
+  .post--choice::before {
     top: 55px;
     right: 40px;
   }
