@@ -104,6 +104,19 @@
 
     margin-right: 0;
   }
+
+  .post__container {
+    padding: 25px;
+  }
+
+  .post__container--choice {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .post__link-img {
+    height: 300px;
+  }
 }
 
 @media #{$desktop} {
