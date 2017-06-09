@@ -8,6 +8,12 @@
 
 .editor-form__tools {
   position: relative;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 15px;
+  margin-bottom: 40px;
 }
 
 .editor-form__tools::after {
@@ -30,6 +36,10 @@
 
 
 .editor-form__range-control {
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+
   width: 100%;
   height: 25px;
   background: 0 0;
