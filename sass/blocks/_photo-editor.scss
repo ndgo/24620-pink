@@ -1,7 +1,7 @@
 @import "../variables";
 @import "../global/mixins";
 
-.editor {
+.photo-editor {
   background-color: $white-smoke;
 }
 
@@ -16,10 +16,7 @@
     display: flex;
     justify-content: space-between;
 
-    padding-top: 55px;
-    padding-bottom: 55px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 55px 40px;
   }
 }
 
