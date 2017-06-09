@@ -6,6 +6,24 @@
   padding-bottom: 30px;
 }
 
+.editor-form__tools {
+  position: relative;
+}
+
+.editor-form__tools::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+
+  margin-left: -20px;
+  margin-right: -20px;
+
+  background-color: $pattens-blue;
+  content: "";
+}
+
 .editor-form__tool {
   margin-bottom: 30px;
 }
