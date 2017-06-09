@@ -1,6 +1,15 @@
 @import "../variables";
 @import "../global/mixins";
 
+.like {
+  display: flex;
+  align-items: center;
+}
+
+.like__icon {
+  margin-right: 20px;
+}
+
 .like__text {
   @include embed-font($sans-light-family, 12px, 12px, $cerise);
 
