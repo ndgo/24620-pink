@@ -30,10 +30,19 @@
   content: "";
 }
 
+.editor-form-img {
+  display: block;
+
+  margin-bottom: 30px;
+}
+
 .editor-form__tool {
   margin-bottom: 30px;
 }
 
+.editor-form__range {
+  display: block;
+}
 
 .editor-form__range-control {
   position: absolute;
@@ -137,6 +146,10 @@
 .editor-form__range-control::-ms-thumb:active,.editor-form__range-control::-ms-thumb:hover {
   background: #d22856;
   transition-duration: .3s
+}
+
+.editor-form__range-control--hidden {
+  display: none;
 }
 
 
