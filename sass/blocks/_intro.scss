@@ -49,6 +49,11 @@
 }
 
 @media #{$tablet} {
+  .intro__text {
+    font-size: 18px;
+    line-height:30px;
+  }
+
   .intro__text--main-page {
     font-size: 40px;
     line-height: 48px;

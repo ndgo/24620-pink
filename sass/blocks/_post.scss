@@ -2,12 +2,31 @@
 @import "../global/mixins";
 
 .post {
+  position: relative;
+
   margin-bottom: 20px;
+}
+
+.post::before {
+  @include embed-font($sans-bold-family, 12px, 24px, $white);
+
+  position: absolute;
+  top: 0;
+  right: 20px;
+  min-width: 140px;
+  padding: 5px;
+  text-align: center;
+  white-space: nowrap;
+  background-color: $cerise;
+  line-height: 24px;
+  text-transform: uppercase;
+  
+  content: attr(data-choice-marker);
 }
 
 @media #{$tablet} {
   .post {
-    width: calc(99.99%*1/2 - (20px - 20px*1/2));
+    width: calc(99.99% * 1 / 2 - (20px - 20px * 1 / 2));
 
     margin-right: 20px;
 
@@ -21,7 +40,7 @@
 
 @media #{$desktop} {
   .post {
-    width: calc(99.99%*1/3 - (20px - 20px*1/3));
+    width: calc(99.99% * 1 / 3 - (20px - 20px * 1 / 3));
   }
 
   .post:nth-child(2n) {
