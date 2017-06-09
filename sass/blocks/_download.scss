@@ -56,3 +56,11 @@
     font-size: 18px;
   }
 }
+
+
+@media #{$desktop} {
+  .download__platform-list {
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+}
