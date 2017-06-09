@@ -69,7 +69,7 @@
 }
 
 .features__item-link {
-  @include embed-font($sans-light-family, 14px, 24px, $cerise);
+  @include embed-font($sans-regular-family, 14px, 24px, $cerise);
 
   margin: 0;
 
@@ -160,18 +160,37 @@
     text-align: center;
   }
 
+  .features__item-title {
+    font-size: 30px;
+    line-height: 36px;
+
+    margin-bottom: 15px;
+  }
+
+  .features__item-description {
+    font-size: 18px;
+    line-height: 30px;
+
+    margin-bottom: 30px;
+  }
+
   .features__item--full-width {
 
     width: auto;
 
-    padding-top: 75px;
-    padding-bottom: 120px;
-    padding-left: 40%;
+    padding: 75px 40px 120px 375px;
 
     margin: 0 auto;
 
     background-color: $white-smoke;
 
     text-align: left;
+  }
+
+  .features__item-link {
+    font-size: 18px;
+    line-height: 30px;
+
+    text-decoration: none;
   }
 }
