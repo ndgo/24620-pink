@@ -5,43 +5,12 @@
   background-color: $white;
 }
 
-@media #{$tablet} {
-  .form {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media #{$desktop} {
-  .form {
-    width: 940px;
-
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-
-    margin: 0 auto;
-  }
-}
-
 .form__fields {
   background-color: $white;
 }
 
 .form__fields--full-name {
   padding-bottom: 30px;
-}
-
-@media #{$tablet} {
-  .form__fields--full-name {
-    order: -20;
-  }
-}
-
-@media #{$desktop} {
-  .form__fields--full-name {
-    width: calc(50% - 35px);
-  }
 }
 
 .form__text-field {
@@ -74,18 +43,6 @@
   background-color: $white-smoke;
 }
 
-@media #{$tablet} {
-  .form__fields--achievements {
-    order: -5;
-  }
-}
-
-@media #{$desktop} {
-  .form__fields--achievements {
-    width: 100%;
-  }
-}
-
 .form__legend {
   @include embed-font($sans-regular-family, 14px, 18px, $cerise, normal);
 
@@ -96,12 +53,6 @@
 
 .form__legend--hidden {
   display: none;
-}
-
-@media #{$tablet} {
-  .form__legend--hidden {
-    display: block;
-  }
 }
 
 .form__checkbox {
@@ -118,35 +69,11 @@
   padding-bottom: 45px;
 }
 
-@media #{$tablet} {
-  .form__fields--contacts {
-    order: -10;
-  }
-}
-
-@media #{$desktop} {
-  .form__fields--contacts {
-    width: 100%;
-  }
-}
-
 .form__fields--platform {
   padding-top: 35px;
   padding-bottom: 45px;
 
   background-color: $white-smoke;
-}
-
-@media #{$tablet} {
-  .form__fields--platform {
-    order: -15;
-  }
-}
-
-@media #{$desktop} {
-  .form__fields--platform {
-    width: calc(50% - 35px);
-  }
 }
 
 .from__radio {
@@ -161,12 +88,6 @@
 
   padding-top: 25px;
   padding-bottom: 45px;
-}
-
-@media #{$desktop} {
-  .form__fields--report {
-    width: 100%;
-  }
 }
 
 .form__textarea {
@@ -184,19 +105,6 @@
   padding-bottom: 55px;
 }
 
-@media #{$tablet} {
-  .form__fields--submit {
-    order: 10;
-  }
-}
-
-@media #{$desktop} {
-  .form__fields--submit {
-    width: 100%;
-  }
-}
-
-
 .form__footer-note {
   @include embed-font($sans-regular-family, 14px, 30px, $midnight);
 
@@ -206,4 +114,71 @@
 .form__wildcard {
 
   color: $cerise;
+}
+
+@media #{$tablet} {
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__fields--full-name {
+    order: -20;
+  }
+
+  .form__fields--achievements {
+    order: -5;
+  }
+
+  .form__legend--hidden {
+    display: block;
+  }
+
+  .form__fields--contacts {
+    order: -10;
+  }
+
+  .form__fields--platform {
+    order: -15;
+  }
+
+  .form__fields--submit {
+    order: 10;
+  }
+}
+
+@media #{$desktop} {
+  .form {
+    width: 940px;
+
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 0 auto;
+  }
+
+  .form__fields--full-name {
+    width: calc(50% - 35px);
+  }
+
+  .form__fields--achievements {
+    width: 100%;
+  }
+
+  .form__fields--contacts {
+    width: 100%;
+  }
+
+  .form__fields--platform {
+    width: calc(50% - 35px);
+  }
+
+  .form__fields--report {
+    width: 100%;
+  }
+
+  .form__fields--submit {
+    width: 100%;
+  }
 }
