@@ -16,7 +16,17 @@
   margin-bottom: 40px;
 }
 
-.editor-form__tools::after {
+.editor-form-img {
+  display: block;
+
+  margin-bottom: 30px;
+}
+
+.editor-form__tool {
+  margin-bottom: 30px;
+}
+
+.editor-form__tool::after {
   position: absolute;
   left: 0;
   right: 0;
@@ -28,16 +38,6 @@
 
   background-color: rgba($black, .1);
   content: "";
-}
-
-.editor-form-img {
-  display: block;
-
-  margin-bottom: 30px;
-}
-
-.editor-form__tool {
-  margin-bottom: 30px;
 }
 
 .editor-form__range {
