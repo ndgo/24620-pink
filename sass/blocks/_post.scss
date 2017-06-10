@@ -82,6 +82,8 @@
 
 .post__comment {
   @include embed-font($sans-regular-family, 14px, 24px, $midnight);
+
+  width: 100%;
 }
 
 .post__comment-text {
