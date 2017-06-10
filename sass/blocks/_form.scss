@@ -45,13 +45,17 @@
 }
 
 .form__text-field {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .form__text-field-caption {
   @include embed-font($sans-regular-family, 14px, 30px, $cerise);
 
   display: block;
+  padding-left: 20px;
+  padding-bottom: 5px;
 
   text-transform: uppercase;
 }
