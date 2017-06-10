@@ -16,7 +16,7 @@
   margin-bottom: 40px;
 }
 
-.editor-form-img {
+.editor-form__img {
   display: block;
 
   margin-bottom: 30px;
@@ -177,21 +177,21 @@
     margin-right: 0;
   }
 
-  .editor-form-img {
+  .editor-form__img {
     margin-bottom: 0;
   }
 
-  .editor-form-crop {
+  .editor-form__img--crop {
     width: 23px;
     height: 30px;
   }
 
-  .editor-form-fill {
+  .editor-form__img--fill {
     width: 23px;
     height: 30px;
   }
 
-  .editor-form-contrast {
+  .editor-form__img--contrast {
     width: 16px;
     height: 16px;
   }
