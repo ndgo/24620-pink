@@ -2,6 +2,10 @@
 @import "../global/mixins";
 
 .modal-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: auto;
   width: 100%;
 
   padding: 35px 20px 45px;
@@ -12,6 +16,9 @@
   box-shadow: 0 5px 20px 0 rgba($midnight, .3);
 
   box-sizing: border-box;
+
+  transform: translate(-50%,-50%);
+  z-index: 15;
 }
 
 .modal-window__header {
