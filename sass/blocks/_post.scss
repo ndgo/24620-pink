@@ -154,4 +154,18 @@
 
     margin-right: 0;
   }
+
+  .post--choice::before {
+    right: 50%;
+    transform: translateX(430px);
+  }
+
+  .post__container--choice {
+    width: 940px;
+
+    margin: 0 auto;
+
+    box-sizing: border-box;
+  }
+
 }
