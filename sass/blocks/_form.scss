@@ -312,6 +312,17 @@
     flex-direction: column;
   }
 
+  .form__text-field {
+    flex-direction: row;
+    align-items: center;
+
+    margin-bottom: 50px;
+  }
+
+  .form__text-field-caption {
+    padding-right: 25px;
+  }
+
   .form__fields--full-name {
     order: -20;
   }
