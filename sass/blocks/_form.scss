@@ -122,7 +122,7 @@
   border: 2px solid $whisper;
 }
 
-.form__checkbox-input[checked] ~ .form__checkbox-caption::after {
+.form__checkbox-input:checked ~ .form__checkbox-caption::after {
   content: "";
 
   position: absolute;
