@@ -220,4 +220,10 @@
     width: 45px;
     height: 45px;
   }
+
+  .editor-form__controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

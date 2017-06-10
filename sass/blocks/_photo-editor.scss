@@ -35,11 +35,19 @@
 }
 
 @media #{$desktop} {
+  .photo-editor {
+    background-color: $white;
+  }
+
   .photo-editor__container {
     width: 940px;
     margin: 0 auto;
 
     padding: 55px 60px 55px 80px;
+
+    box-sizing: border-box;
+
+    background-color: $white-smoke;
   }
 
   .photo-editor__link {
