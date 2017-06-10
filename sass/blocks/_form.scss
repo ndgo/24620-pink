@@ -169,8 +169,10 @@
 }
 
 .form__fields--platform {
-  padding-top: 35px;
-  padding-bottom: 45px;
+
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 35px 20px 45px;
 
   background-color: $white-smoke;
 }
@@ -199,7 +201,6 @@
 
   position: absolute;
   top: 50%;
-  left: 20px;
 
   display: block;
 
@@ -227,7 +228,7 @@
 
   position: absolute;
   top: 50%;
-  left: 35px;
+  left: 14px;
   transform: translateY(-50%);
   display: block;
   width: 15px;
