@@ -152,12 +152,55 @@
   background-color: $white-smoke;
 }
 
-.from__radio {
+.form__radio {
   display: block;
+
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.form__radio-input {
+  display: none;
 }
 
 .form__radio-caption {
   @include embed-font($sans-regular-family, 18px, 30px, $midnight);
+
+  position: relative;
+
+  padding-left: 70px;
+}
+
+.form__radio-caption::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 20px;
+
+  display: block;
+
+  width: 40px;
+  height: 40px;
+
+  transform: translateY(-50%);
+  border: 2px solid $white-smoke;
+  background-color: $white;
+  border-radius: 50%;
+}
+
+.form__radio-input:checked ~ .form__radio-caption::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 35px;
+  transform: translateY(-50%);
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: $cerise;
+  border-radius: 50%;
 }
 
 .form__fields--report {
