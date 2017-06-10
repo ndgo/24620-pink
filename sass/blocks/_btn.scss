@@ -52,6 +52,11 @@
 }
 
 @media #{$tablet} {
+  .btn--submit {
+    width: auto;
+    min-width: calc(50% - 10px);
+  }
+
   .btn--editor-submit {
     margin-bottom: 24px;
   }

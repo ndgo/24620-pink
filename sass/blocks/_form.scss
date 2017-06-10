@@ -400,12 +400,38 @@
     align-self: flex-start;
   }
 
+  .form__fields--achievements {
+    margin-left: 0;
+    margin-right:0;
+    margin-bottom: 25px;
+
+    padding: 35px 80px 60px 80px;
+  }
+
+  .form__checkbox {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .form__fields--report {
+    padding: 40px 80px 50px;
+
+    margin-bottom: 65px;
+  }
+
   .form__fields--platform {
     order: -15;
   }
 
   .form__fields--submit {
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 50px;
+
     order: 10;
+
+    border: none;
   }
 }
 
