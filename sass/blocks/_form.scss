@@ -66,8 +66,9 @@
 
 .form__fields--achievements {
 
-  padding-top: 35px;
-  padding-bottom: 60px;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 35px 20px 60px 20px;
 
   background-color: $white-smoke;
 }
@@ -131,6 +132,7 @@
 
   border: 0;
 }
+
 .form__fields--submit {
   padding-bottom: 55px;
 }
