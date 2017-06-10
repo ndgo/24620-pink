@@ -180,17 +180,10 @@
   }
 
   .editor-form__img {
+    width: 23px;
+    height: 30px;
+
     margin-bottom: 0;
-  }
-
-  .editor-form__img--crop {
-    width: 23px;
-    height: 30px;
-  }
-
-  .editor-form__img--fill {
-    width: 23px;
-    height: 30px;
   }
 
   .editor-form__img--contrast {
@@ -214,5 +207,17 @@
 
   .editor-form__range-control--hidden {
     display: block;
+  }
+}
+
+@media #{$desktop} {
+  .editor-form__img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .editor-form__img--contrast {
+    width: 45px;
+    height: 45px;
   }
 }

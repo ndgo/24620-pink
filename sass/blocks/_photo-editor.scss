@@ -21,8 +21,6 @@
   width: 100%;
 }
 
-
-
 @media #{$tablet} {
   .photo-editor__link {
     width: calc(99.99% * 1 / 2 - (20px - 20px * 1 / 2));
@@ -33,5 +31,18 @@
     justify-content: space-between;
 
     padding: 55px 40px;
+  }
+}
+
+@media #{$desktop} {
+  .photo-editor__container {
+    width: 940px;
+    margin: 0 auto;
+
+    padding: 55px 60px 55px 80px;
+  }
+
+  .photo-editor__link {
+    width: calc(99.99% * 1 / 2 - (180px * 1 / 2));
   }
 }
