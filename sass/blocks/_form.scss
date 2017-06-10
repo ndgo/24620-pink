@@ -455,8 +455,18 @@
     padding-right: 0;
   }
 
+  .form__fields {
+    margin-bottom: 65px;
+  }
+
   .form__fields--full-name {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
     width: calc(50% - 35px);
+
+    padding-bottom: 0;
   }
 
   .form__fields--achievements {
@@ -469,6 +479,8 @@
 
   .form__fields--platform {
     width: calc(50% - 35px);
+
+    box-sizing: border-box;
   }
 
   .form__fields--report {
@@ -477,5 +489,9 @@
 
   .form__fields--submit {
     width: 100%;
+  }
+
+  .form__text-field {
+    margin-bottom: 0;
   }
 }
