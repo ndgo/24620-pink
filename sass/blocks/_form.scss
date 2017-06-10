@@ -66,6 +66,17 @@
   opacity: 1
 }
 
+
+.form__text-field-input:hover {
+  border-color: $midnight;
+  transition-duration: .3s;
+}
+
+.form__text-field-input:focus {
+  border-color: $cerise;
+  transition-duration: .3s;
+}
+
 .form__fields--achievements {
 
   margin-left: -20px;
@@ -275,7 +286,7 @@
 }
 
 .form__textarea:focus {
-  border-color: #d22856;
+  border-color: $cerise;
   transition-duration: .3s
 }
 
