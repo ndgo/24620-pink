@@ -42,6 +42,8 @@
   border-radius: 3px;
 
   box-sizing: border-box;
+
+  outline: none;
 }
 
 .form__text-field-input::-webkit-input-placeholder {
@@ -140,6 +142,16 @@
   transform: rotate(-45deg);
 }
 
+.form__checkbox-caption:hover::before {
+  border-color: $midnight;
+  transition-duration: .3s;
+}
+
+.form__checkbox-caption:active::before {
+  border-color: $cerise;
+  transition-duration: .3s;
+}
+
 .form__fields--contacts {
   padding-top: 25px;
   padding-bottom: 45px;
@@ -189,6 +201,16 @@
   border-radius: 50%;
 }
 
+.form__radio-caption:hover::before {
+  border-color: $midnight;
+  transition-duration: .3s;
+}
+
+.form__radio-caption:active::before {
+  border-color: $cerise;
+  transition-duration: .3s;
+}
+
 .form__radio-input:checked ~ .form__radio-caption::after {
   content: "";
 
@@ -223,6 +245,8 @@
 
   text-align: justify;
   line-height: 30px;
+
+  outline: none;
 }
 
 .form__textarea::-webkit-input-placeholder {
