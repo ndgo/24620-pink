@@ -446,6 +446,15 @@
     margin: 0 auto;
   }
 
+  .page-content__container {
+    width: 940px;
+
+    margin: 0 auto;
+
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .form__fields--full-name {
     width: calc(50% - 35px);
   }
