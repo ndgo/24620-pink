@@ -470,7 +470,22 @@
   }
 
   .form__fields--achievements {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
     width: 100%;
+
+    padding: 35px 60px;
+  }
+
+  .form__checkbox {
+    width: 270px;
+  }
+
+  .form__checkbox-caption {
+    padding-left: 60px;
   }
 
   .form__fields--contacts {
