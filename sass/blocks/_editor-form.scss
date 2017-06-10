@@ -26,7 +26,7 @@
   margin-left: -20px;
   margin-right: -20px;
 
-  background-color: $pattens-blue;
+  background-color: rgba($black, .1);
   content: "";
 }
 
@@ -93,14 +93,14 @@
   color: transparent
 }
 
-.editor-form__range-control::-ms-fill-lower,.editor-form__range-control::-ms-fill-upper {
+.editor-form__range-control::-ms-fill-lower, .editor-form__range-control::-ms-fill-upper {
   background: #283645;
   border: none;
   border-radius: 0;
   box-shadow: none
 }
 
-.editor-form__range-control:focus::-ms-fill-lower,.editor-form__range-control:focus::-ms-fill-upper {
+.editor-form__range-control:focus::-ms-fill-lower, .editor-form__range-control:focus::-ms-fill-upper {
   background: #283645
 }
 
@@ -115,7 +115,7 @@
   -webkit-appearance: none
 }
 
-.editor-form__range-control::-webkit-slider-thumb:active,.editor-form__range-control::-webkit-slider-thumb:hover {
+.editor-form__range-control::-webkit-slider-thumb:active, .editor-form__range-control::-webkit-slider-thumb:hover {
   background: #d22856;
   transition-duration: .3s
 }
@@ -129,7 +129,7 @@
   cursor: pointer
 }
 
-.editor-form__range-control::-moz-range-thumb:active,.editor-form__range-control::-moz-range-thumb:hover {
+.editor-form__range-control::-moz-range-thumb:active, .editor-form__range-control::-moz-range-thumb:hover {
   background: #d22856;
   transition-duration: .3s
 }
@@ -143,7 +143,7 @@
   cursor: pointer
 }
 
-.editor-form__range-control::-ms-thumb:active,.editor-form__range-control::-ms-thumb:hover {
+.editor-form__range-control::-ms-thumb:active, .editor-form__range-control::-ms-thumb:hover {
   background: #d22856;
   transition-duration: .3s
 }
