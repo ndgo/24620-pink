@@ -17,7 +17,7 @@
 
   box-sizing: border-box;
 
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   z-index: 15;
 }
 
@@ -39,14 +39,43 @@
   margin-left: -20px;
   margin-right: -20px;
 
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 50px 20px;
 
   background-color: $white-smoke;
 }
 
 .modal-window__inner--failure {
   background-color: $white;
+}
+
+.modal-window--hidden {
+  display: none;
+}
+
+@media #{$tablet} {
+  .modal-window {
+    width: 55%;
+
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .modal-window__text {
+    font-size: 18px;
+  }
+
+  .modal-window__header {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media #{$desktop} {
+  .modal-window {
+    width: 35%;
+  }
+
+  .modal-window--success {
+    width: 50%;
+  }
 }
