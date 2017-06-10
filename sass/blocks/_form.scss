@@ -372,6 +372,32 @@
 
   .form__fields--contacts {
     order: -10;
+
+    margin-bottom: 65px;
+    padding: 0 80px;
+  }
+
+  .form__text-field--phone {
+    flex-direction: column;
+
+    margin-top: 45px;
+    margin-bottom: 30px;
+  }
+
+  .form__text-field--mail {
+    flex-direction: column;
+
+    margin-bottom: 25px;
+  }
+
+  .form__text-field-input--first {
+    order: -1;
+  }
+
+  .form__text-field-caption--mail,
+  .form__text-field-caption--phone {
+    padding: 10px 0 0 0;
+    align-self: flex-start;
   }
 
   .form__fields--platform {
