@@ -199,10 +199,15 @@
   .editor-form__range {
     display: flex;
     align-items: center;
+
+    padding: 20px 0;
   }
 
   .editor-form__range-control {
     position: static;
+
+    margin-right: 20px;
+    margin-left: 20px;
   }
 
   .editor-form__range-control--hidden {
