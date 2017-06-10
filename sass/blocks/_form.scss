@@ -30,9 +30,38 @@
 }
 
 .form__text-field-input {
+  @include embed-font($sans-regular-family, 18px, 22px, $midnight);
+
   display: block;
 
   width: 100%;
+  height: 60px;
+
+  padding: 10px 10px 10px 20px;
+  border: 2px solid $whisper;
+  border-radius: 3px;
+
+  box-sizing: border-box;
+}
+
+.form__text-field-input::-webkit-input-placeholder {
+  color: #283645;
+  opacity: 1
+}
+
+.form__text-field-input::-moz-placeholder {
+  color: #283645;
+  opacity: 1
+}
+
+.form__text-field-input:-ms-input-placeholder {
+  color: #283645;
+  opacity: 1
+}
+
+.form__text-field-input::placeholder {
+  color: #283645;
+  opacity: 1
 }
 
 .form__fields--achievements {
