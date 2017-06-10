@@ -153,3 +153,59 @@
 }
 
 
+@media #{$tablet} {
+  .editor-form {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(99.99%*1/2 - (20px*1/2));
+    padding: 0 0 0 25px;
+  }
+
+  .editor-form__tools {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+    margin: 0 0 auto;
+  }
+
+  .editor-form__tool {
+    margin-bottom: 0;
+  }
+
+  .editor-form__tool::after {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .editor-form-img {
+    margin-bottom: 0;
+  }
+
+  .editor-form-crop {
+    width: 23px;
+    height: 30px;
+  }
+
+  .editor-form-fill {
+    width: 23px;
+    height: 30px;
+  }
+
+  .editor-form-contrast {
+    width: 16px;
+    height: 16px;
+  }
+
+  .editor-form__range {
+    display: flex;
+    align-items: center;
+  }
+
+  .editor-form__range-control {
+    position: static;
+  }
+
+  .editor-form__range-control--hidden {
+    display: block;
+  }
+}

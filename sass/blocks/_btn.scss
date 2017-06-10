@@ -51,6 +51,12 @@
 
 }
 
+@media #{$tablet} {
+  .btn--editor-submit {
+    margin-bottom: 24px;
+  }
+}
+
 @media #{$desktop} {
   .btn--download {
     font-size: 21px;
