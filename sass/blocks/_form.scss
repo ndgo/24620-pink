@@ -102,6 +102,8 @@
   @include embed-font($sans-regular-family, 18px, 30px, $midnight);
 
   position: relative;
+
+  padding-left: 70px;
 }
 
 .form__checkbox-caption::before {
