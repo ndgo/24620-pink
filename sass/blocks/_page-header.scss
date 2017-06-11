@@ -107,7 +107,7 @@
 }
 
 .page-header__link {
-  @include embed-font($sans-bold-family, 22px, 22px, $white);
+  @include embed-font($font-family, 22px, 22px, $white, $bold);
 
   display: block;
   text-transform: uppercase;
@@ -128,7 +128,7 @@
 }
 
 .page-header__title {
-  @include embed-font($sans-light-family, 24px, 29px, $white, normal);
+  @include embed-font($font-family, 24px, 29px, $white, $lighter);
 
   margin: 0;
 

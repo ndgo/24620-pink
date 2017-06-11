@@ -28,7 +28,7 @@
 }
 
 .download__item-link {
-  @include embed-font($sans-bold-family, 18px, 18px, $white);
+  @include embed-font($font-family, 18px, 18px, $white, $bold);
 
   display: block;
 
@@ -36,7 +36,7 @@
 }
 
 .download__description {
-  @include embed-font($sans-light-family, 14px, 24px, $white);
+  @include embed-font($font-family, 14px, 24px, $white, $lighter);
 
   margin-top: 0;
   margin-bottom: 0;
@@ -56,7 +56,6 @@
     font-size: 18px;
   }
 }
-
 
 @media #{$desktop} {
   .download__platform-list {
