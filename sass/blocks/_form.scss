@@ -20,7 +20,7 @@
 }
 
 .form__text-field-caption {
-  @include embed-font($sans-regular-family, 14px, 30px, $cerise);
+  @include embed-font($font-family, 14px, 30px, $cerise, $normal);
 
   display: block;
   padding-left: 20px;
@@ -30,7 +30,7 @@
 }
 
 .form__text-field-input {
-  @include embed-font($sans-regular-family, 18px, 22px, $midnight);
+  @include embed-font($font-family, 18px, 22px, $midnight, $normal);
 
   display: block;
 
@@ -86,7 +86,7 @@
 }
 
 .form__legend {
-  @include embed-font($sans-regular-family, 14px, 18px, $cerise, normal);
+  @include embed-font($font-family, 14px, 18px, $cerise, $normal, normal);
 
   margin: 0;
   padding-bottom: 20px;
@@ -111,7 +111,7 @@
 }
 
 .form__checkbox-caption {
-  @include embed-font($sans-regular-family, 18px, 30px, $midnight);
+  @include embed-font($font-family, 18px, 30px, $midnight, $normal);
 
   position: relative;
 
@@ -188,7 +188,7 @@
 }
 
 .form__radio-caption {
-  @include embed-font($sans-regular-family, 18px, 30px, $midnight);
+  @include embed-font($font-family, 18px, 30px, $midnight, $normal);
 
   position: relative;
 
@@ -243,7 +243,7 @@
 }
 
 .form__textarea {
-  @include embed-font($sans-regular-family, 18px, 30px, $midnight);
+  @include embed-font($font-family, 18px, 30px, $midnight, $normal);
 
   width: 100%;
   min-height: 200px;
