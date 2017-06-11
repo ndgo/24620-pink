@@ -2,13 +2,13 @@
 @import "../global/mixins";
 
 .google-map {
-  display: none;
+  height: 219px;
+  background: $whisper url(../img/bg-map-mobile@1x.png) center;
+  background-size: cover;
 }
 
 @media #{$tablet} {
   .google-map {
-    display: block;
-
     height: 380px;
   }
 }
