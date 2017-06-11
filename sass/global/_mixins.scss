@@ -1,4 +1,4 @@
-// Adding font-face directive at https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
+// MODIFIED. Adding font-face directive at https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
 // =============================================================================
 // String Replace
 // =============================================================================
@@ -17,7 +17,7 @@
 // Font Face
 // =============================================================================
 
-@mixin font-face($name, $path-map, $weight: normal, $style: null, $exts: eot woff2 woff ttf svg) {
+@mixin font-face($name, $path-map, $weight: 400, $style: null, $exts: eot woff2 woff ttf svg) {
   $src: null;
 
   $extmods: (
