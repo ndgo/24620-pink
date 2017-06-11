@@ -12,13 +12,13 @@
 }
 
 .like__text {
-  @include embed-font($sans-light-family, 12px, 12px, $cerise);
+  @include embed-font($font-family, 12px, 12px, $cerise, $lighter);
 
   text-transform: uppercase;
 }
 
 .like__count {
-  @include embed-font($sans-light-family, 12px, 12px, $cerise);
+  @include embed-font($font-family, 12px, 12px, $cerise, $lighter);
 }
 
 @media #{$tablet} {

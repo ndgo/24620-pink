@@ -11,7 +11,7 @@
 }
 
 .contacts__title {
-  @include embed-font($sans-light-family, 24px, 29px, $midnight);
+  @include embed-font($font-family, 24px, 29px, $midnight, $lighter);
 
   margin-top: 0;
   margin-bottom: 0;
@@ -40,7 +40,7 @@
 }
 
 .contacts__item-title {
-  @include embed-font($sans-bold-family, 18px, 22px, $midnight);
+  @include embed-font($font-family, 18px, 22px, $midnight, $bold);
 
   margin: 0;
   padding-bottom: 5px;
@@ -50,7 +50,7 @@
 }
 
 .contacts__item-text {
-  @include embed-font($sans-light-family, 24px, 29px, $cerise);
+  @include embed-font($font-family, 24px, 29px, $cerise, $lighter);
 
   display: block;
 
@@ -116,7 +116,7 @@
   }
 
   .contacts__item--address {
-    order:2;
+    order: 2;
   }
 
   .contacts__item--full-width {

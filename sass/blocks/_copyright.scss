@@ -8,7 +8,7 @@
 }
 
 .copyright__note {
-  @include embed-font($sans-regular-family, 14px, 18px, $midnight);
+  @include embed-font($font-family, 14px, 18px, $midnight, $normal);
 
   display: block;
 

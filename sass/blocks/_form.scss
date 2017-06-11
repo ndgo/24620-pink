@@ -295,7 +295,7 @@
 }
 
 .form__footer-note {
-  @include embed-font($sans-regular-family, 14px, 30px, $midnight);
+  @include embed-font($font-family, 14px, 30px, $midnight, $normal);
 
   text-transform: uppercase;
 }
@@ -402,7 +402,7 @@
 
   .form__fields--achievements {
     margin-left: 0;
-    margin-right:0;
+    margin-right: 0;
     margin-bottom: 25px;
 
     padding: 35px 80px 60px 80px;

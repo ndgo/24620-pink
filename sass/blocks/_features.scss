@@ -55,21 +55,21 @@
 }
 
 .features__item-title {
-  @include embed-font($sans-bold-family, 18px, 24px, $black);
+  @include embed-font($font-family, 18px, 24px, $black, $bold);
 
   margin-top: 0;
   margin-bottom: 12px;
 }
 
 .features__item-description {
-  @include embed-font($sans-regular-family, 14px, 24px, $midnight);
+  @include embed-font($font-family, 14px, 24px, $midnight, $normal);
 
   margin-top: 0;
   margin-bottom: 12px;
 }
 
 .features__item-link {
-  @include embed-font($sans-regular-family, 14px, 24px, $cerise);
+  @include embed-font($font-family, 14px, 24px, $cerise, $normal);
 
   margin: 0;
 

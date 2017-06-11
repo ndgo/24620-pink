@@ -54,7 +54,7 @@
 
 #review__slide-1:checked ~ .review__controls [for="review__slide-1"],
 #review__slide-2:checked ~ .review__controls [for="review__slide-2"],
-#review__slide-3:checked ~ .review__controls [for="review__slide-3"]{
+#review__slide-3:checked ~ .review__controls [for="review__slide-3"] {
   border: 3px solid $midnight;
   background-color: $white-smoke;
 }
@@ -78,7 +78,7 @@
 }
 
 .review__author {
-  @include embed-font($sans-bold-family, 18px, 30px, $black, null, normal);
+  @include embed-font($font-family, 18px, 30px, $black, $bold, normal);
 
   display: block;
 
@@ -88,7 +88,7 @@
 }
 
 .review__author-info {
-  @include embed-font($sans-regular-family, 14px, 30px, $midnight);
+  @include embed-font($font-family, 14px, 30px, $midnight, $normal);
 
   display: none;
 
@@ -96,7 +96,7 @@
 }
 
 .review__text {
-  @include embed-font($sans-regular-family, 14px, 30px, $midnight);
+  @include embed-font($font-family, 14px, 30px, $midnight, $normal);
 
   margin: 0;
 

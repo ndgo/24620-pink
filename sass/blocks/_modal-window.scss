@@ -22,14 +22,14 @@
 }
 
 .modal-window__header {
-  @include embed-font($sans-bold-family, 18px, 24px, $black);
+  @include embed-font($font-family, 18px, 24px, $black, $bold);
 
   padding: 0;
   margin: 0 0 25px;
 }
 
 .modal-window__text {
-  @include embed-font($sans-regular-family, 14px, 24px, $midnight);
+  @include embed-font($font-family, 14px, 24px, $midnight, $normal);
 
   margin-bottom: 30px;
 }

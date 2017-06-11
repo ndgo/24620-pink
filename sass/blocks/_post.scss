@@ -8,7 +8,7 @@
 }
 
 .post--choice::before {
-  @include embed-font($sans-bold-family, 12px, 24px, $white);
+  @include embed-font($font-family, 12px, 24px, $white, $bold);
 
   position: absolute;
   top: 0;
@@ -71,17 +71,17 @@
 }
 
 .post__author-name {
-  @include embed-font($sans-bold-family, 14px, 14px, $midnight);
+  @include embed-font($font-family, 14px, 14px, $midnight, $bold);
 }
 
 .post__published-at {
-  @include embed-font($sans-light-family, 12px, 12px, $midnight);
+  @include embed-font($font-family, 12px, 12px, $midnight, $lighter);
 
   text-transform: uppercase;
 }
 
 .post__comment {
-  @include embed-font($sans-regular-family, 14px, 24px, $midnight);
+  @include embed-font($font-family, 14px, 24px, $midnight, $normal);
 
   width: 100%;
 }

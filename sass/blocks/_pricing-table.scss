@@ -36,7 +36,7 @@
 }
 
 .pricing-table__cell--hit::before {
-  @include embed-font($sans-bold-family, 14px, 30px, $white);
+  @include embed-font($font-family, 14px, 30px, $white, $bold);
 
   content: attr(data-tag);
   position: absolute;
@@ -68,29 +68,25 @@
 }
 
 .pricing-table__plan-name {
-  @include embed-font($sans-bold-family, 18px, 30px, $white);
+  @include embed-font($font-family, 18px, 30px, $white, $bold);
 
   display: block;
-
-  font-weight: normal;
 
   text-transform: uppercase;
 }
 
 .pricing-table__plan-price {
-  @include embed-font($sans-regular-family, 24px, 30px, $white);
-
-  font-weight: normal;
+  @include embed-font($font-family, 24px, 30px, $white, $normal);
 
   text-transform: uppercase;
 }
 
 .pricing-table__option-name {
-  @include embed-font($sans-regular-family, 14px, 30px, $midnight);
+  @include embed-font($font-family, 14px, 30px, $midnight, $normal);
 }
 
 .pricing-table__option-name--title {
-  @include embed-font($sans-regular-family, 14px, 30px, $midnight);
+  @include embed-font($font-family, 14px, 30px, $midnight, $normal);
 }
 
 .pricing-table__option-status {
