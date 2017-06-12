@@ -10,7 +10,7 @@
 }
 
 .form__fields--full-name {
-  padding-bottom: 30px;
+  padding-bottom: 25px;
 }
 
 .form__text-field {
@@ -80,7 +80,7 @@
 
   margin-left: -20px;
   margin-right: -20px;
-  padding: 35px 20px 60px 20px;
+  padding: 40px 20px 47px 20px;
 
   background-color: $white-smoke;
 }
@@ -103,7 +103,11 @@
   display: block;
 
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 32px;
+}
+
+.form__checkbox:last-child {
+  padding-bottom: 0;
 }
 
 .form__checkbox-input {
@@ -124,8 +128,8 @@
   position: absolute;
   display: block;
 
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
 
   background-color: $white;
   border-radius: 3px;
@@ -163,15 +167,15 @@
 }
 
 .form__fields--contacts {
-  padding-top: 25px;
-  padding-bottom: 45px;
+  padding-top: 35px;
+  padding-bottom: 25px;
 }
 
 .form__fields--platform {
 
   margin-left: -20px;
   margin-right: -20px;
-  padding: 35px 20px 45px;
+  padding: 35px 20px 22px;
 
   background-color: $white-smoke;
 }
@@ -203,8 +207,8 @@
 
   display: block;
 
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
 
   transform: translateY(-50%);
   border: 2px solid $whisper;
@@ -227,7 +231,7 @@
 
   position: absolute;
   top: 50%;
-  left: 14px;
+  left: 12px;
   transform: translateY(-50%);
   display: block;
   width: 15px;
@@ -238,7 +242,7 @@
 
 .form__fields--report {
 
-  padding-top: 25px;
+  padding-top: 35px;
   padding-bottom: 45px;
 }
 
@@ -297,7 +301,12 @@
 .form__footer-note {
   @include embed-font($font-family, 14px, 30px, $midnight, $normal);
 
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 35px;
+
   text-transform: uppercase;
+  text-align: center;
 }
 
 .form__wildcard {

@@ -2,14 +2,29 @@
 @import "../global/mixins";
 
 .page-footer {
-  display: none;
+  display: block;
 
   background-color: $white;
 }
 
+.page-footer--hidden {
+  display: none;
+}
+
 .page-footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  min-height: 200px;
+
+  margin: auto;
   padding-left: 20px;
   padding-right: 20px;
+
+  box-sizing: border-box;
 }
 
 .page-footer__link {
