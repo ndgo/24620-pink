@@ -2,7 +2,7 @@
 @import "../global/mixins";
 
 .intro {
-  padding-top: 45px;
+  padding-top: 40px;
 
   background-color: $white;
 
@@ -22,7 +22,7 @@
 }
 
 .intro__text {
-  @include embed-font($font-family, 14px, 30px, $midnight, $normal);
+  @include embed-font($font-family, 14px, 29px, $midnight, $normal);
 
   margin-top: 0;
   margin-bottom: 0;

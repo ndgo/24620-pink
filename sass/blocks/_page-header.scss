@@ -4,7 +4,7 @@
 .page-header {
   height: 235px;
 
-  background-color: $midnight;
+  background-color: $blue-charcoal;
 }
 
 .page-header::before {
@@ -75,11 +75,8 @@
   width: 258px;
   height: 286px;
   top: 174px;
-  left: 50%;
 
   background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
-
-  transform: translateX(-50%);
 
   content: "";
 }
