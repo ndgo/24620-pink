@@ -4,7 +4,7 @@
 .review {
   margin: 0 auto;
 
-  padding: 0 20px 75px 20px;
+  padding: 0 20px 69px 20px;
 
   background-color: $white;
 
@@ -50,6 +50,10 @@
   border: 3px solid $white;
   border-radius: 50%;
   transition-duration: .3s;
+}
+
+.review__control:last-child {
+  margin-right: 0;
 }
 
 #review__slide-1:checked ~ .review__controls [for="review__slide-1"],

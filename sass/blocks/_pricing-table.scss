@@ -10,7 +10,7 @@
 
   background-color: $white;
 
-  padding: 18px;
+  padding: 15px 18px 14px 25px;
 
   box-sizing: border-box;
 
@@ -24,7 +24,7 @@
 .pricing-table__cell--header {
   background-color: $midnight;
 
-  padding: 18px 40px;
+  padding: 16px 40px 20px;
 
   border-left: 2px solid $whisper;
   border-right: 2px solid $whisper;
@@ -41,7 +41,7 @@
   content: attr(data-tag);
   position: absolute;
   top: 10px;
-  left: -40px;
+  left: -35px;
 
   display: block;
   width: 120px;
@@ -92,7 +92,7 @@
 .pricing-table__option-status {
   position: absolute;
   top: 50%;
-  right: 25px;
+  right: 15px;
 
   transform: translateY(-50%);
 }

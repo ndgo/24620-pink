@@ -2,8 +2,8 @@
 @import "../global/mixins";
 
 .pricing-slider {
-  padding-top: 60px;
-  padding-bottom: 40px;
+  padding-top: 65px;
+  padding-bottom: 45px;
 
   background-color: $white-smoke;
 }
@@ -52,6 +52,10 @@
   border: 3px solid $white;
   border-radius: 50%;
   transition-duration: .3s;
+}
+
+.pricing-slider__control:last-child {
+  margin-right: 0;
 }
 
 #pricing-slider__slide-1:checked ~ .pricing-slider__controls [for="pricing-slider__slide-1"],

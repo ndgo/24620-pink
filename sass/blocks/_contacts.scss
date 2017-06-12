@@ -17,7 +17,7 @@
   margin-bottom: 0;
 
   padding-top: 45px;
-  padding-bottom: 40px;
+  padding-bottom: 35px;
 
   text-align: center;
 }
@@ -40,17 +40,17 @@
 }
 
 .contacts__item-title {
-  @include embed-font($font-family, 18px, 22px, $midnight, $bold);
+  @include embed-font($font-family, 18px, 18px, $midnight, $bold);
 
   margin: 0;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 
   font-style: normal;
   text-align: center;
 }
 
 .contacts__item-text {
-  @include embed-font($font-family, 24px, 29px, $cerise, $lighter);
+  @include embed-font($font-family, 24px, 24px, $cerise, $lighter);
 
   display: block;
 
