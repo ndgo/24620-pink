@@ -92,15 +92,12 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .page-header__container {
   margin: 422px auto 0;
   padding: 0 20px;
 
   text-align: center;
-}
-
-.page-header__title-container--main-page {
-  display: none;
 }
 
 .page-header__link {
@@ -118,6 +115,14 @@
   padding-right: 20px;
 
   z-index: 1;
+}
+
+.page-header__title-container--main-page {
+  display: none;
+}
+
+.page-header__title-container--form-page {
+  padding-top: 40px;
 }
 
 .page-header__title-main-page {
