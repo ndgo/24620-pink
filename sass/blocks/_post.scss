@@ -161,8 +161,9 @@
   }
 
   .post--choice::before {
+    top: 0;
     right: 50%;
-    transform: translateX(430px);
+    transform: translateX(470px);
   }
 
   .post__container--choice {
