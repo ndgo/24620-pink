@@ -65,8 +65,6 @@
 
 .post__like-container {
   width: 100%;
-
-  margin-top: auto;
 }
 
 .post__like-container--choice {
@@ -129,6 +127,7 @@
   .post__container {
     display: flex;
     flex-wrap: wrap;
+    align-content: flex-start;
 
     padding: 25px 25px 15px 25px;
   }
@@ -136,6 +135,10 @@
   .post__container--choice {
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  .post__like-container {
+    align-self: flex-end;
   }
 
   .post__like-container--choice {
