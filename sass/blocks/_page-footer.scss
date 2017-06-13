@@ -41,6 +41,7 @@
   }
 
   .page-footer__container {
+    flex-direction: row;
     display: flex;
     justify-content: space-between;
     align-items: center;
