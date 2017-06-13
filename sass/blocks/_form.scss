@@ -324,11 +324,12 @@
     flex-direction: row;
     align-items: center;
 
-    margin-bottom: 50px;
+    margin-bottom: 55px;
   }
 
   .form__text-field-caption {
     padding-right: 25px;
+    padding-left: 0;
   }
 
   .form__fields {
@@ -342,9 +343,13 @@
   .form__fields--platform {
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 25px;
+    margin-bottom: 60px;
 
-    padding: 35px 80px 55px 80px;
+    padding: 35px 80px 35px 60px;
+  }
+
+  .form__radio-caption {
+    padding-left: 55px;
   }
 
   .form__fields--full-name {
@@ -383,7 +388,7 @@
     order: -10;
 
     margin-bottom: 65px;
-    padding: 0 80px;
+    padding: 0 60px;
   }
 
   .form__text-field--phone {
@@ -405,27 +410,35 @@
 
   .form__text-field-caption--mail,
   .form__text-field-caption--phone {
-    padding: 10px 0 0 0;
+    padding: 15px 0 0 20px;
     align-self: flex-start;
   }
 
   .form__fields--achievements {
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 25px;
+    margin-bottom: 65px;
 
-    padding: 35px 80px 60px 80px;
+    padding: 30px 80px 50px 60px;
   }
 
   .form__checkbox {
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 27px;
+  }
+
+  .form__checkbox-caption {
+    padding-left: 55px;
   }
 
   .form__fields--report {
-    padding: 40px 80px 50px;
+    padding: 45px 60px 50px;
 
     margin-bottom: 65px;
+  }
+
+  .form__textarea {
+    min-height: 195px;
   }
 
   .form__fields--platform {
@@ -435,12 +448,17 @@
   .form__fields--submit {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 
     padding-bottom: 50px;
 
     order: 10;
 
     border: none;
+  }
+
+  .form__footer-note {
+    padding-top: 0;
   }
 }
 

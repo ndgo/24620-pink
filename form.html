@@ -18,7 +18,8 @@
         </a>
       </div>
       <button class="page-header__toggle-control">
-        <img class="page-header__toggle-control-img" width="50" height="25" src="img/icon-menu-burger.svg" alt="Управление меню">
+        <img class="page-header__toggle-control-img" width="50" height="25" src="img/icon-menu-burger.svg"
+             alt="Управление меню">
       </button>
       <nav class="navigation navigation--hidden">
         <ul class="navigation__nav">
@@ -46,8 +47,11 @@
   <div class="page-content__container">
     <div class="feedback-form">
       <div class="intro intro--forms-page">
-        <p class="intro__text intro__text--forms-page">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
+        <p class="intro__text intro__text--forms-page">Поделитесь своей историей и получите шанс выиграть ценный приз —
+          1000 миль на вашу
           бонусную карту!</p>
+        <p class="intro__text intro__text--forms-page intro__text--hidden-on-phones">Пожалуйста, заполните форму
+          ниже:</p>
       </div>
       <form class="form" action="/send" method="post">
         <div class="form__fields form__fields--full-name">
@@ -95,11 +99,13 @@
           <h3 class="form__legend form__legend--hidden">Контактная информация</h3>
           <label class="form__text-field form__text-field--phone">
             <span class="form__text-field-caption form__text-field-caption--phone">номер телефона</span>
-            <input class="form__text-field-input form__text-field-input--first" type="tel" placeholder="Номер, пожалуйста">
+            <input class="form__text-field-input form__text-field-input--first" type="tel"
+                   placeholder="Номер, пожалуйста">
           </label>
           <label class="form__text-field form__text-field--mail">
             <span class="form__text-field-caption form__text-field-caption--mail">адрес почты</span>
-            <input class="form__text-field-input form__text-field-input--first" type="email" placeholder="Введите почту *" required>
+            <input class="form__text-field-input form__text-field-input--first" type="email"
+                   placeholder="Введите почту *" required>
           </label>
         </div>
         <div class="form__fields form__fields--platform">

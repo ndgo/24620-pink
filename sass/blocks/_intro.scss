@@ -55,6 +55,10 @@
   padding-bottom: 40px;
 }
 
+.intro__text--hidden-on-phones {
+  display: none;
+}
+
 @media #{$tablet} {
   .intro__text {
     font-size: 18px;
@@ -76,7 +80,11 @@
   }
 
   .intro--forms-page {
-    padding: 90px 80px 75px 80px;
+    padding: 90px 60px 75px 60px;
+  }
+
+  .intro__text--hidden-on-phones {
+    display: block;
   }
 }
 
