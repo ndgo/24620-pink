@@ -2,13 +2,26 @@
 @import "../global/mixins";
 
 .google-map {
+  position: relative;
+}
+
+.google-map__img {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.google-map__map {
   height: 219px;
   background: $whisper url(../img/bg-map-mobile@1x.png) center;
   background-size: cover;
 }
 
 @media #{$tablet} {
-  .google-map {
+  .google-map__map {
     height: 380px;
   }
 }
