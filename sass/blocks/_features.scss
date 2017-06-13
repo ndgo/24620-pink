@@ -5,13 +5,16 @@
   position: relative;
   margin-bottom: 40px;
   background-color: $white-smoke;
+
+  background-image: url(../../img/bg-triangle-white.svg);
+  background-size: 105%;
+  background-position: center -1px;
+  background-repeat: no-repeat;
 }
 
 .features__container {
-  //width: 100%;
-
   margin: 0 auto;
-  padding: 50px 20px 320px;
+  padding: 78px 20px 320px;
 
   text-align: center;
 }
@@ -38,8 +41,6 @@
 
   margin: 0;
   padding: 0;
-
-  background-color: $white-smoke;
 
   list-style: none;
 }
@@ -92,28 +93,27 @@
   }
 
   .features__list {
-    padding: 30px 20px 35px 330px;
+    padding: 70px 20px 40px 330px;
   }
 
   .features__list::before {
     position: absolute;
 
     bottom: -30px;
-    left: 40px;
-
+    left: 20px;
     transform: unset;
 
     width: 268px;
-    height: 485px;
-
-    background: url("../../img/iphone-screen-mobile@1x.png") no-repeat;
+    height: 512px;
+    background: url(../../img/iphone-screen-mobile@1x.png) no-repeat;
     background-size: cover;
-
     content: "";
   }
 
   .features__item {
     text-align: left;
+
+    margin-bottom: 35px;
   }
 
   .features__item--full-width {

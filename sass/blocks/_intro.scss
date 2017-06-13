@@ -15,7 +15,7 @@
 }
 
 .intro--main-page {
-  padding-bottom: 65px;
+  padding-bottom: 30px;
 }
 
 .intro--photos-page {
@@ -61,10 +61,18 @@
     line-height: 30px;
   }
 
+  .intro--main-page {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   .intro__text--main-page {
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+
     font-size: 40px;
     line-height: 48px;
-    margin-bottom: 0;
   }
 
   .intro--forms-page {
