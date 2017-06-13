@@ -82,6 +82,11 @@
 }
 
 @media #{$tablet} {
+  .pricing-slider {
+    padding-top: 85px;
+    padding-bottom: 25px;
+  }
+
   .pricing-slider__slides {
     width: 100%;
   }
