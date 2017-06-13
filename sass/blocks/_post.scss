@@ -49,6 +49,8 @@
 }
 
 .post__container {
+  align-items: baseline;
+
   padding: 21px 15px 25px 15px;
 
   height: 100%;
@@ -115,7 +117,7 @@
 
   .post--choice::before {
     top: 55px;
-    right: 40px;
+    right: 5px;
   }
 
   .post--choice {
@@ -134,6 +136,12 @@
   .post__container--choice {
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  .post__like-container--choice {
+    margin-top: 0;
+
+    margin-left: auto;
   }
 
   .post__comment--last-element {
