@@ -19,11 +19,12 @@
 }
 
 .intro--photos-page {
+  padding-top: 45px;
   padding-bottom: 50px;
 }
 
 .intro__text {
-  @include embed-font($font-family, 14px, 29px, $midnight, $normal);
+  @include embed-font($font-family, 14px, 30px, $midnight, $normal);
 
   margin-top: 0;
   margin-bottom: 0;

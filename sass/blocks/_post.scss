@@ -16,7 +16,7 @@
   position: absolute;
   top: 0;
   right: 20px;
-  min-width: 140px;
+  min-width: 130px;
   padding: 5px;
   text-align: center;
   white-space: nowrap;
@@ -49,7 +49,7 @@
 }
 
 .post__container {
-  padding: 15px;
+  padding: 21px 15px 25px 15px;
 
   height: 100%;
 
@@ -70,7 +70,7 @@
 .post__like-container--choice {
   width: 130px;
 
-  margin-left: auto;
+  margin-left: 0;
 }
 
 .post__author {

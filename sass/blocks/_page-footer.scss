@@ -14,16 +14,14 @@
 .page-footer__container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 
   width: 100%;
-  min-height: 200px;
+  min-height: 285px;
 
   margin: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-
+  padding: 15px 20px;
   box-sizing: border-box;
 }
 

@@ -2,8 +2,7 @@
 @import "../global/mixins";
 
 .editor-form {
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding: 45px 20px 45px;
 }
 
 .editor-form__tools {
@@ -12,8 +11,14 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-bottom: 15px;
+
   margin-bottom: 40px;
+  padding-bottom: 15px;
+}
+
+.editor-form__controls {
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .editor-form__img {
@@ -85,11 +90,10 @@
 .editor-form__range-control::-ms-track {
   width: 100%;
   height: 2px;
-  background: 0 0;
   border: 0 solid #000;
   border-radius: 0;
   cursor: pointer;
-  background-color: transparent;
+  background: transparent 0 0;
   color: transparent
 }
 
