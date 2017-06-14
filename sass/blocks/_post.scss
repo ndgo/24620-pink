@@ -127,7 +127,7 @@
   .post__container {
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
+    flex-direction: column;
 
     padding: 25px 25px 15px 25px;
   }
@@ -138,7 +138,7 @@
   }
 
   .post__like-container {
-    align-self: flex-end;
+    margin-top: auto;
   }
 
   .post__like-container--choice {
