@@ -156,6 +156,10 @@
   .post__comment--last-element {
     order: 15;
   }
+
+  .post__comment-text {
+    padding-bottom: 18px;
+  }
 }
 
 @media #{$desktop} {
