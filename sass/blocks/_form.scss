@@ -493,6 +493,7 @@
 
     width: calc(50% - 35px);
 
+    padding-top: 5px;
     padding-bottom: 0;
   }
 
@@ -562,6 +563,9 @@
   }
 
   .form__fields--platform {
+    padding-top: 40px;
+    padding-left: 75px;
+
     width: calc(50% - 35px);
 
     box-sizing: border-box;
@@ -576,6 +580,12 @@
   }
 
   .form__text-field {
+    align-items: baseline;
+
     margin-bottom: 0;
+  }
+
+  .form__text-field-caption {
+    padding-right: 20px;
   }
 }
