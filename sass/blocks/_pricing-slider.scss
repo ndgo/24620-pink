@@ -102,6 +102,11 @@
 
 
 @media #{$desktop} {
+  .pricing-slider {
+    padding-top: 155px;
+    padding-bottom:50px;
+  }
+
   .pricing-slider__container {
     width: 940px;
 

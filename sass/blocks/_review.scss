@@ -145,8 +145,12 @@
 
     width: 940px;
 
-    margin-bottom: 90px;
+    margin-bottom: 5px;
     padding: 0;
+  }
+
+  .review__author {
+    padding-bottom: 0;
   }
 
   .review__author-info {
@@ -155,7 +159,7 @@
   }
 
   .review__slide {
-    padding: 115px 90px 0 90px;
+    padding: 145px 90px 0 90px;
   }
 
   .review__controls {
