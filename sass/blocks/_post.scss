@@ -113,6 +113,10 @@
     margin-right: 0;
   }
 
+  .post:last-child {
+    margin-bottom: 20px;
+  }
+
   .post--choice::before {
     top: 55px;
     right: 20px;
