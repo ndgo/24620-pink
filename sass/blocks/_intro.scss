@@ -42,7 +42,7 @@
 }
 
 .intro__text--forms-page {
-  line-height:30px;
+  line-height: 30px;
 }
 
 .intro__text--main-page:last-child {
@@ -96,5 +96,10 @@
     font-size: 50px;
     line-height: 60px;
     margin-bottom: 0;
+  }
+
+  .intro__text--main-page-second-row {
+    width: 420px;
+    margin: 0 auto;
   }
 }
