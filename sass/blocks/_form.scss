@@ -564,6 +564,8 @@
 
   .form__fields--report {
     width: 100%;
+
+    padding-bottom: 40px;
   }
 
   .form__fields--submit {
@@ -578,5 +580,13 @@
 
   .form__text-field-caption {
     padding-right: 20px;
+  }
+
+  .form__textarea {
+    min-height: 125px;
+  }
+
+  .form__fields:last-child {
+    margin-bottom: 0;
   }
 }
