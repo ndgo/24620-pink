@@ -229,7 +229,16 @@
   .page-header__title {
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 50px;
+    margin-bottom: 0;
+  }
+
+  .page-header__title-container--main-page {
+    margin-bottom: 55px;
+  }
+
+  .page-header__title--main-page {
+    font-size: 50px;
+    line-height: 60px;
   }
 
   .page-header__menu-container {
