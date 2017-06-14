@@ -25,3 +25,9 @@
     height: 380px;
   }
 }
+
+@media #{$desktop} {
+  .google-map__map {
+    height: 500px;
+  }
+}

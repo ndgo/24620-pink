@@ -111,6 +111,10 @@
     width: 33%;
   }
 
+  .contacts__item-title {
+    padding-bottom: 30px;
+  }
+
   .contacts__item--tel {
     order: 1;
   }
@@ -128,7 +132,7 @@
   }
 
   .contacts__title {
-    padding: 35px 0 60px 0;
+    padding: 65px 0 60px 0;
 
     font-size: 50px;
     line-height: 60px;

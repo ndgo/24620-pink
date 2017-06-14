@@ -53,7 +53,9 @@
 @media #{$desktop} {
   .page-footer__container {
     width: 940px;
+    min-height: 195px;
 
     margin: 0 auto;
+    padding: 0;
   }
 }
