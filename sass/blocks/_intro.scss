@@ -87,8 +87,7 @@
   }
 
   .intro--photos-page {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 90px 35px 80px;
   }
 
   .intro__text--photos-page {
@@ -96,6 +95,10 @@
     margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .intro--editor {
+    padding-bottom: 70px;
   }
 }
 

@@ -113,15 +113,16 @@
     margin-bottom: 20px;
   }
 
-  .post--choice::before {
-    top: 55px;
-    right: 20px;
-  }
-
   .post--choice {
     width: auto;
 
     margin-right: 0;
+    margin-bottom: 50px;
+  }
+
+  .post--choice::before {
+    top: 55px;
+    right: 20px;
   }
 
   .post__container {
@@ -155,7 +156,7 @@
   }
 
   .post__comment-text {
-    padding-bottom: 18px;
+    padding-bottom: 23px;
   }
 }
 
