@@ -211,6 +211,10 @@
 
     z-index: 1;
   }
+
+  .page-header__title--photos-page {
+    margin-top: 70px;
+  }
 }
 
 @media #{$desktop} {
