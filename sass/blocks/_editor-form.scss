@@ -227,9 +227,16 @@
 }
 
 @media #{$desktop} {
+  .editor-form {
+    width: 410px;
+
+    flex-basis: inherit;
+    padding: 0;
+  }
+
   .editor-form__img {
-    width: 65px;
-    height: 65px;
+    width: 44px;
+    height: 44px;
   }
 
   .editor-form__img--contrast {
@@ -241,5 +248,31 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .editor-form__range-control {
+    margin-right: 30px;
+    margin-left: 55px;
+  }
+
+  .editor-form__range {
+    padding: 0;
+  }
+
+  .editor-form__img {
+    margin-left: 0;
+  }
+
+  .editor-form__tool {
+    padding-top: 15px;
+    padding-bottom: 13px;
+  }
+
+  .editor-form__tool:first-child {
+    padding-top: 0;
+  }
+
+  .editor-form__controls {
+    padding: 0;
   }
 }
