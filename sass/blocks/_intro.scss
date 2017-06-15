@@ -58,6 +58,10 @@
   display: none;
 }
 
+.intro__text-hidden {
+  display: none;
+}
+
 @media #{$tablet} {
   .intro__text {
     font-size: 18px;
@@ -104,6 +108,10 @@
   .intro__text--main-page-second-row {
     width: 420px;
     margin: 0 auto;
+  }
+
+  .intro__text-hidden {
+    display: block;
   }
 }
 
