@@ -3,19 +3,13 @@
 
 .social {
   display: flex;
+  justify-content: space-between;
 
+  width: 180px;
   margin: 0;
   padding: 0;
 
   list-style: none;
-}
-
-.social__item {
-  margin-right: 12px;
-}
-
-.social__item:last-child {
-  margin-right: 0;
 }
 
 .social__link {
