@@ -314,6 +314,10 @@
   color: $cerise;
 }
 
+.form__hidden {
+  display: none;
+}
+
 @media #{$tablet} {
   .form {
     display: flex;
@@ -566,5 +570,9 @@
 
   .form__fields:last-child {
     margin-bottom: 0;
+  }
+
+  .form__hidden {
+    display: none;
   }
 }

@@ -220,6 +220,10 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .page-header__title--form-page {
+    padding-top: 130px;
+  }
 }
 
 @media #{$desktop} {
