@@ -9,9 +9,20 @@
 }
 
 .navigation__list {
+  position: relative;
+  top: 68px;
+
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+@media #{$tablet} {
+  .navigation__list {
+    position: relative;
+
+    top: 108px;
+  }
 }
 
 @media #{$desktop} {
@@ -25,6 +36,10 @@
 }
 
 .navigation__visible-row {
+  position: absolute;
+  left: 0;
+  right: 0;
+
   padding: 21px 20px 23px;
   background-color: $midnight;
   border-bottom: 1px solid $black;
@@ -32,6 +47,10 @@
 
 @media #{$tablet} {
   .navigation__visible-row {
+    position: absolute;
+    left: 0;
+    right: 0;
+
     min-height: 108px;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -41,6 +60,7 @@
 
 @media #{$desktop} {
   .navigation__visible-row {
+    position: static;
     background-color: $transparent;
     border: none;
   }
