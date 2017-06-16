@@ -173,12 +173,14 @@
 .navigation--closed .navigation__toggle:focus::before {
   background-color: $cerise;
   box-shadow: 0 10px $cerise, 0 20px $cerise;
+  transition-duration: .3s;
 }
 
 .navigation--closed .navigation__toggle:active::after,
 .navigation--closed .navigation__toggle:active::before {
   background-color: rgba($cerise, 0.3);
   box-shadow: 0 10px rgba($cerise, 0.3), 0 20px rgba($cerise, 0.3);
+  transition-duration: .3s;
 }
 
 .navigation--opened .navigation__toggle::after,
@@ -202,6 +204,7 @@
 .navigation__toggle:active::after,
 .navigation__toggle:active::before {
   background-color: rgba($cerise, 0.3);
+  transition-duration: .3s;
 }
 
 .navigation__toggle:hover::after,
@@ -209,6 +212,8 @@
 .navigation__toggle:focus::after,
 .navigation__toggle:focus::before {
   background-color: $cerise;
+  transition-duration: .3s;
+
 }
 
 .navigation.navigation--nojs {
@@ -276,10 +281,12 @@
 
 .navigation__list-link:hover {
   color: $cerise;
+  transition-duration: .3s;
 }
 
 .navigation__list-link:active {
   color: rgba($white, 0.3);
+  transition-duration: .3s;
 }
 
 .navigation__link-text {
