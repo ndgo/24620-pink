@@ -256,7 +256,7 @@
   }
 
   .editor-form__range {
-    padding: 0;
+    padding: 0 0 13px;
   }
 
   .editor-form__img {
@@ -265,7 +265,6 @@
 
   .editor-form__tool {
     padding-top: 15px;
-    padding-bottom: 13px;
   }
 
   .editor-form__tool:first-child {
@@ -276,3 +275,4 @@
     padding: 0;
   }
 }
+
