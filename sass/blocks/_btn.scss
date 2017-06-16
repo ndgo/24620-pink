@@ -62,6 +62,12 @@
   .btn--editor-submit {
     margin-bottom: 24px;
   }
+
+  .btn--modal-window {
+    display: inline-block;
+
+    width: 300px;
+  }
 }
 
 @media #{$desktop} {
@@ -92,5 +98,11 @@
   .btn--submit {
     width: 32%;
     min-width: inherit;
+  }
+
+  .btn--modal-window {
+    display: inline-block;
+
+    width: 460px;
   }
 }

@@ -6,9 +6,9 @@
   top: 50%;
   left: 50%;
   height: auto;
-  width: 100%;
+  width: 320px;
 
-  padding: 35px 20px 45px;
+  padding: 40px 20px 45px;
 
   text-align: center;
 
@@ -30,8 +30,10 @@
 
 .modal-window__text {
   @include embed-font($font-family, 14px, 24px, $midnight, $normal);
+}
 
-  margin-bottom: 30px;
+.modal-window__text--success {
+  padding-bottom: 30px;
 }
 
 .modal-window__inner {
@@ -39,9 +41,14 @@
   margin-left: -20px;
   margin-right: -20px;
 
-  padding: 50px 20px;
+  padding: 35px 20px;
 
   background-color: $white-smoke;
+}
+
+.modal-window__inner--success {
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 .modal-window__inner--failure {
@@ -49,15 +56,13 @@
 }
 
 .modal-window--hidden {
-  display: none;
+  display: block;
 }
 
 @media #{$tablet} {
   .modal-window {
-    width: 55%;
-
-    padding-left: 80px;
-    padding-right: 80px;
+    width: 465px;
+    padding: 35px 80px 70px;
   }
 
   .modal-window__text {
@@ -68,14 +73,39 @@
     font-size: 30px;
     line-height: 40px;
   }
+
+  .modal-window--failure {
+    width: 465px;
+  }
+
+  .modal-window__inner--success {
+    margin-bottom: -70px;
+    margin-left: -80px;
+    margin-right: -80px;
+    
+    padding-bottom: 40px;
+  }
 }
 
 @media #{$desktop} {
-  .modal-window {
-    width: 35%;
-  }
 
   .modal-window--success {
-    width: 50%;
+    width: 780px;
+
+    padding-top: 20px;
+
+    text-align: center;
+  }
+
+  .modal-window__inner--success {
+    margin-bottom: -70px;
+    margin-left: -80px;
+    margin-right: -80px;
+  }
+
+  .modal-window__text--success {
+    width: 460px;
+    text-align: center;
+    margin: 0 auto;
   }
 }
