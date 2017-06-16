@@ -84,12 +84,28 @@
 }
 
 .btn--editor-reset {
+  color: rgba($heather, .3);
+
+  border-color: rgba($heather, .3);
+
+  background-color: $transparent;
+
+}
+
+.btn--editor-reset:hover {
   color: $heather;
 
   border-color: $heather;
 
-  background-color: $transparent;
+  transition-duration: .3s;
+}
 
+.btn--editor-reset:active {
+  background-color: $heather;
+
+  color: rgba($white, .3);
+
+  transition-duration: .3s;
 }
 
 @media #{$tablet} {
