@@ -2,12 +2,27 @@
 @import "../global/mixins";
 
 .page-footer {
+  display: block;
+
   background-color: $white;
 }
 
+.page-footer--hidden {
+  display: none;
+}
+
 .page-footer__container {
-  padding-left: 20px;
-  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+  min-height: 285px;
+
+  margin: auto;
+  padding: 15px 20px;
+  box-sizing: border-box;
 }
 
 .page-footer__link {
@@ -16,4 +31,49 @@
 
 .page-footer__link-img {
   display: block;
+}
+
+@media #{$tablet} {
+  .page-footer {
+    display: block;
+
+    min-height: 125px;
+  }
+
+  .page-footer__container {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 125px;
+  }
+
+  .page-footer__social-container {
+    margin-right: 15px;
+  }
+}
+
+@media #{$desktop} {
+  .page-footer__container {
+    width: 940px;
+    min-height: 190px;
+
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .page-footer__container--forms-page {
+    min-height: 100px;
+  }
+
+  .page-footer__container--photos-page {
+    min-height: 225px;
+    padding-top: 30px;
+  }
+
+  .page-footer__social-container {
+    margin-left: 15px;
+    margin-right: 0;
+  }
 }

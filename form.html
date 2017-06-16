@@ -4,43 +4,60 @@
 <head>
   <meta charset="utf-8">
   <title>Pink: Конкурс</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
 <header class="page-header">
-  <div class="page-header__menu">
-    <div class="page-header__logo">
-      <a class="page-header__link" href="index.html">Pink</a>
-    </div>
-    <button class="page-header__toggle-control">Нажми</button>
-    <nav class="navigation">
-      <ul class="navigation__nav">
-        <li class="navigation__item">
-          <a class="navigation__link" href="index.html">Главная</a>
+  <nav class="navigation  navigation--opened  navigation--nojs">
+    <div class="navigation__container">
+      <div class="navigation__visible-row">
+        <div class="navigation__wrapper">
+          <a class="navigation__link" href="index.html">
+            <img class="navigation__link--img" src="img/logo-pink-white-mobile.svg" alt="logo">
+          </a>
+          <button class="navigation__toggle" type="button">Открыть меню</button>
+        </div>
+      </div>
+
+      <ul class="navigation__list">
+        <li class="navigation__list-item">
+          <a class="navigation__list-link" href="index.html">
+            <span class="navigation__link-text">Главная</span>
+          </a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="photos.html">Фотографии</a>
+        <li class="navigation__list-item">
+          <a class="navigation__list-link" href="photos.html">
+            <span class="navigation__link-text">Фотографии</span>
+          </a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="form.html">Конкурс</a>
+        <li class="navigation__list-item navigation__list-link--active">
+          <a class="navigation__list-link">
+            <span class="navigation__link-text">Конкурс</span>
+          </a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="https://htmlacademy.ru/">HTML Academy</a>
+        <li class="navigation__list-item">
+          <a class="navigation__list-link" href="https://htmlacademy.ru/">
+            <span class="navigation__link-text">HTML Academy</span>
+          </a>
         </li>
       </ul>
-    </nav>
-  </div>
-  <div class="page-header__title-container">
-    <h1 class="page-header__title">Конкурс на самое безбашеное путешествие с Пинк</h1>
-  </div>
+    </div>
+  </nav>
 </header>
 <main class="page-content">
+  <div class="promotion  promotion--small">
+    <h1 class="promotion__title  promotion__title--form">
+      Конкурс на самое безбашеное путешествие с Пинк
+    </h1>
+  </div>
   <div class="page-content__container">
     <div class="feedback-form">
       <div class="intro intro--forms-page">
-        <p class="intro__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
-          бонусную карту!</p>
+        <p class="intro__text intro__text--forms-page">Поделитесь своей историей и получите шанс выиграть ценный приз —
+          1000 миль на вашу бонусную карту! <span class="intro__text-hidden">Пожалуйста, заполните форму ниже:</span>
+        </p>
       </div>
       <form class="form" action="/send" method="post">
         <div class="form__fields form__fields--full-name">
@@ -58,45 +75,50 @@
           </label>
         </div>
         <div class="form__fields form__fields--achievements">
-          <h3 class="form__legend">Ваши безбашенные достижения в путешествии</h3>
-          <label class="form__checkbox">
+          <h3 class="form__legend">Ваши безбашенные достижения&nbsp;в путешествии</h3>
+          <label class="form__checkbox form__checkbox--shark-selfie">
             <input class="form__checkbox-input" type="checkbox" name="shark-selfie" checked="checked">
             <span class="form__checkbox-caption">Сделал селфи с акулой</span>
           </label>
-          <label class="form__checkbox">
+          <label class="form__checkbox form__checkbox--shiny-skin">
             <input class="form__checkbox-input" type="checkbox" name="shiny-skin" checked="checked">
             <span class="form__checkbox-caption">Обгорел на пляже</span>
           </label>
-          <label class="form__checkbox">
+          <label class="form__checkbox form__checkbox--see-chuck">
             <input class="form__checkbox-input" type="checkbox" name="see-chuck">
             <span class="form__checkbox-caption">Видел Чака Норриса</span>
           </label>
-          <label class="form__checkbox">
+          <label class="form__checkbox form__checkbox--bought-souvenirs">
             <input class="form__checkbox-input" type="checkbox" name="bought-souvenirs">
             <span class="form__checkbox-caption">Накупил сувениров</span>
           </label>
-          <label class="form__checkbox">
+          <label class="form__checkbox form__checkbox--defenced-tower">
             <input class="form__checkbox-input" type="checkbox" name="defenced-tower" checked="checked">
             <span class="form__checkbox-caption">Удержал башню</span>
           </label>
-          <label class="form__checkbox">
+          <label class="form__checkbox form__checkbox--destroyed-hotel">
             <input class="form__checkbox-input" type="checkbox" name="destroyed-hotel">
             <span class="form__checkbox-caption">Разгромил отель</span>
           </label>
         </div>
         <div class="form__fields form__fields--contacts">
-          <label class="form__text-field">
-            <span class="form__text-field-caption">номер телефона</span>
-            <input class="form__text-field-input" type="tel" placeholder="Номер, пожалуйста">
+          <h3 class="form__legend form__legend--hidden">Контактная информация</h3>
+          <label class="form__text-field form__text-field--phone">
+            <span class="form__text-field-caption form__text-field-caption--phone">номер телефона</span>
+            <input
+              class="form__text-field-input form__text-field-input--first" type="tel"
+              placeholder="Номер, пожалуйста">
           </label>
-          <label class="form__text-field">
-            <span class="form__text-field-caption">адрес почты</span>
-            <input class="form__text-field-input" type="email" placeholder="Введите почту *" required>
+          <label class="form__text-field form__text-field--mail">
+            <span class="form__text-field-caption form__text-field-caption--mail">адрес почты</span>
+            <input
+              class="form__text-field-input form__text-field-input--first" type="email"
+              placeholder="Введите почту *" required>
           </label>
         </div>
         <div class="form__fields form__fields--platform">
           <h3 class="form__legend">С каким приложением путешествовали?</h3>
-          <label class="from__radio">
+          <label class="form__radio">
             <input class="form__radio-input" type="radio" name="platform" checked="checked">
             <span class="form__radio-caption">Pink для iOS</span>
           </label>
@@ -117,7 +139,7 @@
         <div class="form__fields form__fields--submit">
           <button class="btn btn--submit" type="submit">Отправить форму</button>
           <p class="form__footer-note">
-            <span class="form__wildcard">*</span> — обязательные для заполнения поля
+            <span class="form__wildcard">*</span> — обязательные <span class="form__hidden">для заполнения</span> поля
           </p>
         </div>
       </form>
@@ -125,33 +147,35 @@
   </div>
 </main>
 <footer class="page-footer">
-  <div class="page-footer__container">
+  <div class="page-footer__container page-footer__container--forms-page">
     <div class="page-footer__logo">
       <a class="page-footer__link" href="/index.html">
-        <img class="page-footer__link-img" src="img/logo-pink-blue-mobile.svg" alt="Pink">
+        <img class="page-footer__link-img" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
       </a>
     </div>
-    <ul class="social">
-      <li class="social__item">
-        <a class="social__link" href="https://twitter.com/">
-          <img class="social__link-img" src="img/icon-twitter.svg" alt="Twitter">
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="https://www.facebook.com/">
-          <img class="social__link-img" src="img/icon-facebook.svg" alt="Facebook">
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="https://www.youtube.com/">
-          <img class="social__link-img" src="img/icon-youtube.svg" alt="Youtube">
-        </a>
-      </li>
-    </ul>
+    <div class="page-footer__social-container">
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link" href="https://twitter.com/">
+            <img class="social__link-img" src="img/icon-twitter.svg" width="19" height="14" alt="Twitter">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://www.facebook.com/">
+            <img class="social__link-img" src="img/icon-facebook.svg" width="9" height="18" alt="Facebook">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://www.youtube.com/">
+            <img class="social__link-img" src="img/icon-youtube.svg" width="15" height="13" alt="Youtube">
+          </a>
+        </li>
+      </ul>
+    </div>
     <div class="copyright">
       <span class="copyright__note">Разработано</span>
       <a class="copyright__link" href="https://htmlacademy.ru/">
-        <img class="copyright__link-img" src="img/logo-htmlacademy.svg" alt="Htmlacademy">
+        <img class="copyright__link-img" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Htmlacademy">
       </a>
     </div>
   </div>
@@ -165,8 +189,9 @@
 </div>
 <div class="modal-window modal-window--hidden modal-window--success">
   <h2 class="modal-window__header">Ваша заявка отправлена</h2>
-  <div class="modal-window__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы
-    рассмотрим ее и оповестим вас
+  <div class="modal-window__text modal-window__text--success">Спасибо за ваше участие, ваша заявка уже поступила к нам.
+    В ближайшее время мы
+    рассмотрим ее и оповестим&nbsp;вас
   </div>
   <div class="modal-window__inner modal-window__inner--success">
     <a class="btn btn--modal-window" href="#">Закрыть окно</a>

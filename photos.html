@@ -4,161 +4,198 @@
 <head>
   <meta charset="utf-8">
   <title>Pink: Фотографии</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
 <header class="page-header">
-  <div class="page-header__menu">
-    <div class="page-header__logo">
-      <a class="page-header__link" href="index.html">Pink</a>
-    </div>
-    <button class="page-header__toggle-control">Нажми</button>
-    <nav class="navigation">
-      <ul class="navigation__nav">
-        <li class="navigation__item">
-          <a class="navigation__link" href="index.html">Главная</a>
+  <nav class="navigation  navigation--opened  navigation--nojs">
+    <div class="navigation__container">
+      <div class="navigation__visible-row">
+        <div class="navigation__wrapper">
+          <a class="navigation__link" href="index.html">
+            <img class="navigation__link--img" src="img/logo-pink-white-mobile.svg" alt="logo">
+          </a>
+          <button class="navigation__toggle" type="button">Открыть меню</button>
+        </div>
+      </div>
+
+      <ul class="navigation__list">
+        <li class="navigation__list-item">
+          <a class="navigation__list-link" href="index.html">
+            <span class="navigation__link-text">Главная</span>
+          </a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="photos.html">Фотографии</a>
+        <li class="navigation__list-item navigation__list-link--active">
+          <a class="navigation__list-link">
+            <span class="navigation__link-text">Фотографии</span>
+          </a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="form.html">Конкурс</a>
+        <li class="navigation__list-item">
+          <a class="navigation__list-link" href="form.html">
+            <span class="navigation__link-text">Конкурс</span>
+          </a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="https://htmlacademy.ru/">HTML Academy</a>
+        <li class="navigation__list-item">
+          <a class="navigation__list-link" href="https://htmlacademy.ru/">
+            <span class="navigation__link-text">HTML Academy</span>
+          </a>
         </li>
       </ul>
-    </nav>
-  </div>
-  <div class="page-header__title-container">
-    <h1 class="page-header__title">Фотографии пользователей</h1>
-  </div>
+    </div>
+  </nav>
 </header>
 <main class="page-content">
+  <div class="promotion  promotion--small">
+    <h1 class="promotion__title">
+      Фотографии пользователей
+    </h1>
+  </div>
   <div class="photos">
     <div class="intro intro--photos-page">
-      <p class="intro__text">Взгляните на фотографии, которые выкладывают пользователи!</p>
-      <p class="intro__text">Видите, как нехватает ваших?</p>
+      <p class="intro__text intro__text--photos-page">Взгляните на фотографии, которые выкладывают пользователи! Видите,
+        как нехватает ваших?</p>
     </div>
     <div class="feed">
-      <div class="feed__container">
-        <div class="post post--choice">
-          <a class="post__link" href="#">
-            <img class="post__link-img" src="img/panorama-mobile@1x.jpg" alt="Картинка от пользователя">
-          </a>
-          <div class="post__container post__container--choice">
-            <div class="post__author"><span class="post__author-name">Анна</span>
-              <time class="post__published-at" datetime="2016-05-23 12:00">5 минут назад</time>
-            </div>
-            <div class="post__comment">
-              <p class="post__comment-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую
-                трансляцию в перископе, задавайте
-                свои вопросы!</p>
-            </div>
+      <div class="post post--choice" data-choice-marker="Панорама дня">
+        <a class="post__link" href="#">
+          <img class="post__link-img" src="img/panorama-mobile@1x.jpg" alt="Картинка от пользователя">
+        </a>
+        <div class="post__container post__container--choice">
+          <div class="post__author"><span class="post__author-name">Анна</span>
+            <time class="post__published-at" datetime="2016-05-23 12:00">(5 минут назад)</time>
+          </div>
+          <div class="post__comment post__comment--last-element">
+            <p class="post__comment-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую
+              трансляцию в перископе, задавайте
+              свои вопросы!</p>
+          </div>
+          <div class="post__like-container post__like-container--choice">
             <div class="like">
-              <span class="like__text">Нравится:</span>
+              <img class="like__icon" src="img/icon-heart.svg" width="13" height="12" alt="Like">
+              <span class="like__text">Нравится:&nbsp;</span>
               <span class="like__count">215</span>
             </div>
           </div>
         </div>
+      </div>
+      <div class="feed__container">
         <div class="post">
           <a class="post__link" href="#">
             <img class="post__link-img" src="img/photo-1-mobile@1x.jpg" alt="Картинка от пользователя">
           </a>
           <div class="post__container">
             <div class="post__author"><span class="post__author-name">Левон</span>
-              <time class="post__published-at" datetime="2016-05-23 12:00">5 часов назад</time>
+              <time class="post__published-at" datetime="2016-05-23 12:00">(5 часов назад)</time>
             </div>
             <div class="post__comment">
               <p class="post__comment-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             </div>
-            <div class="like">
-              <span class="like__text">Нравится:</span>
-              <span class="like__count">356</span>
+            <div class="post__like-container">
+              <div class="like">
+                <img class="like__icon" src="img/icon-heart.svg" width="13" height="12" alt="Like">
+                <span class="like__text">Нравится:&nbsp;</span>
+                <span class="like__count">356</span>
+              </div>
             </div>
           </div>
-          <div class="post">
-            <a class="post__link" href="#">
-              <img class="post__link-img" src="img/photo-2-mobile@1x.jpg" alt="Картинка от пользователя">
-            </a>
-            <div class="post__container">
-              <div class="post__author"><span class="post__author-name">Антон</span>
-                <time class="post__published-at" datetime="2016-05-23 12:00">12 часов назад</time>
-              </div>
-              <div class="post__comment">
-                <p class="post__comment-text">Соседи будут рады!</p>
-              </div>
+        </div>
+        <div class="post">
+          <a class="post__link" href="#">
+            <img class="post__link-img" src="img/photo-2-mobile@1x.jpg" alt="Картинка от пользователя">
+          </a>
+          <div class="post__container">
+            <div class="post__author"><span class="post__author-name">Антон</span>
+              <time class="post__published-at" datetime="2016-05-23 12:00">(12 часов назад)</time>
+            </div>
+            <div class="post__comment">
+              <p class="post__comment-text">Соседи будут рады!</p>
+            </div>
+            <div class="post__like-container">
               <div class="like">
-                <span class="like__text">Нравится:</span>
+                <img class="like__icon" src="img/icon-heart.svg" width="13" height="12" alt="Like">
+                <span class="like__text">Нравится:&nbsp;</span>
                 <span class="like__count">666</span>
               </div>
             </div>
           </div>
-          <div class="post">
-            <a class="post__link" href="#">
-              <img class="post__link-img" src="img/photo-3-mobile@1x.jpg" alt="Картинка от пользователя">
-            </a>
-            <div class="post__container">
-              <div class="post__author"><span class="post__author-name">Борис</span>
-                <time class="post__published-at" datetime="2016-05-23 12:00">20 часов назад</time>
-              </div>
-              <div class="post__comment">
-                <p class="post__comment-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              </div>
+        </div>
+        <div class="post">
+          <a class="post__link" href="#">
+            <img class="post__link-img" src="img/photo-3-mobile@1x.jpg" alt="Картинка от пользователя">
+          </a>
+          <div class="post__container">
+            <div class="post__author"><span class="post__author-name">Борис</span>
+              <time class="post__published-at" datetime="2016-05-23 12:00">(20 часов назад)</time>
+            </div>
+            <div class="post__comment">
+              <p class="post__comment-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            </div>
+            <div class="post__like-container">
               <div class="like">
-                <span class="like__text">Нравится:</span>
+                <img class="like__icon" src="img/icon-heart.svg" width="13" height="12" alt="Like">
+                <span class="like__text">Нравится:&nbsp;</span>
                 <span class="like__count">215</span>
               </div>
             </div>
           </div>
-          <div class="post">
-            <a class="post__link" href="#">
-              <img class="post__link-img" src="img/photo-4-mobile@1x.jpg" alt="Картинка от пользователя">
-            </a>
-            <div class="post__container">
-              <div class="post__author"><span class="post__author-name">Сергей</span>
-                <time class="post__published-at" datetime="2016-05-23 12:00">25 часов назад</time>
-              </div>
-              <div class="post__comment">
-                <p class="post__comment-text">Самая кубанская в мире!</p>
-              </div>
+        </div>
+        <div class="post">
+          <a class="post__link" href="#">
+            <img class="post__link-img" src="img/photo-4-mobile@1x.jpg" alt="Картинка от пользователя">
+          </a>
+          <div class="post__container">
+            <div class="post__author"><span class="post__author-name">Сергей</span>
+              <time class="post__published-at" datetime="2016-05-23 12:00">(25 часов назад)</time>
+            </div>
+            <div class="post__comment">
+              <p class="post__comment-text">Самая кубанская в мире!</p>
+            </div>
+            <div class="post__like-container">
               <div class="like">
-                <span class="like__text">Нравится:</span>
+                <img class="like__icon" src="img/icon-heart.svg" width="13" height="12" alt="Like">
+                <span class="like__text">Нравится:&nbsp;</span>
                 <span class="like__count">4</span>
               </div>
             </div>
           </div>
-          <div class="post">
-            <a class="post__link" href="#">
-              <img class="post__link-img" src="img/photo-5-mobile@1x.jpg" alt="Картинка от пользователя">
-            </a>
-            <div class="post__container">
-              <div class="post__author"><span class="post__author-name">Максим</span>
-                <time class="post__published-at" datetime="2016-05-23 12:00">40 часов назад</time>
-              </div>
-              <div class="post__comment">
-                <p class="post__comment-text">Где снег-то?</p>
-              </div>
+        </div>
+        <div class="post">
+          <a class="post__link" href="#">
+            <img class="post__link-img" src="img/photo-5-mobile@1x.jpg" alt="Картинка от пользователя">
+          </a>
+          <div class="post__container">
+            <div class="post__author"><span class="post__author-name">Максим</span>
+              <time class="post__published-at" datetime="2016-05-23 12:00">(40 часов назад)</time>
+            </div>
+            <div class="post__comment">
+              <p class="post__comment-text">Где снег-то?</p>
+            </div>
+            <div class="post__like-container">
               <div class="like">
-                <span class="like__text">Нравится:</span>
+                <img class="like__icon" src="img/icon-heart.svg" width="13" height="12" alt="Like">
+                <span class="like__text">Нравится:&nbsp;</span>
                 <span class="like__count">150</span>
               </div>
             </div>
           </div>
-          <div class="post">
-            <a class="post__link" href="#">
-              <img class="post__link-img" src="img/photo-6-mobile@1x.jpg" alt="Картинка от пользователя">
-            </a>
-            <div class="post__container">
-              <div class="post__author"><span class="post__author-name">Надежда</span>
-                <time class="post__published-at" datetime="2016-05-23 12:00">45 часов назад</time>
-              </div>
-              <div class="post__comment">
-                <p class="post__comment-text">Всем GM и взаимные лайки!</p>
-              </div>
+        </div>
+        <div class="post">
+          <a class="post__link" href="#">
+            <img class="post__link-img" src="img/photo-6-mobile@1x.jpg" alt="Картинка от пользователя">
+          </a>
+          <div class="post__container">
+            <div class="post__author"><span class="post__author-name">Надежда</span>
+              <time class="post__published-at" datetime="2016-05-23 12:00">(45 часов назад)</time>
+            </div>
+            <div class="post__comment">
+              <p class="post__comment-text">Всем GM и взаимные лайки!</p>
+            </div>
+            <div class="post__like-container">
               <div class="like">
-                <span class="like__text">Нравится:</span>
+                <img class="like__icon" src="img/icon-heart.svg" width="13" height="12" alt="Like">
+                <span class="like__text">Нравится:&nbsp;</span>
                 <span class="like__count">2560</span>
               </div>
             </div>
@@ -179,24 +216,31 @@
       <form class="editor-form" action="/post" method="post">
         <div class="editor-form__tools" role="group">
           <div class="editor-form__tool">
-            <label class="editor-form__range range--crop range--active" for="crop">
-              <img class="editor-form-img editor-form-crop" src="img/icon-editor-crop.svg" alt="Обрезать">
+            <label class="editor-form__range editor-form__range--crop editor-form__range--active" for="crop">
+              <img
+                class="editor-form__img editor-form__img--crop" src="img/icon-editor-crop.svg" width="44" height="44"
+                alt="Обрезать">
               <input
                 class="editor-form__range-control editor-form__range-control--crop" type="range" min="1" max="10"
                 step="1" value="3" id="crop">
             </label>
           </div>
           <div class="editor-form__tool">
-            <label class="range range--fill" for="fill">
-              <img class="editor-form-img editor-form-crop" src="img/icon-editor-fill.svg" alt="Залить">
+            <label class="editor-form__range editor-form__range--fill" for="fill">
+              <img
+                class="editor-form__img editor-form__img--fill" src="img/icon-editor-fill.svg" width="48" height="43"
+                alt="Залить">
               <input
                 class="editor-form__range-control editor-form__range-control--fill editor-form__range-control--hidden"
                 type="range" min="1" max="10" step="1" value="9" id="fill">
             </label>
           </div>
           <div class="editor-form__tool">
-            <label class="range range--contrast" for="contrast">
-              <img class="editor-form-img editor-form-crop" src="img/icon-editor-contrast.svg" alt="Контраст">
+            <label class="editor-form__range editor-form__range--contrast" for="contrast">
+              <img
+                class="editor-form__img editor-form__img--contrast" src="img/icon-editor-contrast.svg" width="32"
+                height="32"
+                alt="Контраст">
               <input
                 class="editor-form__range-control editor-form__range-control--contrast editor-form__range-control--hidden"
                 type="range" min="1" max="10" step="1" value="6" id="contrast">
@@ -212,35 +256,54 @@
   </div>
 </main>
 <footer class="page-footer">
-  <div class="page-footer__container">
+  <div class="page-footer__container page-footer__container--photos-page">
     <div class="page-footer__logo">
       <a class="page-footer__link" href="/index.html">
-        <img class="page-footer__link-img" src="img/logo-pink-blue-mobile.svg" alt="Pink">
+        <img class="page-footer__link-img" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Pink">
       </a>
     </div>
-    <ul class="social">
-      <li class="social__item">
-        <a class="social__link" href="https://twitter.com/">
-          <img class="social__link-img" src="img/icon-twitter.svg" alt="Twitter">
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="https://www.facebook.com/">
-          <img class="social__link-img" src="img/icon-facebook.svg" alt="Facebook">
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="https://www.youtube.com/">
-          <img class="social__link-img" src="img/icon-youtube.svg" alt="Youtube">
-        </a>
-      </li>
-    </ul>
+    <div class="page-footer__social-container">
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link" href="https://twitter.com/">
+            <img class="social__link-img" src="img/icon-twitter.svg" width="19" height="14" alt="Twitter">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://www.facebook.com/">
+            <img class="social__link-img" src="img/icon-facebook.svg" width="9" height="18" alt="Facebook">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://www.youtube.com/">
+            <img class="social__link-img" src="img/icon-youtube.svg" width="15" height="13" alt="Youtube">
+          </a>
+        </li>
+      </ul>
+    </div>
     <div class="copyright">
       <span class="copyright__note">Разработано</span>
       <a class="copyright__link" href="https://htmlacademy.ru/">
-        <img class="copyright__link-img" src="img/logo-htmlacademy.svg" alt="Htmlacademy">
+        <img class="copyright__link-img" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Htmlacademy">
       </a>
     </div>
   </div>
 </footer>
+<div class="modal-window modal-window--hidden modal-window--failure">
+  <h2 class="modal-window__header">Что-то пошло не так!</h2>
+  <div class="modal-window__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</div>
+  <div class="modal-window__inner modal-window__inner--failure">
+    <a class="btn btn--modal-window" href="#">ok</a>
+  </div>
+</div>
+<div class="modal-window modal-window--hidden modal-window--success">
+  <h2 class="modal-window__header">Ваша заявка отправлена</h2>
+  <div class="modal-window__text modal-window__text--success">Спасибо за ваше участие, ваша заявка уже поступила к нам.
+    В ближайшее время мы
+    рассмотрим ее и оповестим&nbsp;вас
+  </div>
+  <div class="modal-window__inner modal-window__inner--success">
+    <a class="btn btn--modal-window" href="#">Закрыть окно</a>
+  </div>
+</div>
 </body>

@@ -1,30 +1,145 @@
 @import "../variables";
 @import "../global/mixins";
 
-.pricing-table__plan-name {
-  @include embed-font($sans-bold-family, 18px, 30px, $white);
+.pricing-table {
+  margin-bottom: 40px;
+}
 
-  font-weight: normal;
+.pricing-table__cell {
+  position: relative;
+
+  background-color: $white;
+
+  padding: 15px 18px 14px 25px;
+
+  box-sizing: border-box;
+
+  border-right: 2px solid $whisper;
+  border-bottom: 2px solid $whisper;
+  border-left: 2px solid $whisper;
+
+  text-transform: uppercase;
+}
+
+.pricing-table__cell--header {
+  background-color: $midnight;
+
+  padding: 16px 40px 20px;
+
+  border-left: 2px solid $whisper;
+  border-right: 2px solid $whisper;
+  border-bottom: 2px solid $midnight;
+}
+
+.pricing-table__cell--hit {
+  overflow: hidden;
+}
+
+.pricing-table__cell--hit::before {
+  @include embed-font($font-family, 14px, 30px, $white, $bold);
+
+  content: attr(data-tag);
+  position: absolute;
+  top: 10px;
+  left: -35px;
+
+  display: block;
+  width: 120px;
+  height: 30px;
+
+  background-color: $cerise;
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+
+  transform: rotate(-45deg);
+}
+
+.pricing-table__cell--transparent {
+  background-color: $transparent;
+
+  border-left: 2px solid $transparent;
+  border-right: 2px solid $transparent;
+  border-bottom: 2px solid $whisper;
+}
+
+.pricing-table__cell--column-header {
+  display: none;
+}
+
+.pricing-table__plan-name {
+  @include embed-font($font-family, 18px, 30px, $white, $bold);
+
+  display: block;
 
   text-transform: uppercase;
 }
 
 .pricing-table__plan-price {
-  @include embed-font($sans-regular-family, 24px, 30px, $white);
-
-  font-weight: normal;
+  @include embed-font($font-family, 24px, 30px, $white, $normal);
 
   text-transform: uppercase;
 }
 
-.pricing-table__cell {
-  background-color: $white;
-}
-
-.pricing-table__cell--header {
-  background-color: $midnight;
-}
-
 .pricing-table__option-name {
-  @include embed-font($sans-regular-family, 14px, 30px, $midnight);
+  @include embed-font($font-family, 14px, 30px, $midnight, $normal);
+}
+
+.pricing-table__option-name--title {
+  @include embed-font($font-family, 14px, 30px, $midnight, $normal);
+}
+
+.pricing-table__option-status {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+
+  transform: translateY(-50%);
+}
+
+@media #{$tablet} {
+  .pricing-table__cell {
+    min-height: 45px;
+
+    padding: 8px 0 8px 15px;
+
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .pricing-table__cell--column-header {
+    display: table-cell;
+  }
+
+  .pricing-table__option-name {
+    display: none;
+  }
+
+  .pricing-table__option-name--title {
+    display: block;
+
+    text-align: left;
+    text-transform: none;
+  }
+
+  .pricing-table__option-status {
+    position: static;
+    top: auto;
+    right: auto;
+
+    display: inline-block;
+
+    transform: none;
+  }
+}
+
+@media #{$desktop} {
+  .pricing-table__option-name--title {
+    font-size: 18px;
+  }
+
+  .pricing-table__cell {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
