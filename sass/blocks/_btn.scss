@@ -71,6 +71,18 @@
   background-color: $transparent;
 }
 
+.btn--editor-submit:hover {
+  background-color: $cerise;
+  border-color: $cerise;
+  color: $white;
+  transition-duration: .3s;
+}
+
+.btn--editor-submit:active {
+  color: rgba($white, .3);
+  transition-duration: .3s;
+}
+
 .btn--editor-reset {
   color: $heather;
 
