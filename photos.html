@@ -9,40 +9,40 @@
 </head>
 
 <body>
-<header class="page-header page-header--photos-page">
-  <div class="page-header__menu page-header__menu--photos-page">
-    <div class="page-header__menu-container">
-      <div class="page-header__logo">
-        <a class="page-header__link" href="index.html">
-          <img src="img/logo-pink-white-mobile.svg" alt="Pink">
+<header class="page-header">
+  <nav class="navigation  navigation--opened  navigation--nojs">
+    <div class="navigation__visible-row">
+      <div class="navigation__wrapper">
+        <a href="/index.html">
+          <img src="/img/logo-pink-white-mobile.svg" alt="logo">
         </a>
+        <button class="navigation__toggle" type="button">Открыть меню</button>
       </div>
-      <button class="page-header__toggle-control">
-        <img
-          class="page-header__toggle-control-img" width="50" height="25" src="img/icon-menu-burger.svg"
-          alt="Управление меню">
-      </button>
-      <nav class="navigation navigation--hidden">
-        <ul class="navigation__nav">
-          <li class="navigation__item">
-            <a class="navigation__link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="photos.html">Фотографии</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="https://htmlacademy.ru/">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
     </div>
-  </div>
-  <div class="page-header__title-container">
-    <h1 class="page-header__title page-header__title--photos-page">Фотографии пользователей</h1>
-  </div>
+
+    <ul class="navigation__list">
+      <li class="navigation__list-item">
+        <a class="navigation__list-link navigation__list-link--active">
+          <span class="navigation__link-text">Главная</span>
+        </a>
+      </li>
+      <li class="navigation__list-item">
+        <a class="navigation__list-link" href="/photos.html">
+          <span class="navigation__link-text">Фотографии</span>
+        </a>
+      </li>
+      <li class="navigation__list-item">
+        <a class="navigation__list-link" href="/form.html">
+          <span class="navigation__link-text">Конкурс</span>
+        </a>
+      </li>
+      <li class="navigation__list-item">
+        <a class="navigation__list-link" href="https://htmlacademy.ru/">
+          <span class="navigation__link-text">HTML Academy</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
 </header>
 <main class="page-content">
   <div class="photos">
