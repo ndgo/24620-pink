@@ -207,6 +207,10 @@
   }
 }
 
+.navigation__list-link {
+  @include embed-font($font-family, 18px, 32px, $white, $bold);
+}
+
 .navigation__list-link:hover {
   color: $cerise;
 }
@@ -216,8 +220,6 @@
 }
 
 .navigation__link-text {
-  @include embed-font($font-family, 18px, 32px, $white, $bold);
-
   position: relative;
 }
 
