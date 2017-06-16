@@ -18,6 +18,8 @@
   text-transform: none;
 
   box-sizing: border-box;
+
+  outline: 0;
 }
 
 .btn--promo:hover {
@@ -43,6 +45,20 @@
   background-color: $sea-green;
 
   text-transform: uppercase;
+}
+
+.btn--submit:hover,
+.btn--modal-window:hover {
+  background-color: $eucalyptus;
+  transition-duration: .3s;
+  transition-property: background-color;
+}
+
+.btn--submit:active,
+.btn--modal-window:active {
+  color: rgba($white, .7);
+  transition-duration: .3s;
+  transition-property: color;
 }
 
 .btn--editor-submit {
