@@ -26,6 +26,14 @@
 }
 
 @media #{$desktop} {
+  .navigation__list {
+    position: static;
+
+    top: auto;
+  }
+}
+
+@media #{$desktop} {
   .navigation {
     display: flex;
     flex-wrap: wrap;
@@ -234,7 +242,7 @@
 }
 
 .navigation__list-link {
-  @include embed-font($font-family, 18px, 32px, $white, $bold);
+  @include embed-font($font-family, 18px, 32px, $white, $normal);
 }
 
 .navigation__list-link:hover {
