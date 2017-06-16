@@ -164,6 +164,12 @@
   position: relative;
 }
 
+@media #{$desktop} {
+  .navigation.navigation--nojs {
+    position: absolute;
+  }
+}
+
 .navigation--nojs .navigation__toggle {
   display: none;
 }
