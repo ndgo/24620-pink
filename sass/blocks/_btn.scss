@@ -61,6 +61,12 @@
   transition-property: color;
 }
 
+.btn--submit:disabled,
+.btn--modal-window:disabled {
+  background-color: $whisper;
+  color: $white;
+}
+
 .btn--editor-submit {
   margin-bottom: 10px;
 
