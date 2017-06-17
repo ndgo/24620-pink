@@ -42,66 +42,6 @@
   transition-duration: 0s
 }
 
-.page-footer .logo-pink-tablet:hover .logo-pink-tablet__letters {
-  fill: $cerise;
-  transition-duration: .3s
-}
-
-.page-footer .logo-pink-desktop, .page-footer .logo-pink-tablet {
-  width: 147px;
-  height: 40px
-}
-
-.page-footer .logo-pink-desktop__letters, .page-footer .logo-pink-tablet__letters {
-  fill: $midnight
-}
-
-.page-footer .logo-pink-desktop__glasses, .page-footer .logo-pink-desktop__spark, .page-footer .logo-pink-tablet__glasses {
-  fill: $cerise
-}
-
-.page-footer .logo-pink-desktop__sparks {
-  fill: $midnight
-}
-
-.page-footer .logo-pink-tablet:active .logo-pink-tablet__letters {
-  fill: $midnight;
-  opacity: .3;
-  transition-duration: 0s;
-}
-
-.page-footer .logo-pink-tablet:active .logo-pink-tablet__glasses {
-  opacity: .3;
-  transition-duration: 0s
-}
-
-.page-footer .logo-pink-desktop:hover .logo-pink-desktop__letters {
-  fill: $cerise;
-  transition-duration: .3s
-}
-
-.page-footer .logo-pink-desktop:hover .logo-pink-desktop__spark, .page-footer .logo-pink-desktop:hover .logo-pink-desktop__sparks {
-  fill: $midnight;
-  transition-duration: .3s
-}
-
-.page-footer .logo-pink-desktop:active .logo-pink-desktop__letters, .page-footer .logo-pink-desktop:active .logo-pink-desktop__sparks {
-  fill: $midnight;
-  opacity: .3;
-  transition-duration: 0s
-}
-
-.page-footer .logo-pink-desktop:active .logo-pink-desktop__glasses {
-  opacity: .3;
-  transition-duration: 0s
-}
-
-.page-footer .logo-pink-desktop:active .logo-pink-desktop__spark {
-  fill: $cerise;
-  opacity: .3;
-  transition-duration: 0s
-}
-
 .navigation {
   position: absolute;
   top: 0;
