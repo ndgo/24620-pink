@@ -158,6 +158,10 @@
   .post__comment-text {
     padding-bottom: 23px;
   }
+
+  .post__link-img--choice {
+    min-height: 509px;
+  }
 }
 
 @media #{$desktop} {
@@ -193,4 +197,7 @@
     box-sizing: border-box;
   }
 
+  .post__link-img--choice {
+    min-height: 506px;
+  }
 }
