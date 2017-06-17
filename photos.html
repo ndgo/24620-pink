@@ -64,7 +64,17 @@
     <div class="feed">
       <div class="post post--choice" data-choice-marker="Панорама дня">
         <a class="post__link" href="#">
-          <img class="post__link-img" src="img/panorama-mobile@1x.jpg" alt="Картинка от пользователя">
+          <picture>
+            <source media="(min-width: 1200px)"
+                    srcset="img/panorama-desktop@1x.jpg,
+                         img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 700px)"
+                    srcset="img/panorama-tablet@1x.jpg,
+                        img/panorama-tablet@2x.jpg 2x">
+            <img class="post__link-img" srcset="img/panorama-mobile@1x.jpg,
+                         img/panorama-mobile@2x.jpg 2x"
+                 alt="Картинка от пользователя">
+          </picture>
         </a>
         <div class="post__container post__container--choice">
           <div class="post__author"><span class="post__author-name">Анна</span>
@@ -87,7 +97,17 @@
       <div class="feed__container">
         <div class="post">
           <a class="post__link" href="#">
-            <img class="post__link-img" src="img/photo-1-mobile@1x.jpg" alt="Картинка от пользователя">
+            <picture>
+              <source media="(min-width: 1200px)"
+                      srcset="img/photo-1-desktop@1x.jpg,
+                             img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 700px)"
+                      srcset="img/photo-1-tablet@1x.jpg,
+                            img/photo-1-tablet@2x.jpg 2x">
+              <img class="post__link-img" srcset="img/photo-1-mobile@1x.jpg,
+                             img/photo-1-mobile@2x.jpg 2x"
+                   alt="Картинка от пользователя">
+            </picture>
           </a>
           <div class="post__container">
             <div class="post__author"><span class="post__author-name">Левон</span>
@@ -107,7 +127,17 @@
         </div>
         <div class="post">
           <a class="post__link" href="#">
-            <img class="post__link-img" src="img/photo-2-mobile@1x.jpg" alt="Картинка от пользователя">
+            <picture>
+              <source media="(min-width: 1200px)"
+                      srcset="img/photo-2-desktop@1x.jpg,
+                             img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 700px)"
+                      srcset="img/photo-2-tablet@1x.jpg,
+                            img/photo-2-tablet@2x.jpg 2x">
+              <img class="post__link-img" srcset="img/photo-2-mobile@1x.jpg,
+                             img/photo-2-mobile@2x.jpg 2x"
+                   alt="Картинка от пользователя">
+            </picture>
           </a>
           <div class="post__container">
             <div class="post__author"><span class="post__author-name">Антон</span>
@@ -127,7 +157,18 @@
         </div>
         <div class="post">
           <a class="post__link" href="#">
-            <img class="post__link-img" src="img/photo-3-mobile@1x.jpg" alt="Картинка от пользователя">
+            <picture>
+              <source media="(min-width: 1200px)"
+                      srcset="img/photo-3-desktop@1x.jpg,
+                             img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 700px)"
+                      srcset="img/photo-3-tablet@1x.jpg,
+                            img/photo-3-tablet@2x.jpg 2x">
+              <img class="post__link-img" srcset="img/photo-3-mobile@1x.jpg,
+                             img/photo-3-mobile@2x.jpg 2x"
+                   alt="Картинка от пользователя">
+            </picture>
+
           </a>
           <div class="post__container">
             <div class="post__author"><span class="post__author-name">Борис</span>
@@ -147,7 +188,17 @@
         </div>
         <div class="post">
           <a class="post__link" href="#">
-            <img class="post__link-img" src="img/photo-4-mobile@1x.jpg" alt="Картинка от пользователя">
+            <picture>
+              <source media="(min-width: 1200px)"
+                      srcset="img/photo-4-desktop@1x.jpg,
+                             img/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 700px)"
+                      srcset="img/photo-4-tablet@1x.jpg,
+                            img/photo-4-tablet@2x.jpg 2x">
+              <img class="post__link-img" srcset="img/photo-4-mobile@1x.jpg,
+                             img/photo-4-mobile@2x.jpg 2x"
+                   alt="Картинка от пользователя">
+            </picture>
           </a>
           <div class="post__container">
             <div class="post__author"><span class="post__author-name">Сергей</span>
@@ -167,7 +218,18 @@
         </div>
         <div class="post">
           <a class="post__link" href="#">
-            <img class="post__link-img" src="img/photo-5-mobile@1x.jpg" alt="Картинка от пользователя">
+            <picture>
+              <source media="(min-width: 1200px)"
+                      srcset="img/photo-5-desktop@1x.jpg,
+                             img/photo-5-desktop@2x.jpg 2x">
+              <source media="(min-width: 700px)"
+                      srcset="img/photo-5-tablet@1x.jpg,
+                            img/photo-5-tablet@2x.jpg 2x">
+              <img class="post__link-img" srcset="img/photo-5-mobile@1x.jpg,
+                             img/photo-5-mobile@2x.jpg 2x"
+                   alt="Картинка от пользователя">
+            </picture>
+
           </a>
           <div class="post__container">
             <div class="post__author"><span class="post__author-name">Максим</span>
@@ -187,7 +249,17 @@
         </div>
         <div class="post">
           <a class="post__link" href="#">
-            <img class="post__link-img" src="img/photo-6-mobile@1x.jpg" alt="Картинка от пользователя">
+            <picture>
+              <source media="(min-width: 1200px)"
+                      srcset="img/photo-6-desktop@1x.jpg,
+                             img/photo-6-desktop@2x.jpg 2x">
+              <source media="(min-width: 700px)"
+                      srcset="img/photo-6-tablet@1x.jpg,
+                            img/photo-6-tablet@2x.jpg 2x">
+              <img class="post__link-img" srcset="img/photo-6-mobile@1x.jpg,
+                             img/photo-6-mobile@2x.jpg 2x"
+                   alt="Картинка от пользователя">
+            </picture>
           </a>
           <div class="post__container">
             <div class="post__author"><span class="post__author-name">Надежда</span>
