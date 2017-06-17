@@ -58,6 +58,18 @@
   margin-right: 0;
 }
 
+.review__control:hover {
+  transition-duration: .3s;
+  transition-property: background-color;
+  background-color: $light-stale-gray;
+}
+
+.review__control:active {
+  transition-duration: .3s;
+  transition-property: background-color;
+  background-color: $pattens-blue;
+}
+
 #review__slide-1:checked ~ .review__controls [for="review__slide-1"],
 #review__slide-2:checked ~ .review__controls [for="review__slide-2"],
 #review__slide-3:checked ~ .review__controls [for="review__slide-3"] {
