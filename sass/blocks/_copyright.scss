@@ -17,6 +17,26 @@
 
 .copyright__link {
   display: block;
+
+  fill: $cerise;
+}
+
+.copyright__link:hover {
+  transition-duration: .3s;
+  transition-property: fill;
+  fill: $midnight;
+}
+
+.copyright__link:hover {
+  transition-duration: .3s;
+  transition-property: fill;
+  fill: $midnight;
+}
+
+.copyright__link:active {
+  transition-duration: .3s;
+  transition-property: fill;
+  fill: rgba($midnight, .3);
 }
 
 .copyright__link-img {
