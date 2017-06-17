@@ -27,7 +27,7 @@
   text-align: center;
   color: $white;
   background-color: $midnight;
-  background-image: url(../img/iphone-hand-mobile@1x.png), url(/img/bg-back-mobile@1x.jpg);
+  background-image: url(../img/iphone-hand-mobile@1x.png), url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: center 176px, center top;
   background-size: 258px, 700px;
@@ -36,7 +36,7 @@
 @media #{$tablet} {
   .promotion {
     height: 728px;
-    background-image: url(../img/iphone-hand-mobile@1x.png), url(/img/bg-back-mobile@1x.jpg);
+    background-image: url(../img/iphone-hand-mobile@1x.png), url(../img/bg-back-mobile@1x.jpg);
     background-position: center bottom, center top;
     background-size: 695px, cover;
   }
