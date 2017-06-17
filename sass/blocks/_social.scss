@@ -22,6 +22,19 @@
   border-radius: 50%;
 
   text-align: center;
+
+  fill: $cerise;
+}
+
+.social__link:hover {
+  border-color: $midnight;
+  transition-duration: .3s;
+}
+
+.social__link:active {
+  fill: rgba($cerise, .3);
+  border-color: $pattens-blue;
+  transition-duration: .3s;
 }
 
 .social__link-img {
