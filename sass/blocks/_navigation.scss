@@ -1,7 +1,7 @@
 @import "../variables";
 @import "../global/mixins";
 
-.logo-pink-mobile:hover use, .logo-pink-tablet:hover use, .page-footer .logo-pink-tablet:hover .logo-pink-tablet__letters, .range-field--active {
+.logo-pink-mobile:hover, .logo-pink-tablet:hover, .page-footer .logo-pink-tablet:hover .logo-pink-tablet__letters, .range-field--active {
   fill: $cerise;
   transition-duration: .3s
 }
@@ -14,28 +14,28 @@
   fill: currentColor
 }
 
-.logo-pink-desktop use, .logo-pink-mobile use, .logo-pink-tablet use {
+.logo-pink-desktop, .logo-pink-mobile, .logo-pink-tablet {
   fill: $white;
   transition-duration: .3s
 }
 
-.logo-pink-desktop use {
+.logo-pink-desktop {
   color: $cerise
 }
 
-.logo-pink-mobile:active use, .logo-pink-tablet:active use {
+.logo-pink-mobile:active, .logo-pink-tablet:active {
   fill: $white;
   opacity: .3;
   transition: none
 }
 
-.logo-pink-desktop:hover use {
+.logo-pink-desktop:hover {
   fill: $cerise;
   color: $white;
   transition-duration: .3s
 }
 
-.logo-pink-desktop:active use {
+.logo-pink-desktop:active {
   fill: $white;
   color: $cerise;
   opacity: .3;
