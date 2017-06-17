@@ -53,13 +53,27 @@
   margin-right: 15px;
 
   background-color: $spindle;
-  border: 3px solid $white;
+  border: 3px solid $white-smoke;
   border-radius: 50%;
   transition-duration: .3s;
+
+  cursor: pointer;
 }
 
 .pricing-slider__control:last-child {
   margin-right: 0;
+}
+
+.pricing-slider__control:hover {
+  transition-duration: .3s;
+  transition-property: background-color;
+  background-color: $light-stale-gray;
+}
+
+.pricing-slider__control:active {
+  transition-duration: .3s;
+  transition-property: background-color;
+  background-color: $pattens-blue;
 }
 
 #pricing-slider__slide-1:checked ~ .pricing-slider__controls [for="pricing-slider__slide-1"],
