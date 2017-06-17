@@ -1,6 +1,102 @@
 @import "../variables";
 @import "../global/mixins";
 
+.logo-pink-mobile:hover use, .logo-pink-tablet:hover use, .page-footer .logo-pink-tablet:hover .logo-pink-tablet__letters, .range-field--active {
+  fill: $cerise;
+  transition-duration: .3s
+}
+
+.logo-pink-desktop__glasses, .logo-pink-desktop__letters, .logo-pink-mobile__letters, .logo-pink-tablet__glasses, .logo-pink-tablet__letters {
+  fill: inherit
+}
+
+.logo-pink-desktop__spark, .logo-pink-desktop__sparks {
+  fill: currentColor
+}
+
+.logo-pink-desktop use, .logo-pink-mobile use, .logo-pink-tablet use {
+  fill: $white;
+  transition-duration: .3s
+}
+
+.logo-pink-desktop use {
+  color: $cerise
+}
+
+.logo-pink-mobile:active use, .logo-pink-tablet:active use {
+  fill: $white;
+  opacity: .3;
+  transition: none
+}
+
+.logo-pink-desktop:hover use {
+  fill: $cerise;
+  color: $white;
+  transition-duration: .3s
+}
+
+.logo-pink-desktop:active use {
+  fill: $white;
+  color: $cerise;
+  opacity: .3;
+  transition-duration: 0s
+}
+
+.page-footer .logo-pink-desktop, .page-footer .logo-pink-tablet {
+  width: 147px;
+  height: 40px
+}
+
+.page-footer .logo-pink-desktop__letters, .page-footer .logo-pink-tablet__letters {
+  fill: $midnight
+}
+
+.page-footer .logo-pink-desktop__glasses, .page-footer .logo-pink-desktop__spark, .page-footer .logo-pink-tablet__glasses {
+  fill: $cerise
+}
+
+.icon-htmlacademy:hover, .page-footer .logo-pink-desktop__sparks {
+  fill: $midnight
+}
+
+.page-footer .logo-pink-tablet:active .logo-pink-tablet__letters {
+  fill: $midnight;
+  opacity: .3;
+  transition-duration: 0s
+}
+
+.page-footer .logo-pink-tablet:active .logo-pink-tablet__glasses {
+  opacity: .3;
+  transition-duration: 0s
+}
+
+.icon-htmlacademy, .page-footer .logo-pink-desktop:hover .logo-pink-desktop__letters {
+  fill: $cerise;
+  transition-duration: .3s
+}
+
+.page-footer .logo-pink-desktop:hover .logo-pink-desktop__spark, .page-footer .logo-pink-desktop:hover .logo-pink-desktop__sparks {
+  fill: $midnight;
+  transition-duration: .3s
+}
+
+.page-footer .logo-pink-desktop:active .logo-pink-desktop__letters, .page-footer .logo-pink-desktop:active .logo-pink-desktop__sparks {
+  fill: $midnight;
+  opacity: .3;
+  transition-duration: 0s
+}
+
+.icon-htmlacademy:active, .page-footer .logo-pink-desktop:active .logo-pink-desktop__glasses {
+  opacity: .3;
+  transition-duration: 0s
+}
+
+.page-footer .logo-pink-desktop:active .logo-pink-desktop__spark {
+  fill: $cerise;
+  opacity: .3;
+  transition-duration: 0s
+}
+
 .navigation {
   position: absolute;
   top: 0;
