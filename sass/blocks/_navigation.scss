@@ -1,41 +1,71 @@
 @import "../variables";
 @import "../global/mixins";
 
-.logo-pink-mobile:hover use, .logo-pink-tablet:hover use {
+.navigation__logo-desktop {
+  display: none
+}
+
+@media (min-width: 1200px) {
+  .navigation__logo-desktop {
+    display: block
+  }
+}
+
+.navigation__logo-mobile {
+  display: none
+}
+
+@media (max-width: 659px) {
+  .navigation__logo-mobile {
+    display: block
+  }
+}
+
+.navigation__logo-tablet {
+  display: none
+}
+
+@media (min-width: 660px) and (max-width: 1199px) {
+  .navigation__logo-tablet {
+    display: block
+  }
+}
+
+.navigation__logo-mobile:hover use, .navigation__logo-tablet:hover use {
   fill: $cerise;
   transition-duration: .3s
 }
 
-.logo-pink-desktop__glasses, .logo-pink-desktop__letters, .logo-pink-mobile__letters, .logo-pink-tablet__glasses, .logo-pink-tablet__letters {
+.navigation__logo-glasses, .navigation__logo-letters, .navigation__logo-letters-mobile, .navigation__logo-glasses-tablet, .navigation__logo-letters-tablet {
   fill: inherit
 }
 
-.logo-pink-desktop__spark, .logo-pink-desktop__sparks {
+.navigation__logo-star, .navigation__logo-starts {
   fill: currentColor
 }
 
-.logo-pink-desktop use, .logo-pink-mobile use, .logo-pink-tablet use {
+.navigation__logo-desktop use, .navigation__logo-mobile use, .navigation__logo-tablet use {
   fill: $white;
   transition-duration: .3s
 }
 
-.logo-pink-desktop use {
+.navigation__logo-desktop use {
   color: $cerise
 }
 
-.logo-pink-mobile:active use, .logo-pink-tablet:active use {
+.navigation__logo-mobile:active use, .navigation__logo-tablet:active use {
   fill: $white;
   opacity: .3;
   transition: none
 }
 
-.logo-pink-desktop:hover use {
+.navigation__logo-desktop:hover use {
   fill: $cerise;
   color: $white;
   transition-duration: .3s
 }
 
-.logo-pink-desktop:active use {
+.navigation__logo-desktop:active use {
   fill: $white;
   color: $cerise;
   opacity: .3;
