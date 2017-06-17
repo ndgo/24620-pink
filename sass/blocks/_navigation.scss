@@ -1,7 +1,7 @@
 @import "../variables";
 @import "../global/mixins";
 
-.logo-pink-mobile:hover, .logo-pink-tablet:hover, .page-footer .logo-pink-tablet:hover .logo-pink-tablet__letters, .range-field--active {
+.logo-pink-mobile:hover, .logo-pink-tablet:hover, .page-footer .logo-pink-tablet:hover .logo-pink-tablet__letters {
   fill: $cerise;
   transition-duration: .3s
 }
