@@ -107,14 +107,11 @@
 
   .features__list::before {
     position: absolute;
-
-    bottom: -30px;
-    left: 20px;
-    transform: unset;
-
     width: 268px;
-    height: 512px;
-    background: url(../../img/iphone-screen-mobile@1x.png) no-repeat;
+    height: 485px;
+    bottom: -30px;
+    left: 40px;
+    background: url(../img/iphone-screen-3-tablet@1x.png) no-repeat;
     background-size: cover;
     content: "";
   }
@@ -138,6 +135,12 @@
 
     font-size: 30px;
     line-height: 36px;
+  }
+}
+
+@media #{$tablet} and #{$min-dpi}, #{$tablet} and #{$min-dppx}{
+  .features__list::before {
+    background-image: url("../img/iphone-screen-3-tablet@2x.png");
   }
 }
 
