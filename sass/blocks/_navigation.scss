@@ -1,21 +1,20 @@
 @import "../variables";
 @import "../global/mixins";
 
-.logo-pink-mobile:hover use,.logo-pink-tablet:hover use,.page-footer .logo-pink-tablet:hover .logo-pink-tablet__letters,.range-field--active {
+.logo-pink-mobile:hover use, .logo-pink-tablet:hover use, .page-footer .logo-pink-tablet:hover .logo-pink-tablet__letters {
   fill: #d22856;
   transition-duration: .3s
 }
 
-
-.logo-pink-desktop__glasses,.logo-pink-desktop__letters,.logo-pink-mobile__letters,.logo-pink-tablet__glasses,.logo-pink-tablet__letters {
+.logo-pink-desktop__glasses, .logo-pink-desktop__letters, .logo-pink-mobile__letters, .logo-pink-tablet__glasses, .logo-pink-tablet__letters {
   fill: inherit
 }
 
-.logo-pink-desktop__spark,.logo-pink-desktop__sparks {
+.logo-pink-desktop__spark, .logo-pink-desktop__sparks {
   fill: currentColor
 }
 
-.logo-pink-desktop use,.logo-pink-mobile use,.logo-pink-tablet use {
+.logo-pink-desktop use, .logo-pink-mobile use, .logo-pink-tablet use {
   fill: #fff;
   transition-duration: .3s
 }
@@ -24,7 +23,7 @@
   color: #d22856
 }
 
-.logo-pink-mobile:active use,.logo-pink-tablet:active use {
+.logo-pink-mobile:active use, .logo-pink-tablet:active use {
   fill: #fff;
   opacity: .3;
   transition: none
@@ -43,20 +42,20 @@
   transition-duration: 0s
 }
 
-.page-footer .logo-pink-desktop,.page-footer .logo-pink-tablet {
+.page-footer .logo-pink-desktop, .page-footer .logo-pink-tablet {
   width: 147px;
   height: 40px
 }
 
-.page-footer .logo-pink-desktop__letters,.page-footer .logo-pink-tablet__letters {
+.page-footer .logo-pink-desktop__letters, .page-footer .logo-pink-tablet__letters {
   fill: #283645
 }
 
-.page-footer .logo-pink-desktop__glasses,.page-footer .logo-pink-desktop__spark,.page-footer .logo-pink-tablet__glasses {
+.page-footer .logo-pink-desktop__glasses, .page-footer .logo-pink-desktop__spark, .page-footer .logo-pink-tablet__glasses {
   fill: #d22856
 }
 
-.icon-htmlacademy:hover,.page-footer .logo-pink-desktop__sparks {
+.icon-htmlacademy:hover, .page-footer .logo-pink-desktop__sparks {
   fill: #283645
 }
 
@@ -71,23 +70,23 @@
   transition-duration: 0s
 }
 
-.icon-htmlacademy,.page-footer .logo-pink-desktop:hover .logo-pink-desktop__letters {
+.icon-htmlacademy, .page-footer .logo-pink-desktop:hover .logo-pink-desktop__letters {
   fill: #d22856;
   transition-duration: .3s
 }
 
-.page-footer .logo-pink-desktop:hover .logo-pink-desktop__spark,.page-footer .logo-pink-desktop:hover .logo-pink-desktop__sparks {
+.page-footer .logo-pink-desktop:hover .logo-pink-desktop__spark, .page-footer .logo-pink-desktop:hover .logo-pink-desktop__sparks {
   fill: #283645;
   transition-duration: .3s
 }
 
-.page-footer .logo-pink-desktop:active .logo-pink-desktop__letters,.page-footer .logo-pink-desktop:active .logo-pink-desktop__sparks {
+.page-footer .logo-pink-desktop:active .logo-pink-desktop__letters, .page-footer .logo-pink-desktop:active .logo-pink-desktop__sparks {
   fill: #283645;
   opacity: .3;
   transition-duration: 0s
 }
 
-.icon-htmlacademy:active,.page-footer .logo-pink-desktop:active .logo-pink-desktop__glasses {
+.icon-htmlacademy:active, .page-footer .logo-pink-desktop:active .logo-pink-desktop__glasses {
   opacity: .3;
   transition-duration: 0s
 }
