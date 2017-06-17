@@ -15,7 +15,11 @@
       <div class="navigation__visible-row">
         <div class="navigation__wrapper">
           <a class="navigation__link" href="index.html">
-            <img class="navigation__link--img" src="img/logo-pink-white-mobile.svg" alt="logo">
+            <picture>
+              <source media="(min-width: 1200px)"
+                      srcset="img/logo-pink-white-desktop.svg">
+              <img class="navigation__link--img" src="/img/logo-pink-white-mobile.svg" alt="Pink">
+            </picture>
           </a>
           <button class="navigation__toggle" type="button">Открыть меню</button>
         </div>
