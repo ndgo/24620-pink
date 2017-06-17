@@ -36,6 +36,12 @@
   content: "";
 }
 
+@media #{$min-dpi}, #{$min-dppx} {
+  .features__container::before {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+  }
+}
+
 .features__list {
   position: relative;
 
