@@ -130,6 +130,30 @@
     padding: 95px 20px 85px 330px;
   }
 
+  .features__item--full-width:before {
+    @include embed-font($font-family, 96px, 96px, $cerise, $bold);
+
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 240px;
+    height: 277px;
+
+    padding-top: 20px;
+    background-image: url(/img/icon-editor-diagram-fill.svg), url(/img/icon-timer.svg);
+    background-repeat: no-repeat;
+    background-position: 19px 56px, top;
+    background-size: 202px, 100%;
+    content: "24";
+    box-sizing: border-box;
+  }
+
   .features__item-title--full-width {
     width: 170px;
 
@@ -201,6 +225,18 @@
     background-color: $white-smoke;
 
     text-align: left;
+  }
+
+  .features__item--full-width::before {
+    left: 0;
+    transform: translateY(-60%);
+
+    width: 300px;
+    height: 345px;
+    font-size: 120px;
+    line-height: 120px;
+    background-position: 23px 69px, top;
+    background-size: 253px, 100%;
   }
 
   .features__item-title--full-width {
