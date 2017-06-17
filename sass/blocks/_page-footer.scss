@@ -33,6 +33,26 @@
   display: block;
 }
 
+.page-footer__logo-tablet {
+  display: none;
+}
+
+@media (min-width: 660px) and (max-width: 1199px) {
+  .page-footer__logo-tablet {
+    display: block;
+  }
+}
+
+.page-footer__logo-desktop {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .page-footer__logo-desktop {
+    display: block;
+  }
+}
+
 .page-footer__logo-tablet:hover .page-footer__logo-letters-tablet {
   fill: $cerise;
   transition-duration: .3s
