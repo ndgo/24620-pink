@@ -323,12 +323,13 @@
 }
 
 .navigation__list-link {
+  @include embed-font($font-family, 18px, 32px, $white, $bold);
+
   position: relative;
   display: block;
   padding: 15px 0;
   font-weight: bold;
   text-align: center;
-  color: $black;
   text-transform: uppercase;
   text-decoration: none;
   background-color: $midnight;
@@ -344,15 +345,6 @@
     text-transform: none;
     background-color: $transparent;
     border: none;
-  }
-}
-
-.navigation__list-link {
-  @include embed-font($font-family, 18px, 32px, $white, $bold);
-}
-
-@media #{$desktop} {
-  .navigation__list-link {
     font-weight: $normal;
   }
 }
