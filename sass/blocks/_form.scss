@@ -396,13 +396,45 @@
   }
 
   .form__text-field--phone {
+    position: relative;
+
     flex-direction: column;
 
     margin-top: 45px;
     margin-bottom: 30px;
   }
 
+  .form__icon--phone {
+    background-image: url(../img/icon-phone.svg);
+  }
+
+  .form__icon--mail {
+    background-image: url(../img/icon-mail.svg);
+  }
+
+  .form__icon {
+    position: absolute;
+    top: 37px;
+    right: 2px;
+    width: 58px;
+    height: 56px;
+    background-color: #e5e5e5;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+  }
+
+  @media (min-width: 660px) {
+
+    .form__icon {
+      top: 2px;
+    }
+  }
+
+
   .form__text-field--mail {
+    position: relative;
+
     flex-direction: column;
 
     margin-bottom: 25px;
