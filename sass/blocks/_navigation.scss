@@ -360,8 +360,14 @@
 }
 
 .navigation__list-link:active {
-  color: rgba($white, 0.3);
+  color: rgba($cerise, 0.3);
   transition-duration: .3s;
+}
+
+@media #{$desktop} {
+  .navigation__list-link:active {
+    color: rgba($white, 0.3);
+  }
 }
 
 .navigation__link-text {
