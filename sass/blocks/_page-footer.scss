@@ -130,6 +130,10 @@
   .page-footer__social-container {
     margin-right: 15px;
   }
+
+  .page-footer__link {
+    padding-bottom: 10px;
+  }
 }
 
 @media #{$desktop} {
