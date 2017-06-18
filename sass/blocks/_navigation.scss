@@ -160,6 +160,10 @@
 @media #{$desktop} {
   .navigation__visible-row {
     position: static;
+
+    padding-left: 0;
+    padding-right: 0;
+
     background-color: $transparent;
     border: none;
   }
