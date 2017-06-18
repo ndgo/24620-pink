@@ -418,7 +418,10 @@
     right: 2px;
     width: 58px;
     height: 56px;
-    background-color: #e5e5e5;
+
+    display: block;
+
+    background-color: $whisper;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20px;
