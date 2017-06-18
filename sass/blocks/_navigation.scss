@@ -328,15 +328,12 @@
   position: relative;
   display: block;
   padding: 15px 0;
-  font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   background-color: $midnight;
   border-top: 1px solid $blue-charcoal;
   border-bottom: 1px solid black;
-  font-size: 18px;
-  line-height: 32px;
 }
 
 @media #{$desktop} {
