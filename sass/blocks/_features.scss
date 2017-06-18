@@ -109,8 +109,8 @@
     position: absolute;
     width: 268px;
     height: 485px;
-    bottom: -30px;
-    left: 40px;
+    bottom: 0;
+    left: 20px;
     background: url(../img/iphone-screen-3-tablet@1x.png) no-repeat;
     background-size: cover;
     content: "";
@@ -254,10 +254,13 @@
 
   .features__item--full-width::before {
     left: 0;
-    transform: translateY(-60%);
+    transform: translateY(-63%);
 
     width: 300px;
     height: 345px;
+
+    padding-top: 30px;
+
     font-size: 120px;
     line-height: 120px;
     background-position: 23px 69px, top;
