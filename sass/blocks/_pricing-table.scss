@@ -40,8 +40,8 @@
 
   content: attr(data-tag);
   position: absolute;
-  top: 10px;
-  left: -35px;
+  top: 5px;
+  left: -40px;
 
   display: block;
   width: 120px;
@@ -107,6 +107,14 @@
     vertical-align: middle;
   }
 
+  .pricing-table__plan-name {
+    font-size: 16px;
+  }
+
+  .pricing-table__plan-price {
+    font-size: 18px;
+  }
+
   .pricing-table__cell--column-header {
     display: table-cell;
   }
@@ -131,6 +139,10 @@
 
     transform: none;
   }
+
+  .pricing-table__cell--header {
+    padding-left: 0;
+  }
 }
 
 @media #{$desktop} {
@@ -141,5 +153,9 @@
   .pricing-table__cell {
     padding-top: 16px;
     padding-bottom: 16px;
+  }
+
+  .pricing-table__plan-price {
+    font-size: 24px;
   }
 }

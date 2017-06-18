@@ -1,6 +1,77 @@
 @import "../variables";
 @import "../global/mixins";
 
+.navigation__logo-desktop {
+  display: none
+}
+
+@media (min-width: 1200px) {
+  .navigation__logo-desktop {
+    display: block
+  }
+}
+
+.navigation__logo-mobile {
+  display: none
+}
+
+@media (max-width: 659px) {
+  .navigation__logo-mobile {
+    display: block
+  }
+}
+
+.navigation__logo-tablet {
+  display: none
+}
+
+@media (min-width: 660px) and (max-width: 1199px) {
+  .navigation__logo-tablet {
+    display: block
+  }
+}
+
+.navigation__logo-mobile:hover use, .navigation__logo-tablet:hover use {
+  fill: $cerise;
+  transition-duration: .3s
+}
+
+.navigation__logo-glasses, .navigation__logo-letters, .navigation__logo-letters-mobile, .navigation__logo-glasses-tablet, .navigation__logo-letters-tablet {
+  fill: inherit
+}
+
+.navigation__logo-star, .navigation__logo-starts {
+  fill: currentColor
+}
+
+.navigation__logo-desktop use, .navigation__logo-mobile use, .navigation__logo-tablet use {
+  fill: $white;
+  transition-duration: .3s
+}
+
+.navigation__logo-desktop use {
+  color: $cerise
+}
+
+.navigation__logo-mobile:active use, .navigation__logo-tablet:active use {
+  fill: $white;
+  opacity: .3;
+  transition: none
+}
+
+.navigation__logo-desktop:hover use {
+  fill: $cerise;
+  color: $white;
+  transition-duration: .3s
+}
+
+.navigation__logo-desktop:active use {
+  fill: $white;
+  color: $cerise;
+  opacity: .3;
+  transition-duration: 0s
+}
+
 .navigation {
   position: absolute;
   top: 0;
@@ -56,9 +127,12 @@
   left: 0;
   right: 0;
 
+  min-height: 68px;
+
   padding: 21px 20px 23px;
   background-color: $midnight;
   border-bottom: 1px solid $black;
+  box-sizing: border-box;
 }
 
 @media #{$desktop} {
@@ -89,6 +163,10 @@
 @media #{$desktop} {
   .navigation__visible-row {
     position: static;
+
+    padding-left: 0;
+    padding-right: 0;
+
     background-color: $transparent;
     border: none;
   }
@@ -285,8 +363,14 @@
 }
 
 .navigation__list-link:active {
-  color: rgba($white, 0.3);
+  color: rgba($cerise, 0.3);
   transition-duration: .3s;
+}
+
+@media #{$desktop} {
+  .navigation__list-link:active {
+    color: rgba($white, 0.3);
+  }
 }
 
 .navigation__link-text {

@@ -50,10 +50,24 @@
   border: 3px solid $white;
   border-radius: 50%;
   transition-duration: .3s;
+
+  cursor: pointer;
 }
 
 .review__control:last-child {
   margin-right: 0;
+}
+
+.review__control:hover {
+  transition-duration: .3s;
+  transition-property: background-color;
+  background-color: $light-stale-gray;
+}
+
+.review__control:active {
+  transition-duration: .3s;
+  transition-property: background-color;
+  background-color: $pattens-blue;
 }
 
 #review__slide-1:checked ~ .review__controls [for="review__slide-1"],
@@ -151,6 +165,7 @@
 
   .review__author {
     padding-bottom: 0;
+    font-size: 24px;
   }
 
   .review__author-info {
@@ -160,6 +175,11 @@
 
   .review__slide {
     padding: 145px 90px 0 90px;
+
+    background-image: url(/img/icon-quotes.svg);
+    background-repeat: no-repeat;
+    background-position: center 35px;
+    background-size: 79px;
   }
 
   .review__controls {
@@ -176,10 +196,24 @@
     width: 25px;
     height: 25px;
     margin-right: 0;
-    background-color: transparent;
+    background-color: $transparent;
     border: 2px solid $spindle;
     border-radius: 0;
     transform: rotate(45deg);
+
+    cursor: pointer;
+  }
+
+  .review__control:hover {
+    background-color: $transparent;
+    border-color: $light-stale-gray;
+    transition-duration: .3s;
+  }
+
+  .review__control:active {
+    background-color: $transparent;
+    border-color: $pattens-blue;
+    transition-duration: .3s;
   }
 
   #review__slide-1:checked ~ .review__controls [for="review__slide-2"] {
@@ -187,15 +221,15 @@
 
     margin-left: auto;
 
-    border-bottom-color: transparent;
-    border-left-color: transparent;
+    border-bottom-color: $transparent;
+    border-left-color: $transparent;
   }
 
   #review__slide-2:checked ~ .review__controls [for="review__slide-1"] {
     display: block;
 
-    border-top-color: transparent;
-    border-right-color: transparent;
+    border-top-color: $transparent;
+    border-right-color: $transparent;
   }
 
   #review__slide-2:checked ~ .review__controls [for="review__slide-3"] {
@@ -203,14 +237,14 @@
 
     margin-left: auto;
 
-    border-bottom-color: transparent;
-    border-left-color: transparent;
+    border-bottom-color: $transparent;
+    border-left-color: $transparent;
   }
 
   #review__slide-3:checked ~ .review__controls [for="review__slide-2"] {
     display: block;
 
-    border-top-color: transparent;
-    border-right-color: transparent;
+    border-top-color: $transparent;
+    border-right-color: $transparent;
   }
 }

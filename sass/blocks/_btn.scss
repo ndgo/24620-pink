@@ -61,6 +61,12 @@
   transition-property: color;
 }
 
+.btn--submit:disabled,
+.btn--modal-window:disabled {
+  background-color: $whisper;
+  color: $white;
+}
+
 .btn--editor-submit {
   margin-bottom: 10px;
 
@@ -126,7 +132,8 @@
 }
 
 @media #{$desktop} {
-  .btn--download {
+
+  .btn--promo {
     font-size: 21px;
     line-height: 18px;
   }

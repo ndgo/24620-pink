@@ -14,6 +14,18 @@
   z-index: 1000;
 }
 
+@media #{$tablet} {
+  .google-map__img {
+    height: 70px;
+  }
+}
+
+@media #{$desktop} {
+  .google-map__img {
+    height: 105px;
+  }
+}
+
 .google-map__map {
   height: 200px;
   background: $whisper url(../img/bg-map-mobile@1x.png) center;

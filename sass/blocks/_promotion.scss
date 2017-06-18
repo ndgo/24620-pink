@@ -27,27 +27,45 @@
   text-align: center;
   color: $white;
   background-color: $midnight;
-  background-image: url(../img/iphone-hand-mobile@1x.png), url(/img/bg-back-mobile@1x.jpg);
+  background-image: url(../img/iphone-hand-mobile@1x.png), url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: center 176px, center top;
   background-size: 258px, 700px;
 }
 
+@media #{$min-dpi}, #{$min-dppx} {
+  .promotion {
+    background-image: url(../img/iphone-hand-mobile@2x.png), url(../img/bg-back-mobile@2x.jpg);
+  }
+}
+
 @media #{$tablet} {
   .promotion {
     height: 728px;
-    background-image: url(../img/iphone-hand-mobile@1x.png), url(/img/bg-back-mobile@1x.jpg);
+    background-image: url(../img/iphone-hand-tablet@1x.png), url(../img/bg-back-tablet@1x.jpg);
     background-position: center bottom, center top;
     background-size: 695px, cover;
+  }
+}
+
+@media #{$tablet} and #{$min-dpi}, #{$tablet} and #{$min-dppx} {
+  .promo {
+    background-image: url(../img/iphone-hand-tablet@2x.png), url(../img/bg-back-tablet@2x.jpg);
   }
 }
 
 @media #{$desktop} {
   .promotion {
     height: 853px;
-    background-image: url(../img/iphone-hand-mobile@1x.png), url(../img/bg-back-mobile@1x.jpg);
+    background-image: url(../img/iphone-hand-desktop@1x.png), url(../img/bg-back-desktop@1x.jpg);
     background-position: right bottom, center top;
     background-size: 1050px, cover;
+  }
+}
+
+@media #{$desktop} and #{$min-dpi}, #{$desktop}  and #{$min-dppx} {
+  .promotion {
+    background-image: url(../img/iphone-hand-desktop@2x.png), url(../img/bg-back-desktop@2x.jpg);
   }
 }
 
@@ -59,15 +77,35 @@
   background-size: cover;
 }
 
+@media #{$min-dpi}, #{$min-dppx} {
+  .promotion--small {
+    background-image: url(../img/bg-back-mobile@2x.jpg);
+  }
+}
+
 @media #{$tablet} {
   .promotion--small {
     height: 440px;
+    background-image: url(../img/bg-back-tablet@1x.jpg);
+  }
+}
+
+@media #{$tablet} and #{$min-dpi}, #{$tablet}  and #{$min-dppx} {
+  .promotion--small {
+    background-image: url(../img/bg-back-tablet@2x.jpg);
   }
 }
 
 @media #{$desktop} {
   .promotion--small {
     height: 394px;
+    background-image: url(../img/bg-back-desktop@1x.jpg);
+  }
+}
+
+@media  #{$desktop} and #{$min-dpi} , #{$desktop}  and #{$min-dppx} {
+  .promotion--small {
+    background-image: url(../img/bg-back-desktop@2x.jpg);
   }
 }
 

@@ -61,6 +61,17 @@
   text-align: center;
 }
 
+.contacts__item-text:hover {
+  color: $midnight;
+  text-decoration: underline;
+  transition-duration: .3s;
+}
+
+.contacts__item-text:active {
+  color: rgba($midnight, .3);
+  transition-duration: .3s;
+}
+
 @media #{$tablet} {
   .contacts__list {
     display: flex;

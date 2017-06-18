@@ -99,6 +99,7 @@
 @media #{$tablet} {
   .post {
     width: calc(50% - 10px);
+    min-height: 455px;
 
     margin-right: 20px;
 
@@ -115,6 +116,7 @@
 
   .post--choice {
     width: auto;
+    min-height: initial;
 
     margin-right: 0;
     margin-bottom: 50px;
@@ -130,7 +132,7 @@
     flex-wrap: wrap;
     flex-direction: column;
 
-    padding: 24px 27px;
+    padding: 24px 27px 30px;
   }
 
   .post__container--choice {
@@ -138,7 +140,7 @@
 
     margin-left: 20px;
     margin-right: 20px;
-    padding-bottom: 0;
+    padding-bottom: 23px;
   }
 
   .post__like-container {
@@ -156,13 +158,24 @@
   }
 
   .post__comment-text {
-    padding-bottom: 23px;
+    padding-bottom: 0;
+  }
+
+  .post__link-img--choice {
+    min-height: 509px;
   }
 }
 
 @media #{$desktop} {
   .post {
     width: calc(100% / 3 - (40px / 3));
+    min-height: 555px;
+
+    margin-bottom: 55px;
+  }
+
+  .post:last-child {
+    margin-bottom: 55px;
   }
 
   .post:nth-child(2n) {
@@ -175,7 +188,9 @@
 
   .post--choice {
     width: auto;
+    min-height: initial;
 
+    margin-bottom: 50px;
     margin-right: 0;
   }
 
@@ -193,4 +208,7 @@
     box-sizing: border-box;
   }
 
+  .post__link-img--choice {
+    min-height: 506px;
+  }
 }
