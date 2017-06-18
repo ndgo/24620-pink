@@ -156,6 +156,23 @@
   display: none;
 }
 
+.editor-form__range {
+  fill:$heather;
+}
+
+.editor-form__range--fill:hover,
+.editor-form__range--crop:hover,
+.editor-form__range--contrast:hover {
+  fill:$light-stale-gray;
+  transition-duration: .3s;
+}
+
+.editor-form__range--fill:active,
+.editor-form__range--crop:active,
+.editor-form__range--contrast:active {
+  fill: $cerise;
+  transition-duration: .3s;
+}
 
 @media #{$tablet} {
   .editor-form {
