@@ -108,7 +108,7 @@ gulp.task('js:build', function () {
 gulp.task('css:build', function () {
   gulp.src(path.src.css) //Выберем наш основной файл стилей
     .pipe(sourcemaps.init()) //инициализируем soucemap
-    .pipe(sass()) //Скомпилируем stylus
+    .pipe(sass()) //Скомпилируем sass
     .pipe(postcss([
       autoprefixer({
         browsers: [
