@@ -608,6 +608,10 @@
   }
 
   .form__hidden {
-    display: none;
+    display: inline;
+  }
+
+  .form__footer-note {
+    width: 315px;
   }
 }
