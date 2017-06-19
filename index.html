@@ -89,7 +89,7 @@
     <div class="navigation__container">
       <div class="navigation__visible-row">
         <div class="navigation__wrapper">
-          <a class="navigation__link" href="index.html">
+          <div class="navigation__link">
             <svg class="logo-pink-mobile navigation__logo-mobile" width="75px" height="22px">
               <use xlink:href="#logo-pink-mobile"/>
             </svg>
@@ -99,7 +99,7 @@
             <svg class="logo-pink-desktop navigation__logo-desktop" width="147px" height="40px">
               <use xlink:href="#logo-pink-desktop"/>
             </svg>
-          </a>
+          </div>
           <button class="navigation__toggle" type="button">Открыть меню</button>
         </div>
       </div>
@@ -137,19 +137,19 @@
           Взгляните на жизнь иначе!
         </h1>
         <div class="promotion__wrapper">
-          <a class="btn btn--promo" href="/">Скачать приложение</a>
+          <a class="btn btn--promo" href="https://itunes.apple.com">Скачать приложение</a>
           <div class="promotion__brand-list">
-            <a href="#">
+            <a href="https://itunes.apple.com">
               <svg class="promotion__brand-item" width="46" height="57">
                 <use xlink:href="#icon-apple"></use>
               </svg>
             </a>
-            <a href="#">
+            <a href="https://www.android.com/intl/ru_ru/play/">
               <svg class="promotion__brand-item" width="42" height="47">
                 <use xlink:href="#icon-android"></use>
               </svg>
             </a>
-            <a href="#">
+            <a href="https://www.microsoft.com/ru-ru/store/apps">
               <svg class="promotion__brand-item" width="44" height="42">
                 <use xlink:href="#icon-microsoft"></use>
               </svg>
@@ -197,41 +197,39 @@
       </div>
     </div>
   </div>
-  <div class="advantage__review-container">
-    <div class="review">
-      <input class="review__input" type="radio" name="review__input" id="review__slide-1" checked="checked">
-      <input class="review__input" type="radio" name="review__input" id="review__slide-2">
-      <input class="review__input" type="radio" name="review__input" id="review__slide-3">
-      <div class="review__mask">
-        <div class="review__slides">
-          <blockquote class="review__slide review__item">
-            <cite class="review__author">Николай Петров</cite>
-            <div class="review__author-info">25 лет, водитель трамвая</div>
-            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-              фотографии!»</p>
-          </blockquote>
-          <blockquote class="review__slide review__item">
-            <cite class="review__author">Николай Петров</cite>
-            <div class="review__author-info">25 лет, водитель трамвая</div>
-            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-              фотографии!»</p>
-          </blockquote>
-          <blockquote class="review__slide review__item">
-            <cite class="review__author">Николай Петров</cite>
-            <div class="review__author-info">25 лет, водитель трамвая</div>
-            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-              фотографии!»</p>
-          </blockquote>
-        </div>
+  <div class="review">
+    <input class="review__input" type="radio" name="review__input" id="review__slide-1" checked="checked">
+    <input class="review__input" type="radio" name="review__input" id="review__slide-2">
+    <input class="review__input" type="radio" name="review__input" id="review__slide-3">
+    <div class="review__mask">
+      <div class="review__slides">
+        <blockquote class="review__slide review__item">
+          <cite class="review__author">Николай Петров</cite>
+          <div class="review__author-info">25 лет, водитель трамвая</div>
+          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+            привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+            фотографии!»</p>
+        </blockquote>
+        <blockquote class="review__slide review__item">
+          <cite class="review__author">Николай Петров</cite>
+          <div class="review__author-info">25 лет, водитель трамвая</div>
+          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+            привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+            фотографии!»</p>
+        </blockquote>
+        <blockquote class="review__slide review__item">
+          <cite class="review__author">Николай Петров</cite>
+          <div class="review__author-info">25 лет, водитель трамвая</div>
+          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+            привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+            фотографии!»</p>
+        </blockquote>
       </div>
-      <div class="review__controls">
-        <label class="review__control" for="review__slide-1"></label>
-        <label class="review__control" for="review__slide-2"></label>
-        <label class="review__control" for="review__slide-3"></label>
-      </div>
+    </div>
+    <div class="review__controls">
+      <label class="review__control" for="review__slide-1"></label>
+      <label class="review__control" for="review__slide-2"></label>
+      <label class="review__control" for="review__slide-3"></label>
     </div>
   </div>
   <div class="pricing-slider">
@@ -407,8 +405,8 @@
       </ul>
     </div>
     <div class="copyright">
-      <span class="copyright__note">Разработано</span>
-      <a class="copyright__link" href="https://htmlacademy.ru/">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright__note">Разработано</span>
         <svg class="copyright__link-img" width="27" height="34">
           <use xlink:href="#logo-htmlacademy"></use>
         </svg>

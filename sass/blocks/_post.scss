@@ -87,9 +87,7 @@
   @include embed-font($font-family, 14px, 24px, $midnight, $normal);
 
   width: 100%;
-}
 
-.post__comment-text {
   margin-top: 0;
   margin-bottom: 0;
 
@@ -157,7 +155,7 @@
     order: 15;
   }
 
-  .post__comment-text {
+  .post__comment {
     padding-bottom: 0;
   }
 

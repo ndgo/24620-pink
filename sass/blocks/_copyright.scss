@@ -2,10 +2,6 @@
 @import "../global/mixins";
 
 .copyright {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
   padding-bottom: 5px;
 }
 
@@ -18,9 +14,13 @@
 }
 
 .copyright__link {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   fill: $cerise;
+
+  text-decoration: none;
 }
 
 .copyright__link:hover {
