@@ -157,13 +157,13 @@
 }
 
 .editor-form__range {
-  fill:$heather;
+  fill: $heather;
 }
 
 .editor-form__range--fill:hover,
 .editor-form__range--crop:hover,
 .editor-form__range--contrast:hover {
-  fill:$light-stale-gray;
+  fill: $light-stale-gray;
   transition-duration: .3s;
 }
 
@@ -274,7 +274,7 @@
 
   .editor-form__range {
     padding: 0 0 13px;
-  } 
+  }
 
   .editor-form__img {
     margin-left: 0;
