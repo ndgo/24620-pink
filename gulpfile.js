@@ -13,6 +13,8 @@ var uglify = require('gulp-uglify'); //минификация js
 var rename = require("gulp-rename"); //переименвоание файлов
 var cssmin = require('gulp-minify-css'); //минификация css
 var runSequence = require('run-sequence');
+var svgmin = require('gulp-svgmin');
+var svgstore = require('gulp-svgstore');
 
 var path = {
   build: { //Тут мы укажем куда складывать готовые после сборки файлы
@@ -21,14 +23,16 @@ var path = {
     js: 'build/js/',
     css: 'build/css/',
     img: 'build/img/',
-    fonts: 'build/fonts/'
+    fonts: 'build/fonts/',
+    svgSprite: 'build/img/'
   },
   src: { //Пути откуда брать исходники
     html: './*.html', //Синтаксис src/template/*.html говорит gulp что мы хотим взять все файлы с расширением .html
     js: './js/*.js',//В стилях и скриптах нам понадобятся только main файлы
     css: './sass/style.scss',
     img: './img/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
-    fonts: './fonts/*.*'
+    fonts: './fonts/*.*',
+    svg: './img/**/*.svg'
   },
   watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
     html: './*.html',
@@ -141,7 +145,7 @@ gulp.task('fonts:build', function () {
 
 // билдим все
 gulp.task('build', function (callback) {
-  runSequence('clean', ['image:build', 'html:build', 'js:build', 'css:build', 'fonts:build'], callback);
+  runSequence('clean', ['image:build', 'html:build', 'js:build', 'css:build', 'fonts:build', 'symbols:build'], callback);
 });
 
 // билдим все
@@ -166,6 +170,17 @@ gulp.task('browserSync', function () {
     ui: false
   });
 });
+
+gulp.task("symbols:build", function() {
+  return gulp.src(path.src.svg)
+    .pipe(svgmin())
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("symbols.svg"))
+    .pipe(gulp.dest(path.build.svgSprite));
+});
+
 
 gulp.task('default', function (callback) {
   runSequence('watcher', 'browserSync', callback)

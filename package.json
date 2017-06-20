@@ -17,12 +17,14 @@
     "gulp-uglify": "3.0.0",
     "gulp-rename": "1.2.2",
     "gulp-minify-css": "1.2.4",
-    "run-sequence": "1.2.2"
+    "run-sequence": "1.2.2",
+    "gulp-svgmin": "1.2.4",
+    "gulp-svgstore": "6.1.0"
   },
   "scripts": {
     "test": "editorconfig-cli",
-    "build": "gulp style",
-    "start": "gulp serve"
+    "build": "gulp build",
+    "start": "gulp default"
   },
   "editorconfig-cli": [
     "*.html",
