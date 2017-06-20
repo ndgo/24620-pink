@@ -85,7 +85,14 @@ gulp.task('image:build', function () {
       ]
     ))
     .pipe(gulp.dest(path.build.img)) //выгрузим в build
-    // .pipe(server.reload({stream: true}));
+    .pipe(server.reload({stream: true}));
+});
+
+// копируем статичные изображения
+gulp.task('image:copy', function () {
+  return gulp.src(path.src.img) //Выберем наши картинки
+    .pipe(gulp.dest(path.build.img)) //выгрузим в build
+    .pipe(server.reload({stream: true}));
 });
 
 // таск для билдинга html
@@ -134,7 +141,20 @@ gulp.task('fonts:build', function () {
 
 // билдим все
 gulp.task('build', function (callback) {
-  return runSequence('clean', ['image:build', 'html:build', 'js:build', 'css:build', 'fonts:build'], callback);
+  runSequence('clean', ['image:build', 'html:build', 'js:build', 'css:build', 'fonts:build'], callback);
+});
+
+// билдим все
+gulp.task('buildForDevelop', function (callback) {
+  runSequence('clean', ['image:copy', 'html:build', 'js:build', 'css:build', 'fonts:build'], callback);
+});
+
+gulp.task("watcher", ["buildForDevelop"], function () {
+  gulp.watch(path.src.img, ['image:copy']);
+  gulp.watch(path.src.html, ['html:build']);
+  gulp.watch(path.src.js, ['js:build']);
+  gulp.watch(path.src.sass, ['css:build']);
+  gulp.watch(path.src.fonts, ['fonts:build']);
 });
 
 gulp.task('browserSync', function () {
@@ -147,15 +167,6 @@ gulp.task('browserSync', function () {
   });
 });
 
-
-gulp.task("watcher", ["build"], function () {
-  gulp.watch(path.src.img, ['image:build']);
-  gulp.watch(path.src.html, ['html:build']);
-  gulp.watch(path.src.js, ['js:build']);
-  gulp.watch(path.src.sass, ['css:build']);
-  gulp.watch(path.src.fonts, ['fonts:build']);
-});
-
 gulp.task('default', function (callback) {
-  return runSequence('build', 'browserSync', 'watcher', callback)
+  runSequence('watcher', 'browserSync', callback)
 });
