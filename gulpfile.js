@@ -17,26 +17,24 @@ var runSequence = require('run-sequence');
 var path = {
   build: { //Тут мы укажем куда складывать готовые после сборки файлы
     html: 'build/',
+    serverRoot: './build/',
     js: 'build/js/',
     css: 'build/css/',
     img: 'build/img/',
-    fonts: 'build/fonts/',
-    contentImg: 'build/img/'
+    fonts: 'build/fonts/'
   },
   src: { //Пути откуда брать исходники
     html: './*.html', //Синтаксис src/template/*.html говорит gulp что мы хотим взять все файлы с расширением .html
     js: './js/*.js',//В стилях и скриптах нам понадобятся только main файлы
     css: './sass/style.scss',
-    img: './img/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
-    fonts: './fonts/*.*',
-    contentImg: './img/*.*'
+    img: './img/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
+    fonts: './fonts/*.*'
   },
   watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
     html: './*.html',
     js: './js/**/*.js',
-    css: './css/**/*.*',
+    sass: './sass/**/*.scss',
     img: './img/**/*.*',
-    contentImg: './img/**/*.*',
     fonts: './fonts/**/*.*'
   },
   clean: './build', //директории которые могут очищаться
@@ -73,40 +71,44 @@ gulp.task("serve", ["style"], function () {
 
 // чистим папку билда
 gulp.task('clean', function (cb) {
-  rimraf(path.clean, cb);
+  return rimraf(path.clean, cb);
 });
 
 // билдим статичные изображения
 gulp.task('image:build', function () {
-  gulp.src(path.src.img) //Выберем наши картинки
-    .pipe(imagemin({ //Сожмем их
-      progressive: true, //сжатие .jpg
-      svgoPlugins: [{removeViewBox: false}], //сжатие .svg
-      interlaced: true, //сжатие .gif
-      optimizationLevel: 3 //степень сжатия от 0 до 7
-    }))
+  return gulp.src(path.src.img) //Выберем наши картинки
+    .pipe(imagemin(
+      [
+        imagemin.jpegtran({progressive: true}),
+        imagemin.optipng({optimizationLevel: 5}),
+        imagemin.svgo({plugins: [{removeViewBox: true}]})
+      ]
+    ))
     .pipe(gulp.dest(path.build.img)) //выгрузим в build
+    // .pipe(server.reload({stream: true}));
 });
 
 // таск для билдинга html
 gulp.task('html:build', function () {
-  gulp.src(path.src.html) //Выберем файлы по нужному пути
+  return gulp.src(path.src.html) //Выберем файлы по нужному пути
     .pipe(gulp.dest(path.build.html)) //выгрузим их в папку build
+    .pipe(server.reload({stream: true}));
 });
 
 // билдинг яваскрипта
 gulp.task('js:build', function () {
-  gulp.src(path.src.js) //Найдем наш main файл
+  return gulp.src(path.src.js) //Найдем наш main файл
     .pipe(sourcemaps.init()) //Инициализируем sourcemap
     .pipe(uglify()) //Сожмем наш js
     .pipe(sourcemaps.write()) //Пропишем карты
     // .pipe(rename({suffix: '.min'})) //добавим суффикс .min к выходному файлу
     .pipe(gulp.dest(path.build.js)) //выгрузим готовый файл в build
+    .pipe(server.reload({stream: true}));
 });
 
 // билдинг домашнего css
 gulp.task('css:build', function () {
-  gulp.src(path.src.css) //Выберем наш основной файл стилей
+  return gulp.src(path.src.css) //Выберем наш основной файл стилей
     .pipe(sourcemaps.init()) //инициализируем soucemap
     .pipe(sass()) //Скомпилируем sass
     .pipe(postcss([
@@ -120,15 +122,40 @@ gulp.task('css:build', function () {
     .pipe(sourcemaps.write()) //пропишем sourcemap
     // .pipe(rename({suffix: '.min'})) //добавим суффикс .min к имени выходного файла
     .pipe(gulp.dest(path.build.css)) //вызгрузим в build
+    .pipe(server.reload({stream: true}));
 });
 
 // билдим шрифты
 gulp.task('fonts:build', function () {
-  gulp.src(path.src.fonts)
+  return gulp.src(path.src.fonts)
     .pipe(gulp.dest(path.build.fonts)) //выгружаем в build
+    .pipe(server.reload({stream: true}));
 });
 
 // билдим все
 gulp.task('build', function (callback) {
-  runSequence('clean', ['image:build', 'html:build', 'js:build', 'css:build', 'fonts:build'], callback);
+  return runSequence('clean', ['image:build', 'html:build', 'js:build', 'css:build', 'fonts:build'], callback);
+});
+
+gulp.task('browserSync', function () {
+  server.init({
+    server: path.build.serverRoot,
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false
+  });
+});
+
+
+gulp.task("watcher", ["build"], function () {
+  gulp.watch(path.src.img, ['image:build']);
+  gulp.watch(path.src.html, ['html:build']);
+  gulp.watch(path.src.js, ['js:build']);
+  gulp.watch(path.src.sass, ['css:build']);
+  gulp.watch(path.src.fonts, ['fonts:build']);
+});
+
+gulp.task('default', function (callback) {
+  return runSequence('build', 'browserSync', 'watcher', callback)
 });
