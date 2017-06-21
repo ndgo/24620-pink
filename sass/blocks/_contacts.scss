@@ -51,7 +51,7 @@
 }
 
 .contacts__item-text {
-  @include embed-font($font-family, 24px, 24px, $cerise, $lighter);
+  @include embed-font($font-family, 24px, 26px, $cerise, $lighter);
 
   display: block;
 
@@ -80,7 +80,7 @@
   }
 
   .contacts__container {
-    padding-bottom: 10px;
+    padding-bottom: 0;
   }
 
   .contacts__item {
