@@ -70,7 +70,7 @@
 }
 
 .promotion--small {
-  height: 239px;
+  min-height: 239px;
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: top;
@@ -85,7 +85,7 @@
 
 @media #{$tablet} {
   .promotion--small {
-    height: 440px;
+    min-height: 440px;
     background-image: url(../img/bg-back-tablet@1x.jpg);
   }
 }
@@ -98,7 +98,7 @@
 
 @media #{$desktop} {
   .promotion--small {
-    height: 394px;
+    min-height: 394px;
     background-image: url(../img/bg-back-desktop@1x.jpg);
   }
 }
