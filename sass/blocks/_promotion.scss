@@ -22,14 +22,14 @@
 
 .promotion {
   position: relative;
-  height: 732px;
+  min-height: 736px;
   font-weight: 300;
   text-align: center;
   color: $white;
   background-color: $midnight;
   background-image: url(../img/iphone-hand-mobile@1x.png), url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
-  background-position: center 176px, center top;
+  background-position: left 176px, center top;
   background-size: 258px, 700px;
 }
 
@@ -110,7 +110,7 @@
 }
 
 .promotion__info {
-  padding: 487px 0 30px;
+  padding: 493px 0 0;
 }
 
 @media #{$tablet} {
