@@ -8,7 +8,7 @@
 .contacts__container {
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
 }
 
 .contacts__title {
@@ -44,14 +44,14 @@
   @include embed-font($font-family, 18px, 18px, $midnight, $bold);
 
   margin: 0;
-  padding-bottom: 10px;
+  padding-bottom: 0;
 
   font-style: normal;
   text-align: center;
 }
 
 .contacts__item-text {
-  @include embed-font($font-family, 24px, 26px, $cerise, $lighter);
+  @include embed-font($font-family, 24px, 35px, $cerise, $lighter);
 
   display: block;
 
@@ -87,6 +87,14 @@
     width: 50%;
 
     padding-bottom: 50px;
+  }
+
+  .contacts__item-title {
+    margin-bottom: 10px;
+  }
+
+  .contacts__item-text {
+    font-size: 26px;
   }
 
   .contacts__item--tel {
