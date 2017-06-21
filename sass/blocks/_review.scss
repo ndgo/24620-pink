@@ -77,17 +77,6 @@
   background-color: $white-smoke;
 }
 
-#review__slide-1:checked ~ .review__mask .review__slides {
-  margin-left: 0;
-}
-
-#review__slide-2:checked ~ .review__mask .review__slides {
-  margin-left: -100%;
-}
-
-#review__slide-3:checked ~ .review__mask .review__slides {
-  margin-left: -200%;
-}
 
 .review__item {
   width: 100%;
@@ -216,20 +205,35 @@
     transition-duration: .3s;
   }
 
-  #review__slide-1:checked ~ .review__controls [for="review__slide-2"] {
+  #review__slide-1:checked ~ .review__controls [for="review__slide-1"],
+  #review__slide-2:checked ~ .review__controls [for="review__slide-2"],
+  #review__slide-3:checked ~ .review__controls [for="review__slide-3"] {
+    background-color: $transparent;
+    border-width: 2px;
+    border-top-color: $transparent;
+    border-right-color: $transparent;
+    border-bottom-color: $spindle;
+    border-left-color: $spindle;
+  }
+
+  #review__slide-1 ~ .review__controls [for="review__slide-2"] {
     display: block;
 
     margin-left: auto;
 
     border-bottom-color: $transparent;
     border-left-color: $transparent;
+    background-color: $transparent;
+    border-width: 2px;
   }
 
-  #review__slide-2:checked ~ .review__controls [for="review__slide-1"] {
+  #review__slide-2 ~ .review__controls [for="review__slide-1"] {
     display: block;
 
     border-top-color: $transparent;
     border-right-color: $transparent;
+    background-color: $transparent;
+    border-width: 2px;
   }
 
   #review__slide-2:checked ~ .review__controls [for="review__slide-3"] {
@@ -239,6 +243,8 @@
 
     border-bottom-color: $transparent;
     border-left-color: $transparent;
+    background-color: $transparent;
+    border-width: 2px;
   }
 
   #review__slide-3:checked ~ .review__controls [for="review__slide-2"] {
@@ -246,5 +252,7 @@
 
     border-top-color: $transparent;
     border-right-color: $transparent;
+    background-color: $transparent;
+    border-width: 2px;
   }
 }
