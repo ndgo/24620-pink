@@ -335,6 +335,7 @@
 @media #{$desktop} {
   .navigation__list-link {
     display: inline-block;
+    vertical-align: middle;
     text-transform: none;
     background-color: $transparent;
     border: none;
