@@ -54,9 +54,9 @@
       d="M71.874 18.661c0-.708.58-1.288 1.256-1.288h7.18c5.087 0 8.436 2.704 8.436 7.146v.064c0 4.86-4.057 7.373-8.854 7.373h-5.474v6.825c0 .708-.58 1.287-1.29 1.287-.675 0-1.255-.58-1.255-1.287v-20.12h.001zm8.114 10.98c3.734 0 6.181-1.996 6.181-4.96v-.062c0-3.22-2.414-4.894-6.052-4.894h-5.7v9.918h5.57v-.002zM93.603 18.5c0-.708.58-1.288 1.255-1.288.709 0 1.288.58 1.288 1.288v20.283c0 .708-.58 1.287-1.288 1.287-.676 0-1.255-.579-1.255-1.287V18.5zm9.141.032c0-.676.58-1.256 1.256-1.256h.354c.58 0 .935.29 1.288.74l13.684 17.45V18.468c0-.676.547-1.256 1.256-1.256.675 0 1.224.58 1.224 1.256v20.348c0 .677-.48 1.19-1.158 1.19h-.129c-.548 0-.935-.32-1.318-.772l-13.976-17.867v17.45c0 .676-.547 1.256-1.257 1.256-.675 0-1.222-.58-1.222-1.257V18.532h-.002zm25.429-.032c0-.708.58-1.288 1.257-1.288.708 0 1.286.58 1.286 1.288v12.331l12.848-13.168c.29-.257.58-.451.998-.451.676 0 1.225.612 1.225 1.256 0 .354-.163.644-.42.901l-7.985 7.92 8.565 10.56c.224.292.353.547.353.936 0 .676-.577 1.288-1.285 1.288-.482 0-.807-.259-1.03-.58l-8.402-10.464-4.863 4.862v4.894a1.29 1.29 0 0 1-1.286 1.288c-.677 0-1.257-.58-1.257-1.288V18.5h-.004z"
     />
     <path
-      class="logo-pink-desktop__spark navigation__logo-star"
+      class="navigation__logo-star"
       d="M98.498 9.875a3.623 3.623 0 0 1-3.623-3.624 3.625 3.625 0 0 1-3.625 3.624 3.625 3.625 0 0 1 3.625 3.624 3.623 3.623 0 0 1 3.623-3.624z"/>
-    <g class="logo-pink-desktop__glasses navigation__logo-glasses">
+    <g class="navigation__logo-glasses">
       <path
         d="M43.094 19.313c.246 0 .489.014.73.033a2.492 2.492 0 0 0-2.136-1.221 1.993 1.993 0 0 1-1.884-1.354c-.727.208-1.425.482-2.09.816.063.017.123.038.189.038a2 2 0 0 1 2 2c0 .096-.015.188-.028.281 1-.382 2.084-.593 3.219-.593z"/>
       <path
@@ -89,7 +89,7 @@
     <div class="navigation__container">
       <div class="navigation__visible-row">
         <div class="navigation__wrapper">
-          <a class="navigation__link" href="index.html">
+          <div class="navigation__link">
             <svg class="logo-pink-mobile navigation__logo-mobile" width="75px" height="22px">
               <use xlink:href="#logo-pink-mobile"/>
             </svg>
@@ -99,7 +99,7 @@
             <svg class="logo-pink-desktop navigation__logo-desktop" width="147px" height="40px">
               <use xlink:href="#logo-pink-desktop"/>
             </svg>
-          </a>
+          </div>
           <button class="navigation__toggle" type="button">Открыть меню</button>
         </div>
       </div>
@@ -137,19 +137,19 @@
           Взгляните на жизнь иначе!
         </h1>
         <div class="promotion__wrapper">
-          <a class="btn btn--promo" href="/">Скачать приложение</a>
+          <a class="btn btn--promo" href="https://itunes.apple.com">Скачать приложение</a>
           <div class="promotion__brand-list">
-            <a href="#">
+            <a href="https://itunes.apple.com">
               <svg class="promotion__brand-item" width="46" height="57">
                 <use xlink:href="#icon-apple"></use>
               </svg>
             </a>
-            <a href="#">
+            <a href="https://www.android.com/intl/ru_ru/play/">
               <svg class="promotion__brand-item" width="42" height="47">
                 <use xlink:href="#icon-android"></use>
               </svg>
             </a>
-            <a href="#">
+            <a href="https://www.microsoft.com/ru-ru/store/apps">
               <svg class="promotion__brand-item" width="44" height="42">
                 <use xlink:href="#icon-microsoft"></use>
               </svg>
@@ -188,50 +188,47 @@
           </li>
         </ul>
         <div class="features__item features__item--full-width">
-          <h2 class="features__item-title features__item-title--full-width">Эффект на 24 часа!</h2>
-          <p class="features__item-description">Британские ученые провели исследования и доказали, что положительный
-            эффект от
-            использования приложения длится целые сутки!</p>
+          <h2 class="features__item-title features__item-title--full-width">Эффект на&nbsp;24&nbsp;часа!</h2>
+          <p class="features__item-description">Британские ученые провели исследования и&nbsp;доказали, что положительный
+            эффект от&nbsp;использования приложения длится целые сутки!</p>
           <a class="features__item-link" href="#">Узнать больше об исследовании</a>
         </div>
       </div>
     </div>
   </div>
-  <div class="advantage__review-container">
-    <div class="review">
-      <input class="review__input" type="radio" name="review__input" id="review__slide-1" checked="checked">
-      <input class="review__input" type="radio" name="review__input" id="review__slide-2">
-      <input class="review__input" type="radio" name="review__input" id="review__slide-3">
-      <div class="review__mask">
-        <div class="review__slides">
-          <blockquote class="review__slide review__item">
-            <cite class="review__author">Николай Петров</cite>
-            <div class="review__author-info">25 лет, водитель трамвая</div>
-            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-              фотографии!»</p>
-          </blockquote>
-          <blockquote class="review__slide review__item">
-            <cite class="review__author">Николай Петров</cite>
-            <div class="review__author-info">25 лет, водитель трамвая</div>
-            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-              фотографии!»</p>
-          </blockquote>
-          <blockquote class="review__slide review__item">
-            <cite class="review__author">Николай Петров</cite>
-            <div class="review__author-info">25 лет, водитель трамвая</div>
-            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-              привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-              фотографии!»</p>
-          </blockquote>
-        </div>
+  <div class="review">
+    <input class="review__input" type="radio" name="review__input" id="review__slide-1" checked="checked">
+    <input class="review__input" type="radio" name="review__input" id="review__slide-2">
+    <input class="review__input" type="radio" name="review__input" id="review__slide-3">
+    <div class="review__mask">
+      <div class="review__slides">
+        <blockquote class="review__slide review__item">
+          <cite class="review__author">Николай Петров</cite>
+          <div class="review__author-info">25 лет, водитель трамвая</div>
+          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+            привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+            фотографии!»</p>
+        </blockquote>
+        <blockquote class="review__slide review__item">
+          <cite class="review__author">Николай Петров</cite>
+          <div class="review__author-info">25 лет, водитель трамвая</div>
+          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+            привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+            фотографии!»</p>
+        </blockquote>
+        <blockquote class="review__slide review__item">
+          <cite class="review__author">Николай Петров</cite>
+          <div class="review__author-info">25 лет, водитель трамвая</div>
+          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+            привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+            фотографии!»</p>
+        </blockquote>
       </div>
-      <div class="review__controls">
-        <label class="review__control" for="review__slide-1"></label>
-        <label class="review__control" for="review__slide-2"></label>
-        <label class="review__control" for="review__slide-3"></label>
-      </div>
+    </div>
+    <div class="review__controls">
+      <label class="review__control" for="review__slide-1"></label>
+      <label class="review__control" for="review__slide-2"></label>
+      <label class="review__control" for="review__slide-3"></label>
     </div>
   </div>
   <div class="pricing-slider">
@@ -268,15 +265,15 @@
             <td class="pricing-table__cell pricing-table__cell--column-header">
               <span class="pricing-table__option-name pricing-table__option-name--title">Розовый фильтр</span>
             </td>
-            <td class="pricing-table__cell">
+            <td class="pricing-table__cell pricing-table__cell--content">
               <span class="pricing-table__option-name">Розовый фильтр</span>
               <img class="pricing-table__option-status" src="img/icon-yes.svg" width="31" height="21" alt="Доступно"/>
             </td>
-            <td class="pricing-table__cell">
+            <td class="pricing-table__cell pricing-table__cell--content">
               <span class="pricing-table__option-name">Розовый фильтр</span>
               <img class="pricing-table__option-status" src="img/icon-yes.svg" width="31" height="21" alt="Доступно"/>
             </td>
-            <td class="pricing-table__cell">
+            <td class="pricing-table__cell pricing-table__cell--content">
               <span class="pricing-table__option-name">Розовый фильтр</span>
               <img class="pricing-table__option-status" src="img/icon-yes.svg" width="31" height="21" alt="Доступно"/>
             </td>
@@ -285,15 +282,15 @@
             <td class="pricing-table__cell pricing-table__cell--column-header">
               <span class="pricing-table__option-name pricing-table__option-name--title">Смайлики</span>
             </td>
-            <td class="pricing-table__cell">
+            <td class="pricing-table__cell pricing-table__cell--content">
               <span class="pricing-table__option-name">Смайлики</span>
               <img class="pricing-table__option-status" src="img/icon-no.svg" width="27" height="26" alt="Недоступно"/>
             </td>
-            <td class="pricing-table__cell">
+            <td class="pricing-table__cell pricing-table__cell--content">
               <span class="pricing-table__option-name">Смайлики</span>
               <img class="pricing-table__option-status" src="img/icon-yes.svg" width="31" height="21" alt="Доступно"/>
             </td>
-            <td class="pricing-table__cell">
+            <td class="pricing-table__cell pricing-table__cell--content">
               <span class="pricing-table__option-name">Смайлики</span>
               <img class="pricing-table__option-status" src="img/icon-yes.svg" width="31" height="21" alt="Доступно"/>
             </td>
@@ -302,15 +299,15 @@
             <td class="pricing-table__cell pricing-table__cell--column-header">
               <span class="pricing-table__option-name pricing-table__option-name--title">Комментарии</span>
             </td>
-            <td class="pricing-table__cell">
+            <td class="pricing-table__cell pricing-table__cell--content">
               <span class="pricing-table__option-name">Комментарии</span>
               <img class="pricing-table__option-status" src="img/icon-no.svg" width="27" height="26" alt="Недоступно"/>
             </td>
-            <td class="pricing-table__cell">
+            <td class="pricing-table__cell pricing-table__cell--content">
               <span class="pricing-table__option-name">Комментарии</span>
               <img class="pricing-table__option-status" src="img/icon-no.svg" width="27" height="26" alt="Недоступно"/>
             </td>
-            <td class="pricing-table__cell">
+            <td class="pricing-table__cell pricing-table__cell--content">
               <span class="pricing-table__option-name">Комментарии</span>
               <img class="pricing-table__option-status" src="img/icon-yes.svg" width="31" height="21" alt="Доступно"/>
             </td>
@@ -407,8 +404,8 @@
       </ul>
     </div>
     <div class="copyright">
-      <span class="copyright__note">Разработано</span>
-      <a class="copyright__link" href="https://htmlacademy.ru/">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright__note">Разработано</span>
         <svg class="copyright__link-img" width="27" height="34">
           <use xlink:href="#logo-htmlacademy"></use>
         </svg>

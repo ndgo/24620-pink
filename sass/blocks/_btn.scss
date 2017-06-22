@@ -126,6 +126,7 @@
 
   .btn--modal-window {
     display: inline-block;
+    vertical-align: middle;
 
     width: 300px;
   }
@@ -163,8 +164,6 @@
   }
 
   .btn--modal-window {
-    display: inline-block;
-
     width: 460px;
   }
 }

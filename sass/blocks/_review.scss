@@ -13,7 +13,7 @@
 
 .review::after {
   content: "";
-  background-image: url("../../img/bg-triangle-white.svg");
+  background-image: url("../img/bg-triangle-white.svg");
 }
 
 .review__input {
@@ -40,6 +40,7 @@
 
 .review__control {
   display: inline-block;
+  vertical-align: middle;
 
   width: 6px;
   height: 6px;
@@ -176,7 +177,7 @@
   .review__slide {
     padding: 145px 90px 0 90px;
 
-    background-image: url(/img/icon-quotes.svg);
+    background-image: url(../img/icon-quotes.svg);
     background-repeat: no-repeat;
     background-position: center 35px;
     background-size: 79px;
