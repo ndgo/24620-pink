@@ -236,4 +236,18 @@
     border-left-color: $transparent;
   }
 
+  .review__control {
+    position: relative;
+  }
+
+  .review__control:first-child {
+    top: 10px;
+    left: 5px;
+  }
+
+  .review__control:last-child {
+    top: 10px;
+    right: 5px;
+  }
+
 }
