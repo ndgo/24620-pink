@@ -349,7 +349,7 @@
   .form__fields--platform {
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 60px;
+    margin-bottom: 65px;
 
     padding: 35px 80px 35px 60px;
   }
@@ -363,7 +363,7 @@
 
     border: none;
 
-    padding-bottom: 15px;
+    padding-bottom: 11px;
   }
 
   .form__fields--achievements {
@@ -420,7 +420,7 @@
     top: 37px;
     right: 2px;
     width: 58px;
-    height: 56px;
+    height: 59px;
 
     display: block;
 
@@ -437,7 +437,6 @@
     }
   }
 
-
   .form__text-field--mail {
     position: relative;
 
@@ -448,11 +447,13 @@
 
   .form__text-field-input--first {
     order: -1;
+
+    height: 63px;
   }
 
   .form__text-field-caption--mail,
   .form__text-field-caption--phone {
-    padding: 15px 0 0 20px;
+    padding: 10px 0 0 20px;
     align-self: flex-start;
   }
 
@@ -461,7 +462,7 @@
     margin-right: 0;
     margin-bottom: 65px;
 
-    padding: 30px 80px 50px 60px;
+    padding: 30px 80px 55px 60px;
   }
 
   .form__checkbox {
@@ -476,7 +477,7 @@
   .form__fields--report {
     padding: 45px 60px 50px;
 
-    margin-bottom: 65px;
+    margin-bottom: 62px;
   }
 
   .form__textarea {
@@ -519,6 +520,10 @@
     margin-bottom: 65px;
   }
 
+  .form__text-field-input {
+    height: 63px;
+  }
+
   .form__fields--full-name {
     display: flex;
     justify-content: space-between;
@@ -527,7 +532,7 @@
     width: calc(50% - 35px);
 
     padding-top: 5px;
-    padding-bottom: 0;
+    padding-bottom: 5px;
   }
 
   .form__fields--achievements {
