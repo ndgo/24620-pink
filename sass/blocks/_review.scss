@@ -192,7 +192,7 @@
   }
 
   .review__control {
-    display: none;
+    display: block;
 
     width: 25px;
     height: 25px;
@@ -217,35 +217,23 @@
     transition-duration: .3s;
   }
 
-  #review__slide-1:checked ~ .review__controls [for="review__slide-2"] {
-    display: block;
-
-    margin-left: auto;
-
-    border-bottom-color: $transparent;
-    border-left-color: $transparent;
+  .review__control:nth-child(2) {
+    display: none;
   }
 
-  #review__slide-2:checked ~ .review__controls [for="review__slide-1"] {
-    display: block;
-
+  #review__slide-1:checked ~ .review__controls [for="review__slide-1"], #review__slide-2:checked ~ .review__controls [for="review__slide-2"],
+  #review__slide-3:checked ~ .review__controls [for="review__slide-3"] {
+    border: 2px solid $spindle;
+    background-color: $transparent;
     border-top-color: $transparent;
     border-right-color: $transparent;
   }
 
-  #review__slide-2:checked ~ .review__controls [for="review__slide-3"] {
-    display: block;
-
-    margin-left: auto;
-
+  .review__control:last-child {
+    border: 2px solid $spindle;
+    background-color: $transparent;
     border-bottom-color: $transparent;
     border-left-color: $transparent;
   }
 
-  #review__slide-3:checked ~ .review__controls [for="review__slide-2"] {
-    display: block;
-
-    border-top-color: $transparent;
-    border-right-color: $transparent;
-  }
 }
