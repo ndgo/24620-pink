@@ -340,6 +340,10 @@
 }
 
 @media #{$desktop} {
+  .navigation__list-item {
+    box-shadow: none;
+  }
+
   .navigation__list-link {
     display: inline-block;
     vertical-align: middle;
