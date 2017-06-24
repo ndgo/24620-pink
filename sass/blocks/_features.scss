@@ -206,7 +206,7 @@
 
     content: "";
     position: absolute;
-    top: 45px;
+    top: 48px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -255,7 +255,7 @@
   }
 
   .features__item--full-width::before {
-    left: 10px;
+    left: 0;
     transform: translateY(-63%);
 
     width: 300px;
