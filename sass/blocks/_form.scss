@@ -97,6 +97,10 @@
 
 .form__legend-title {
   @include embed-font($font-family, 14px, 18px, $cerise, $normal, normal);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .form__legend--hidden {
@@ -410,6 +414,10 @@
 
   .form__legend-title {
     margin: 0;
+
+    padding-left: 0;
+    padding-right: 0;
+
     font-weight: normal;
   }
 
