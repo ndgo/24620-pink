@@ -209,6 +209,8 @@
     top: 45px;
     left: 50%;
     transform: translateX(-50%);
+
+    background-size: cover;
   }
 
   .features__item--in-list:first-child:before {
@@ -253,7 +255,7 @@
   }
 
   .features__item--full-width::before {
-    left: 0;
+    left: 10px;
     transform: translateY(-63%);
 
     width: 300px;
