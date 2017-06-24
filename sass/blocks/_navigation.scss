@@ -328,8 +328,8 @@
   text-transform: uppercase;
   text-decoration: none;
   background-color: $midnight;
-  border-top: 1px solid $blue-charcoal;
-  border-bottom: 1px solid black;
+  border-top: 1px solid rgba($white, .15);
+  border-bottom: 1px solid $black;
 }
 
 @media #{$desktop} {
