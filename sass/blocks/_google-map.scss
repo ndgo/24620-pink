@@ -22,7 +22,7 @@
 
 @media #{$desktop} {
   .google-map__img {
-    height: 105px;
+    height: 80px;
   }
 }
 
@@ -40,6 +40,6 @@
 
 @media #{$desktop} {
   .google-map__map {
-    height: 500px;
+    min-height: 480px;
   }
 }
