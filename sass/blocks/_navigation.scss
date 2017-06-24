@@ -328,8 +328,15 @@
   text-transform: uppercase;
   text-decoration: none;
   background-color: $midnight;
-  border-top: 1px solid rgba($white, .15);
-  border-bottom: 1px solid $black;
+
+}
+
+.navigation__list-link {
+  box-shadow: 0 -1px 0 $black, inset 0 1px 0 rgba($white, .15);
+}
+
+.navigation__list-item:last-child {
+  box-shadow: 0 1px 0 $black, inset 0 1px 0 rgba($white, .15);
 }
 
 @media #{$desktop} {
@@ -339,6 +346,7 @@
     text-transform: none;
     background-color: $transparent;
     border: none;
+    box-shadow: none;
     font-weight: $normal;
   }
 }
