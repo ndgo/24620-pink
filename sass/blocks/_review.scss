@@ -222,12 +222,16 @@
 
     margin-left: auto;
 
+    margin-right: 15px;
+
     border-bottom-color: $transparent;
     border-left-color: $transparent;
   }
 
   #review__slide-2:checked ~ .review__controls [for="review__slide-1"] {
     display: block;
+
+    margin-left: 15px;
 
     border-top-color: $transparent;
     border-right-color: $transparent;
@@ -238,12 +242,16 @@
 
     margin-left: auto;
 
+    margin-right: 15px;
+
     border-bottom-color: $transparent;
     border-left-color: $transparent;
   }
 
   #review__slide-3:checked ~ .review__controls [for="review__slide-2"] {
     display: block;
+
+    margin-left: 15px;
 
     border-top-color: $transparent;
     border-right-color: $transparent;
