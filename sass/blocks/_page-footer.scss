@@ -45,7 +45,7 @@
   display: none;
 }
 
-@media (min-width: 1200px) {
+@media #{$desktop}{
   .page-footer__logo-desktop {
     display: block;
   }

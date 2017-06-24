@@ -139,7 +139,7 @@
   line-height: 50px;
 }
 
-@media (max-width: 659px) {
+@media #{$before-tablet} {
   .promotion__header {
     position: absolute;
     width: 1px;

@@ -2,7 +2,9 @@ $font-family: "Open Sans", Helvetica, Arial, sans-serif;
 $embedding-font: "Open Sans";
 
 $phone: "(min-width: 320px)";
+$phone-max-width: "(max-width: 659px)";
 $tablet: "(min-width: 660px)";
+$tablet-max-width: "(max-width: 1199px)";
 $desktop: "(min-width: 1200px)";
 $min-dpi: "(min-resolution: 144dpi)";
 $min-dppx: "(min-resolution: 1.5dppx)";

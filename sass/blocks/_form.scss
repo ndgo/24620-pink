@@ -430,7 +430,7 @@
     background-size: 20px;
   }
 
-  @media (min-width: 660px) {
+  @media #{$tablet} {
 
     .form__icon {
       top: 2px;

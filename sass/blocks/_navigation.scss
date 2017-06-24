@@ -15,7 +15,7 @@
   display: none
 }
 
-@media (max-width: 659px) {
+@media #{$phone-max-width} {
   .navigation__logo-mobile {
     display: block
   }
@@ -25,7 +25,7 @@
   display: none
 }
 
-@media (min-width: 660px) and (max-width: 1199px) {
+@media #{$tablet} and #{$tablet-max-width} {
   .navigation__logo-tablet {
     display: block
   }
