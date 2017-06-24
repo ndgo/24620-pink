@@ -214,6 +214,7 @@
   }
 
   .features__item--in-list:first-child:before {
+    left: 47%;
     background-image: url("../img/iphone-screen-1-desktop@1x.png");
   }
 
@@ -222,6 +223,7 @@
   }
 
   .features__item--in-list:last-child:before {
+    right: 53%;
     background-image: url("../img/iphone-screen-3-desktop@1x.png");
   }
 
