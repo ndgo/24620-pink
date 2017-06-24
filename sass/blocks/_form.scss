@@ -90,11 +90,13 @@
 
   margin: 0;
   padding-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
 
   text-transform: uppercase;
   text-align: center;
+}
+
+.form__legend-title {
+  @include embed-font($font-family, 14px, 18px, $cerise, $normal, normal);
 }
 
 .form__legend--hidden {
@@ -212,7 +214,7 @@
 
   position: absolute;
   top: 50%;
-  left:0;
+  left: 0;
 
   display: block;
 
@@ -327,6 +329,10 @@
   display: none;
 }
 
+.form__legend-line {
+  display: none;
+}
+
 @media #{$tablet} {
   .form {
     display: flex;
@@ -351,6 +357,7 @@
     background-color: $white;
 
     border: 2px solid $whisper;
+    border-top-color: $transparent;
   }
 
   .form__fields--platform {
@@ -379,23 +386,35 @@
 
   .form__legend {
     position: absolute;
-    display: inline-block;
-    vertical-align: middle;
-
-    width: auto;
     top: -10px;
     left: 50%;
+
+    display: flex;
+    align-items: center;
+
+    width: 100%;
 
     padding-bottom: 0;
 
     background-color: #fff;
 
     transform: translateX(-50%);
-    white-space: nowrap;
+  }
+
+  .form__legend-line {
+    display: block;
+    width: 100px;
+    border-bottom: 2px solid $whisper;
+    flex-grow: 1;
+  }
+
+  .form__legend-title {
+    margin: 0;
+    font-weight: normal;
   }
 
   .form__legend--hidden {
-    display: block;
+    display: flex;
   }
 
   .form__fields--contacts {
@@ -437,11 +456,8 @@
     background-size: 20px;
   }
 
-  @media #{$tablet} {
-
-    .form__icon {
-      top: 2px;
-    }
+  .form__icon {
+    top: 2px;
   }
 
   .form__text-field--mail {
