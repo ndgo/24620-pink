@@ -340,6 +340,10 @@
 }
 
 @media #{$desktop} {
+  .navigation__list-item:last-child {
+    box-shadow: none;
+  }
+
   .navigation__list-item {
     box-shadow: none;
   }
