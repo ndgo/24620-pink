@@ -54,3 +54,40 @@
 .modal-window--hidden {
   display: none;
 }
+
+@media #{$tablet} {
+  .modal-window {
+    width: 460px;
+    padding: 40px 80px 50px;
+  }
+
+  .modal-window__header {
+    margin-bottom: 28px;
+
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal-window__header--success {
+    margin-bottom:24px;
+  }
+
+  .modal-window__text {
+    font-size: 18px;
+  }
+
+  .modal-window--success {
+    padding: 33px 0 0;
+  }
+
+  .modal-window__text-container--success {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  .modal-window__inner--success {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+}
