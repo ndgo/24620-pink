@@ -22,14 +22,14 @@
 
 .promotion {
   position: relative;
-  height: 732px;
+  min-height: 736px;
   font-weight: 300;
   text-align: center;
   color: $white;
   background-color: $midnight;
   background-image: url(../img/iphone-hand-mobile@1x.png), url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
-  background-position: center 176px, center top;
+  background-position: left 176px, center top;
   background-size: 258px, 700px;
 }
 
@@ -41,7 +41,7 @@
 
 @media #{$tablet} {
   .promotion {
-    height: 728px;
+    min-height: 728px;
     background-image: url(../img/iphone-hand-tablet@1x.png), url(../img/bg-back-tablet@1x.jpg);
     background-position: center bottom, center top;
     background-size: 695px, cover;
@@ -56,7 +56,7 @@
 
 @media #{$desktop} {
   .promotion {
-    height: 853px;
+    min-height: 853px;
     background-image: url(../img/iphone-hand-desktop@1x.png), url(../img/bg-back-desktop@1x.jpg);
     background-position: right bottom, center top;
     background-size: 1050px, cover;
@@ -70,7 +70,7 @@
 }
 
 .promotion--small {
-  height: 239px;
+  min-height: 239px;
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: top;
@@ -85,7 +85,7 @@
 
 @media #{$tablet} {
   .promotion--small {
-    height: 440px;
+    min-height: 440px;
     background-image: url(../img/bg-back-tablet@1x.jpg);
   }
 }
@@ -98,7 +98,7 @@
 
 @media #{$desktop} {
   .promotion--small {
-    height: 394px;
+    min-height: 394px;
     background-image: url(../img/bg-back-desktop@1x.jpg);
   }
 }
@@ -110,7 +110,7 @@
 }
 
 .promotion__info {
-  padding: 487px 0 30px;
+  padding: 493px 0 0;
 }
 
 @media #{$tablet} {
@@ -132,7 +132,7 @@
   display: block;
   width: 198px;
   margin: 0 auto;
-  margin-bottom: 28px;
+  margin-bottom: 33px;
   font-weight: 300;
   text-align: center;
   font-size: 40px;
@@ -172,6 +172,7 @@
   @include embed-font($font-family, 24px, 29px, $white, $lighter);
 
   display: inline-block;
+  vertical-align: middle;
   width: 230px;
   margin: 0 auto;
   margin-top: 100px;

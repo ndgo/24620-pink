@@ -2,10 +2,6 @@
 @import "../global/mixins";
 
 .copyright {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
   padding-bottom: 5px;
 }
 
@@ -18,9 +14,13 @@
 }
 
 .copyright__link {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   fill: $cerise;
+
+  text-decoration: none;
 }
 
 .copyright__link:hover {
@@ -49,10 +49,22 @@
   .copyright {
     padding-bottom: 0;
   }
+
+  .copyright--photos {
+    padding-top: 10px;
+  }
 }
 
 @media #{$desktop} {
   .copyright__note {
     font-size: 18px;
+  }
+
+  .copyright {
+    padding-top: 10px;
+  }
+
+  .copyright--form {
+    padding-top: 0;
   }
 }

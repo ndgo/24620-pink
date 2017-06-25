@@ -33,6 +33,10 @@
   display: block;
 }
 
+.page-footer__logo {
+  padding-top: 5px;
+}
+
 .page-footer__logo-tablet {
   display: block;
 }
@@ -116,6 +120,10 @@
     display: block;
 
     min-height: 125px;
+  }
+
+  .page-footer__logo {
+    padding-top: 0;
   }
 
   .page-footer__container {

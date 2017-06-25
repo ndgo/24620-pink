@@ -27,11 +27,13 @@
   margin-bottom: 30px;
 }
 
-.editor-form__tool {
-  margin-bottom: 30px;
+.editor-form__range {
+  display: block;
+
+  margin-bottom: 60px;
 }
 
-.editor-form__tool::after {
+.editor-form__range::after {
   position: absolute;
   left: 0;
   right: 0;
@@ -43,10 +45,6 @@
 
   background-color: rgba($black, .1);
   content: "";
-}
-
-.editor-form__range {
-  display: block;
 }
 
 .editor-form__range-control {
@@ -157,13 +155,13 @@
 }
 
 .editor-form__range {
-  fill:$heather;
+  fill: $heather;
 }
 
 .editor-form__range--fill:hover,
 .editor-form__range--crop:hover,
 .editor-form__range--contrast:hover {
-  fill:$light-stale-gray;
+  fill: $light-stale-gray;
   transition-duration: .3s;
 }
 
@@ -189,17 +187,6 @@
     margin: 0 0 auto;
   }
 
-  .editor-form__tool {
-    margin-bottom: 0;
-  }
-
-  .editor-form__tool::after {
-    bottom: auto;
-
-    margin-left: 0;
-    margin-right: 0;
-  }
-
   .editor-form__img {
     width: 30px;
     height: 30px;
@@ -214,10 +201,19 @@
   }
 
   .editor-form__range {
+    position: relative;
+
     display: flex;
     align-items: center;
 
     padding: 20px 0;
+
+    margin-bottom: 0;
+  }
+
+  .editor-form__range::after {
+    margin-left: 20px;
+    margin-right: 0;
   }
 
   .editor-form__range-control {
@@ -273,19 +269,15 @@
   }
 
   .editor-form__range {
-    padding: 0 0 13px;
+    padding: 15px 0 13px;
+  }
+
+  .editor-form__range--crop {
+    padding-top: 0;
   }
 
   .editor-form__img {
     margin-left: 0;
-  }
-
-  .editor-form__tool {
-    padding-top: 15px;
-  }
-
-  .editor-form__tool:first-child {
-    padding-top: 0;
   }
 
   .editor-form__controls {

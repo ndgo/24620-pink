@@ -46,6 +46,7 @@
 
 .pricing-slider__control {
   display: inline-block;
+  vertical-align: middle;
 
   width: 6px;
   height: 6px;
@@ -78,7 +79,7 @@
 
 #pricing-slider__slide-1:checked ~ .pricing-slider__controls [for="pricing-slider__slide-1"],
 #pricing-slider__slide-2:checked ~ .pricing-slider__controls [for="pricing-slider__slide-2"],
-#pricing-slider__slide-3:checked ~ .pricing-slider__controls [for="pricing-slider__slide-3"]{
+#pricing-slider__slide-3:checked ~ .pricing-slider__controls [for="pricing-slider__slide-3"] {
   border: 3px solid $midnight;
   background-color: $white-smoke;
 }
@@ -114,11 +115,10 @@
   }
 }
 
-
 @media #{$desktop} {
   .pricing-slider {
     padding-top: 155px;
-    padding-bottom:50px;
+    padding-bottom: 55px;
   }
 
   .pricing-slider__container {
