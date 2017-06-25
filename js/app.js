@@ -3,12 +3,12 @@ function initMap() {
   var mapParams = {
     zoom: 16,
     center: position,
-    disableDefaultUI: !0,
-    zoomControl: !0,
+    disableDefaultUI: true,
+    zoomControl: true,
     zoomControlOptions: {
       position: google.maps.ControlPosition.LEFT_CENTER
     },
-    scrollwheel: !1
+    scrollwheel: false
   };
   map = new google.maps.Map(document.getElementById("map"), mapParams);
   new google.maps.Marker({
