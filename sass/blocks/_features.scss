@@ -285,6 +285,11 @@
     font-size: 18px;
     line-height: 30px;
   }
+
+  .features__item:nth-child(2) .features__item-description {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
 }
 
 @media #{$desktop} and #{$min-dpi}, #{$desktop} and #{$min-dppx}{
