@@ -29,7 +29,7 @@ var path = {
   src: { //Пути откуда брать исходники
     html: './*.html', //Синтаксис src/template/*.html говорит gulp что мы хотим взять все файлы с расширением .html
     js: './js/*.js',//В стилях и скриптах нам понадобятся только main файлы
-    css: './sass/**/*.scss',
+    css: './sass/style.scss',
     img: './img/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
     fonts: './fonts/*.*',
     svg: './img/**/*.svg'
@@ -154,11 +154,11 @@ gulp.task('buildForDevelop', function (callback) {
 });
 
 gulp.task("watcher", ["buildForDevelop"], function () {
-  gulp.watch(path.src.img, ['image:copy']);
-  gulp.watch(path.src.html, ['html:build']);
-  gulp.watch(path.src.js, ['js:build']);
-  gulp.watch(path.src.sass, ['css:build']);
-  gulp.watch(path.src.fonts, ['fonts:build']);
+  gulp.watch(path.watch.img, ['image:copy']);
+  gulp.watch(path.watch.html, ['html:build']);
+  gulp.watch(path.watch.js, ['js:build']);
+  gulp.watch(path.watch.sass, ['css:build']);
+  gulp.watch(path.watch.fonts, ['fonts:build']);
 });
 
 gulp.task('browserSync', function () {
