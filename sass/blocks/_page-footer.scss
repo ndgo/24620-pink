@@ -120,7 +120,7 @@
 }
 
 .page-footer__social-separator {
-  display: none;
+  flex-grow: 1;
 }
 
 @media #{$tablet} {
@@ -149,11 +149,6 @@
 
   .page-footer__link {
     padding-bottom: 10px;
-  }
-
-  .page-footer__social-separator {
-    display: block;
-    flex-grow: 1;
   }
 }
 
