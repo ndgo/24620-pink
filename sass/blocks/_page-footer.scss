@@ -115,6 +115,10 @@
   transition-duration: 0s
 }
 
+.page-footer__social-container {
+  flex-grow: 1;
+}
+
 @media #{$tablet} {
   .page-footer {
     display: block;
@@ -133,10 +137,6 @@
     align-items: center;
 
     min-height: 125px;
-  }
-
-  .page-footer__social-container {
-    margin-right: 15px;
   }
 
   .page-footer__link {
