@@ -24,6 +24,8 @@ function initMap() {
     }
   });
   google.maps.event.addDomListener(window, "resize", function () {
-    map.setCenter(position)
-  })
+    var e = map.getCenter();
+    google.maps.event.trigger(map, "resize");
+    map.setCenter(e)
+  });
 }
