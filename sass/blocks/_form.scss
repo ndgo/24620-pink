@@ -420,12 +420,18 @@
   }
 
   .form__legend-title {
+    max-width: 320px;
+
     margin: 0;
 
     padding-left: 0;
     padding-right: 0;
 
     font-weight: normal;
+  }
+
+  .form__legend-title--achievements {
+    max-width: 390px;
   }
 
   .form__legend--hidden {
