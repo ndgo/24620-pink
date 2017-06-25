@@ -412,6 +412,14 @@
     flex-grow: 1;
   }
 
+  .form__legend-line:first-child {
+    margin-right: 25px;
+  }
+
+  .form__legend-line:last-child {
+    margin-left: 25px;
+  }
+
   .form__legend-title {
     margin: 0;
 
