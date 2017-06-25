@@ -115,11 +115,11 @@
   transition-duration: 0s
 }
 
-.page-footer__social-container {
-  flex-grow: 1;
-}
-
 @media #{$tablet} {
+  .page-footer__social-container {
+    flex-grow: 1;
+  }
+
   .page-footer {
     display: block;
 
