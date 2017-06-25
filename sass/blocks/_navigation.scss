@@ -275,12 +275,6 @@
   transform: rotate(-45deg);
 }
 
-.navigation__toggle:active::after,
-.navigation__toggle:active::before {
-  background-color: rgba($cerise, 0.3);
-  transition-duration: .3s;
-}
-
 .navigation__toggle:hover::after,
 .navigation__toggle:hover::before,
 .navigation__toggle:focus::after,
@@ -288,6 +282,12 @@
   background-color: $cerise;
   transition-duration: .3s;
 
+}
+
+.navigation__toggle:active::after,
+.navigation__toggle:active::before {
+  background-color: rgba($cerise, 0.3);
+  transition-duration: .3s;
 }
 
 .navigation.navigation--nojs {
