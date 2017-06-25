@@ -55,6 +55,10 @@
   display: none;
 }
 
+.modal-window__text--success {
+  margin-bottom: 32px;
+}
+
 @media #{$tablet} {
   .modal-window {
     width: 460px;
