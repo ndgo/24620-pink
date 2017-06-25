@@ -49,7 +49,7 @@
 }
 
 @media #{$tablet} and #{$min-dpi}, #{$tablet} and #{$min-dppx} {
-  .promo {
+  .promotion {
     background-image: url(../img/iphone-hand-tablet@2x.png), url(../img/bg-back-tablet@2x.jpg);
   }
 }
