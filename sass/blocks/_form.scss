@@ -390,7 +390,7 @@
 
   .form__legend {
     position: absolute;
-    top: -10px;
+    top: 0;
     left: 50%;
 
     display: flex;
@@ -400,9 +400,9 @@
 
     padding-bottom: 0;
 
-    background-color: #fff;
+    background-color: $white;
 
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-50%);
   }
 
   .form__legend-line {
