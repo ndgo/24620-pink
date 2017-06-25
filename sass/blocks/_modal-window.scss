@@ -91,3 +91,30 @@
   }
 
 }
+
+@media #{$desktop} {
+  .modal-window__header {
+    margin-bottom: 20px;
+  }
+
+  .modal-window--success {
+    width: 780px;
+  }
+
+  .modal-window__inner--success {
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+
+  .modal-window__text-container--success {
+    width: 400px;
+
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+  }
+
+  .modal-window--success {
+    padding-top: 40px;
+  }
+}
