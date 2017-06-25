@@ -72,6 +72,10 @@
   transition-duration: .3s;
 }
 
+.contacts__item-text:hover:active {
+  text-decoration: none;
+}
+
 @media #{$tablet} {
   .contacts__list {
     display: flex;

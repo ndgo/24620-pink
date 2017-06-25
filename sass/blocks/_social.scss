@@ -3,9 +3,9 @@
 
 .social {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
 
-  width: 180px;
   margin: 0;
   padding: 0;
 
@@ -24,6 +24,14 @@
   text-align: center;
 
   fill: $cerise;
+}
+
+.social__item {
+  margin-right: 15px;
+}
+
+.social__item:last-child {
+  margin-right: 0;
 }
 
 .social__link:hover {
@@ -46,6 +54,12 @@
 @media #{$tablet} {
   .social {
     padding-top: 5px;
-    margin-left: -5px;
+    margin-right: 15px;
+  }
+}
+
+@media #{$desktop} {
+  .social {
+    margin-right: 0;
   }
 }

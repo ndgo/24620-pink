@@ -90,11 +90,17 @@
 
   margin: 0;
   padding-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
 
   text-transform: uppercase;
   text-align: center;
+}
+
+.form__legend-title {
+  @include embed-font($font-family, 14px, 18px, $cerise, $normal, normal);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .form__legend--hidden {
@@ -121,6 +127,8 @@
 
   position: relative;
 
+  display: block;
+
   padding-left: 70px;
 }
 
@@ -128,6 +136,8 @@
   content: "";
 
   position: absolute;
+  left: 0;
+
   display: block;
 
   width: 35px;
@@ -144,18 +154,18 @@
   content: "";
 
   position: absolute;
-  top: 0;
-  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
 
   display: block;
 
-  width: 20px;
-  height: 10px;
+  width: 22px;
+  height: 16px;
 
-  border: 2px solid $cerise;
-  border-top-color: transparent;
-  border-right-color: transparent;
-  transform: rotate(-45deg);
+  fill: $cerise;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjAiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjIxLjY5OHB4IiBoZWlnaHQ9IjE2LjA5cHgiIHZpZXdCb3g9Ii04Mi4zNTcgNC44NzUgMjEuNjk4IDE2LjA5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IC04Mi4zNTcgNC44NzUgMjEuNjk4IDE2LjA5IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICA8cGF0aCBmaWxsPSIjRDIyODU2IiBkPSJNLTYwLjk1Myw1LjE2N2MtMC4zOTEtMC4zOTEtMS4wMjMtMC4zOTEtMS40MTQsMEwtNzUuNzUsMTguNTUxbC00LjktNC45Yy0wLjM5MS0wLjM5MS0xLjAyMy0wLjM5MS0xLjQxNCwwIHMtMC4zOTEsMS4wMjMsMCwxLjQxNGw1LjYwNyw1LjYwN2MwLjE5NSwwLjE5NSwwLjQ1MSwwLjI5MywwLjcwNywwLjI5M3MwLjUxMi0wLjA5OCwwLjcwNy0wLjI5M2wxNC4wOS0xNC4wIEMtNjAuNTYyLDYuMTkxLTYwLjU2Miw1LjU1OC02MC45NTMsNS4xNjd6Ii8+Cjwvc3ZnPgo=");
+  background-repeat: no-repeat;
 }
 
 .form__checkbox-caption:hover::before {
@@ -198,6 +208,8 @@
 
   position: relative;
 
+  display: block;
+
   padding-left: 70px;
 }
 
@@ -206,6 +218,7 @@
 
   position: absolute;
   top: 50%;
+  left: 0;
 
   display: block;
 
@@ -320,6 +333,10 @@
   display: none;
 }
 
+.form__legend-line {
+  display: none;
+}
+
 @media #{$tablet} {
   .form {
     display: flex;
@@ -344,6 +361,7 @@
     background-color: $white;
 
     border: 2px solid $whisper;
+    border-top-color: $transparent;
   }
 
   .form__fields--platform {
@@ -372,23 +390,52 @@
 
   .form__legend {
     position: absolute;
-    display: inline-block;
-    vertical-align: middle;
-
-    width: auto;
-    top: -10px;
+    top: 0;
     left: 50%;
+
+    display: flex;
+    align-items: center;
+
+    width: 100%;
 
     padding-bottom: 0;
 
-    background-color: #fff;
+    background-color: $white;
 
-    transform: translateX(-50%);
-    white-space: nowrap;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .form__legend-line {
+    display: block;
+    border-bottom: 2px solid $whisper;
+    flex-grow: 1;
+  }
+
+  .form__legend-line:first-child {
+    margin-right: 25px;
+  }
+
+  .form__legend-line:last-child {
+    margin-left: 25px;
+  }
+
+  .form__legend-title {
+    max-width: 320px;
+
+    margin: 0;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    font-weight: normal;
+  }
+
+  .form__legend-title--achievements {
+    max-width: 390px;
   }
 
   .form__legend--hidden {
-    display: block;
+    display: flex;
   }
 
   .form__fields--contacts {
@@ -430,11 +477,8 @@
     background-size: 20px;
   }
 
-  @media (min-width: 660px) {
-
-    .form__icon {
-      top: 2px;
-    }
+  .form__icon {
+    top: 2px;
   }
 
   .form__text-field--mail {
@@ -449,6 +493,8 @@
     order: -1;
 
     height: 63px;
+
+    padding-right: 65px;
   }
 
   .form__text-field-caption--mail,
@@ -471,6 +517,7 @@
   }
 
   .form__checkbox-caption {
+    display: block;
     padding-left: 55px;
   }
 

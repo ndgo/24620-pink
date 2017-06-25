@@ -5,7 +5,7 @@
   display: none
 }
 
-@media (min-width: 1200px) {
+@media #{$desktop} {
   .navigation__logo-desktop {
     display: block
   }
@@ -15,7 +15,7 @@
   display: none
 }
 
-@media (max-width: 659px) {
+@media #{$phone-max-width} {
   .navigation__logo-mobile {
     display: block
   }
@@ -25,7 +25,7 @@
   display: none
 }
 
-@media (min-width: 660px) and (max-width: 1199px) {
+@media #{$tablet} and #{$tablet-max-width} {
   .navigation__logo-tablet {
     display: block
   }
@@ -179,7 +179,7 @@
 
 .navigation__toggle {
   position: absolute;
-  right: 0;
+  right: -13px;
 
   width: 50px;
   height: 50px;
@@ -275,12 +275,6 @@
   transform: rotate(-45deg);
 }
 
-.navigation__toggle:active::after,
-.navigation__toggle:active::before {
-  background-color: rgba($cerise, 0.3);
-  transition-duration: .3s;
-}
-
 .navigation__toggle:hover::after,
 .navigation__toggle:hover::before,
 .navigation__toggle:focus::after,
@@ -288,6 +282,12 @@
   background-color: $cerise;
   transition-duration: .3s;
 
+}
+
+.navigation__toggle:active::after,
+.navigation__toggle:active::before {
+  background-color: rgba($cerise, 0.3);
+  transition-duration: .3s;
 }
 
 .navigation.navigation--nojs {
@@ -299,10 +299,6 @@
   .navigation.navigation--nojs {
     position: absolute;
   }
-}
-
-.navigation--nojs .navigation__toggle {
-  display: none;
 }
 
 .navigation__wrapper {
@@ -323,22 +319,38 @@
 
   position: relative;
   display: block;
-  padding: 15px 0;
+  padding: 16px 0;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   background-color: $midnight;
-  border-top: 1px solid $blue-charcoal;
-  border-bottom: 1px solid black;
+
+}
+
+.navigation__list-link {
+  box-shadow: 0 -1px 0 $black, inset 0 1px 0 rgba($white, .15);
+}
+
+.navigation__list-item:last-child {
+  box-shadow: 0 1px 0 $black, inset 0 1px 0 rgba($white, .15);
 }
 
 @media #{$desktop} {
+  .navigation__list-item:last-child {
+    box-shadow: none;
+  }
+
+  .navigation__list-item {
+    box-shadow: none;
+  }
+
   .navigation__list-link {
     display: inline-block;
     vertical-align: middle;
     text-transform: none;
     background-color: $transparent;
     border: none;
+    box-shadow: none;
     font-weight: $normal;
   }
 }

@@ -206,12 +206,15 @@
 
     content: "";
     position: absolute;
-    top: 45px;
+    top: 48px;
     left: 50%;
     transform: translateX(-50%);
+
+    background-size: cover;
   }
 
   .features__item--in-list:first-child:before {
+    left: 48%;
     background-image: url("../img/iphone-screen-1-desktop@1x.png");
   }
 
@@ -220,6 +223,7 @@
   }
 
   .features__item--in-list:last-child:before {
+    left: 53%;
     background-image: url("../img/iphone-screen-3-desktop@1x.png");
   }
 
@@ -280,6 +284,11 @@
 
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .features__item--in-list:nth-child(2) .features__item-description {
+    padding-left: 7px;
+    padding-right: 7px;
   }
 }
 

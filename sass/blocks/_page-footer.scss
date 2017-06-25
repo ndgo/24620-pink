@@ -45,7 +45,7 @@
   display: none;
 }
 
-@media (min-width: 1200px) {
+@media #{$desktop}{
   .page-footer__logo-desktop {
     display: block;
   }
@@ -115,7 +115,19 @@
   transition-duration: 0s
 }
 
+.page-footer__social-container {
+  display: flex;
+}
+
+.page-footer__social-separator {
+  flex-grow: 1;
+}
+
 @media #{$tablet} {
+  .page-footer__social-container {
+    flex-grow: 1;
+  }
+
   .page-footer {
     display: block;
 
@@ -133,10 +145,6 @@
     align-items: center;
 
     min-height: 125px;
-  }
-
-  .page-footer__social-container {
-    margin-right: 15px;
   }
 
   .page-footer__link {
