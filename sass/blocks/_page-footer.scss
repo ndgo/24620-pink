@@ -115,6 +115,10 @@
   transition-duration: 0s
 }
 
+.page-footer__social-container {
+  display: flex;
+}
+
 .page-footer__social-separator {
   flex-grow: 1;
 }
