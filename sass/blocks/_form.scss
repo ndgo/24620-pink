@@ -618,21 +618,21 @@
     order: -6;
   }
 
-  .form__checkbox:nth-child(2) {
+  .form__checkbox:nth-child(3) {
     order: -5;
     margin-left: 20px;
   }
 
-  .form__checkbox:nth-child(3) {
+  .form__checkbox:nth-child(2) {
+    order: -3;
+  }
+
+  .form__checkbox:nth-child(5) {
     order: -4;
     margin-right: -35px;
   }
 
   .form__checkbox:nth-child(4) {
-    order: -3;
-  }
-
-  .form__checkbox:nth-child(5) {
     order: -2;
     margin-left: 20px;
   }
