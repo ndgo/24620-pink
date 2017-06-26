@@ -594,6 +594,14 @@
     padding: 32px 60px;
   }
 
+  .form__checkbox-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between
+  }
+
   .form__checkbox {
     width: 30%;
   }
@@ -606,34 +614,34 @@
     padding-left: 60px;
   }
 
-  .form__checkbox--shark-selfie {
-    order: 1;
+  .form__checkbox:first-child {
+    order: -6;
   }
 
-  .form__checkbox--see-chuck {
-    order: 2;
+  .form__checkbox:nth-child(2) {
+    order: -5;
     margin-left: 20px;
   }
 
-  .form__checkbox--defenced-tower {
-    order: 3;
+  .form__checkbox:nth-child(3) {
+    order: -4;
     margin-right: -35px;
   }
 
-  .form__checkbox--shiny-skin {
-    order: 4;
+  .form__checkbox:nth-child(4) {
+    order: -3;
   }
 
-  .form__checkbox--bought-souvenirs {
-    order: 5;
+  .form__checkbox:nth-child(5) {
+    order: -2;
     margin-left: 20px;
   }
 
-  .form__checkbox--destroyed-hotel {
-    order: 6;
+  .form__checkbox:nth-child(6) {
+    order: -1;
     margin-right: -35px;
   }
-
+  
   .form__fields--contacts {
     display: flex;
     justify-content: space-between;
