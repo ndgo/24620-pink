@@ -584,15 +584,18 @@
 
   .form__fields--achievements {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
 
     width: 100%;
-    height: 165px;
 
     padding: 32px 60px;
+  }
+
+  .form__checkbox {
+    width: 30%;
   }
 
   .form__checkbox:last-child {
@@ -602,6 +605,36 @@
   .form__checkbox-caption {
     padding-left: 60px;
   }
+
+  .form__checkbox--shark-selfie {
+    order:1;
+  }
+
+  .form__checkbox--see-chuck {
+    order: 2;
+    margin-left: 20px;
+  }
+
+  .form__checkbox--defenced-tower{
+    order: 3;
+    margin-right: -35px;
+  }
+
+  .form__checkbox--shiny-skin {
+    order: 4;
+  }
+
+  .form__checkbox--bought-souvenirs {
+    order: 5;
+    margin-left: 20px;
+  }
+
+  .form__checkbox--destroyed-hotel {
+    order: 6;
+    margin-right: -35px;
+  }
+
+
 
   .form__fields--contacts {
     display: flex;
